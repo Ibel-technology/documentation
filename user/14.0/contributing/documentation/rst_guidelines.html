@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RST guidelines &#8212; Odoo 14.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
+ 
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/prefixfree.min.js"></script>
+    <script src="../../_static/atom.js"></script>
+    <script src="../../_static/immutable.js"></script>
+    <script src="../../_static/react.min.js"></script>
+    <script src="../../_static/accounts.js"></script>
+    <script src="../../_static/chart-of-accounts.js"></script>
+    <script src="../../_static/entries.js"></script>
+    <script src="../../_static/reconciliation.js"></script>
+    <script src="../../_static/misc.js"></script>
+    <script src="../../_static/inventory.js"></script>
+    <script src="../../_static/coa-valuation-continental.js"></script>
+    <script src="../../_static/coa-valuation-anglo-saxon.js"></script>
+<script type="text/javascript" src="../../_static/jquery.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap.js"></script>
+<script type="text/javascript" src="../../_static/doc.js"></script>
+<script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
+    <link rel="canonical" href="" />
+  
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Content guidelines" href="content_guidelines.html" />
+    <link rel="prev" title="RST cheat sheet" href="rst_cheat_sheet.html" /> 
+  </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
+    <div class="o_main_header_main">
+      <a class="pull-left o_logo" href="/"></a>
+      <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="mdi-navigation-menu"></span>
+      </a>
+      <div class="o_header_buttons">
+        <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+      </div>
+      <ul class="o_primary_nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Apps</a>
+          <div class="dropdown-menu o_secondary_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 o_website_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Websites
+                    <div>Build great user experience</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/website-builder">Website Builder</a></li>
+                    <li><a href="https://www.odoo.com/page/e-commerce">eCommerce</a></li>
+                    <li><a href="https://www.odoo.com/page/blog-engine">Blogs</a></li>
+                    <li><a href="https://www.odoo.com/page/community-builder">Forums</a></li>
+                    <li><a href="https://www.odoo.com/page/learning-management-system">eLearning</a></li>
+                    <li><a href="https://www.odoo.com/page/live-chat">Live Chat</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_sale_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Sales
+                    <div>Boost your success rate</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/sales">Sales</a></li>
+                    <li><a href="https://www.odoo.com/page/crm">CRM</a></li>
+                    <li><a href="https://www.odoo.com/page/billing">Invoicing</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Point of Sale</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/point-of-sale">Shops</a></li>
+                        <li><a href="https://www.odoo.com/page/pos-restaurant">Restaurants</a></li>
+                        <li><a href="https://www.odoo.com/page/point-of-sale-hardware">Hardware</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/subscriptions">Subscriptions</a></li>
+                    <li><a href="https://www.odoo.com/page/sign">Sign</a></li>
+                    <li><a href="https://www.odoo.com/page/rental">Rental</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_operation_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Operations
+                    <div>It's all about efficiency</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/accounting/">Accounting</a></li>
+                    <li><a href="https://www.odoo.com/page/project-management/">Project</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Human Resources</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/referral">Referral</a></li>
+                        <li><a href="https://www.odoo.com/page/employees">Employees</a></li>
+                        <li><a href="https://www.odoo.com/page/expenses">Expenses</a></li>
+                        <li><a href="https://www.odoo.com/page/appraisal">Appraisal</a></li>
+                        <li><a href="https://www.odoo.com/page/fleet">Fleet</a></li>
+                        <li><a href="https://www.odoo.com/page/leaves">Time Off</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/warehouse">Inventory</a></li>
+                    <li><a href="https://www.odoo.com/page/purchase">Purchase</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Manufacturing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/manufacturing">MRP</a></li>
+                        <li><a href="https://www.odoo.com/page/plm">PLM</a></li>
+                        <li><a href="https://www.odoo.com/page/maintenance">Maintenance</a></li>
+                        <li><a href="https://www.odoo.com/page/quality">Quality</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/helpdesk">Helpdesk</a></li>
+                    <li><a href="https://www.odoo.com/page/field-service-management">Field Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_productivity_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Productivity Tools
+                    <div>Great Tools = Happy People</div>
+                  </div>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Communication</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/discuss">Discuss</a></li>
+                        <li><a href="https://www.odoo.com/page/discuss-groups">Mailing Lists</a></li>
+                        <li><a href="https://www.odoo.com/page/notes">Notes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/timesheet">Timesheet</a></li>
+                    <li><a href="https://www.odoo.com/page/events">Events</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Marketing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/marketing-automation">Automation</a></li>
+                        <li><a href="https://www.odoo.com/page/email-marketing">Email</a></li>
+                        <li><a href="https://www.odoo.com/page/social-marketing">Social</a></li>
+                        <li><a href="https://www.odoo.com/page/sms-marketing">SMS</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/survey">Survey</a></li>
+                    <li><a href="https://www.odoo.com/page/approval-workflow">Approvals</a></li>
+                    <li><a href="https://www.odoo.com/page/appointments">Appointments</a></li>
+                    <li><a href="https://www.odoo.com/page/documents">Documents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="http://www.odoo.com/apps/modules" class="o_store_link"><i class="fa fa-cube fa-fw"></i> Third party apps</a>
+          </div>
+        </li>
+        <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
+        <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
+        <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
+      </ul>
+    </div>
+    <nav class="navbar o_sub_nav">
+      <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed text-left btn-block" data-toggle="collapse" data-target="#o_sub-menu" aria-expanded="false">
+              Navigate
+              <span class="mdi-hardware-keyboard-arrow-down pull-right"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="o_sub-menu">
+          <ol class="o_breadcrumb breadcrumb nav navbar-left">
+              
+              
+
+
+
+
+
+    
+        
+            
+                <li><a href="../../index.html">User Doc</a></li>
+            
+        
+    
+        
+            
+                
+                    <li><a href="../../contributing.html">Contributing</a></li>
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+    <li class="active"><a href="#">RST guidelines</a></li>
+
+              
+          </ol>
+
+          <div class="call-to-action navbar-right hidden-xs">
+            <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+
+            
+            
+
+<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
+<li><a href="https://training.odoo.com">Training Center</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
+<li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
+    <form class="search form-inline input-group-sm" action="../../search.html" method="get">
+        <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
+        <input type="hidden" name="area" value="default" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <button type="submit" value="Go" class="btn btn-default btn-sm">Go</button>
+    </form>
+</li>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+            
+
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><div id="wrap" class="">
+    
+    
+    
+    <figure class="card top has_banner">
+      <span class="card-img" style="background-image: url('../../_static/banners/contributing.png');"></span>
+      <div class="container text-center">
+        <h1> RST guidelines </h1>
+      </div>
+    </figure>
+    
+    
+    
+      <main class="container ">
+        
+        <div class="o_content row">
+          
+          <aside>
+            <div class="navbar-aside text-center">
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#use-relative-links-for-internal-urls" class="reference ripple internal">Use relative links for internal URLs</a><ul ><li class="list-group-item"><a href="#example" class="reference ripple internal">Example</a></li></ul></li><li class="list-group-item"><a href="#start-a-new-line-before-the-100th-character" class="reference ripple internal">Start a new line before the 100th character</a><ul ><li class="list-group-item"><a href="#example-line-breaks-within-directive-and-inline-markup" class="reference ripple internal">Example: Line breaks within directive and inline markup</a></li></ul></li><li class="list-group-item"><a href="#be-consistent-with-indentation" class="reference ripple internal">Be consistent with indentation</a><ul ><li class="list-group-item"><a href="#example-the-first-is-below-the-i-3-spaces" class="reference ripple internal">Example: The first <code >:</code> is below the <code >i</code> (3 spaces)</a></li><li class="list-group-item"><a href="#example-the-titlesonly-and-page-references-start-below-the-t-3-spaces" class="reference ripple internal">Example: The <code >:titlesonly:</code> and page references start below the <code >t</code> (3 spaces)</a></li><li class="list-group-item"><a href="#example-continuation-lines-resume-below-the-is-of-invoice-2-spaces" class="reference ripple internal">Example: Continuation lines resume below the <code >I</code>’s of “Invoice” (2 spaces)</a></li></ul></li><li class="list-group-item"><a href="#use-the-menuselection-directive" class="reference ripple internal">Use the menuselection directive</a></li><li class="list-group-item"><a href="#write-resilient-code" class="reference ripple internal">Write resilient code</a></li><li class="list-group-item"><a href="#prefix-hyperlink-targets-with-application-names" class="reference ripple internal">Prefix hyperlink targets with application names</a></li><li class="list-group-item"><a href="#dont-break-hyperlink-targets" class="reference ripple internal">Don’t break hyperlink targets</a></li><li class="list-group-item"><a href="#use-single-underscore-suffixes-for-hyperlink-references" class="reference ripple internal">Use single-underscore suffixes for hyperlink references</a></li></ul>
+              
+              <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/contributing/documentation/rst_guidelines.rst" class="gith-link">
+                  Edit on GitHub
+              </a></p>
+              
+            </div>
+          </aside>
+          
+          <article class="doc-body ">
+            
+            
+  <section id="rst-guidelines"></section><section id="use-relative-links-for-internal-urls"><i id="contributing-relative-links"></i><h2 >Use relative links for internal URLs</h2><p >If you need to reference an internal documentation page or a file that is not sitting in the same
+directory as your current page, always make use of <em >relative file paths</em> rather than <em >absolute file
+paths</em>. An absolute file path indicates the location of the target from the root of its file tree. A
+relative file path makes use of smart notations (such as <code >../</code> git that redirects to the parent
+folder) to indicate the location of the target <em >relative</em> to that of the source document.</p></section><section id="example"><h3 >Example</h3><p >Given the following source file tree:</p><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">documentation</span><span class="o">-</span><span class="n">user</span>
+<span class="err">├──</span> <span class="n">sales</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">products_prices</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">products</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">import</span><span class="o">.</span><span class="n">rst</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">variants</span><span class="o">.</span><span class="n">rst</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">prices</span><span class="o">.</span><span class="n">rst</span>
+</pre></div>
+</div>
+<p >A reference to the rendered <code class="file">prices.html</code> and <code class="file">variants.html</code> could be made from
+<code class="file">import.rst</code> as follows:</p><ol ><li ><p >Absolute:</p><ul ><li ><code >https://odoo.com/documentation/user/14.0/sales/products_prices/prices.html</code></li><li ><code >https://odoo.com/documentation/user/14.0/sales/products_prices/products/variants.html</code></li></ul></li><li ><p >Relative:</p><ul ><li ><code >../prices.html</code></li><li ><code >variants.html</code></li></ul></li></ol><p >The relative links are clearly superior in terms of readability and stability: the references
+survive version updates, folder name changes and file tree restructurations.</p></section><section id="start-a-new-line-before-the-100th-character"><i id="contributing-line-length-limit"></i><h2 >Start a new line before the 100th character</h2><p >In RST, it is possible to break a line without forcing a line break on the rendered HTML. Make use
+of this feature to write <strong >lines of maximum 100 characters</strong>. A line break in a sentence results in
+an additional whitespace in HTML. That means that you do not need to leave a trailing whitespace at
+the end of a line to separate words.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can safely break a line around the separators (<code >--&gt;</code>) of <code >menuselection</code> directives and
+anywhere in a hyperlink reference. For the <code >doc</code>, <code >ref</code> and <code >download</code> directives, this is
+only true for the label part of the reference.</p></div></section><section id="example-line-breaks-within-directive-and-inline-markup"><h3 >Example: Line breaks within directive and inline markup</h3><div class="highlight-rst"><div class="highlight"><pre><span></span>To register your seller account in Odoo, navigate to :menuselection:`Sales --&gt; Configuration
+--&gt; Settings --&gt; Amazon Connector --&gt; Amazon Accounts` and click on <span class="gs">**CREATE**</span>. The **Seller
+ID<span class="gs">** can be found under the link **</span>Your Merchant Token**.
+</pre></div>
+</div>
+</section><section id="be-consistent-with-indentation"><h2 >Be consistent with indentation</h2><p >Use only spaces (never tabs).</p><p >Use as many spaces at the beginning of an indented line as needed to align it with the first
+character of the directive in the line above. This usually implies 3 spaces but you only need 2 for
+bulleted lists.</p></section><section id="example-the-first-is-below-the-i-3-spaces"><h3 >Example: The first <code >:</code> is below the <code >i</code> (3 spaces)</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> media/example.png
+   <span class="nc">:align:</span> center
+   <span class="nc">:alt:</span> example
+</pre></div>
+</div>
+</section><section id="example-the-titlesonly-and-page-references-start-below-the-t-3-spaces"><h3 >Example: The <code >:titlesonly:</code> and page references start below the <code >t</code> (3 spaces)</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:titlesonly:</span>
+
+   payables/supplier_bills
+   payables/pay
+</pre></div>
+</div>
+</section><section id="example-continuation-lines-resume-below-the-is-of-invoice-2-spaces"><h3 >Example: Continuation lines resume below the <code >I</code>’s of “Invoice” (2 spaces)</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">-</span> Invoice on ordered quantity: invoice the full order as soon as the sales order is confirmed.
+<span class="m">-</span> Invoice on delivered quantity: invoice on what you delivered even if it&#39;s a partial delivery.
+</pre></div>
+</div>
+</section><section id="use-the-menuselection-directive"><i id="contributing-menuselection"></i><h2 >Use the menuselection directive</h2><p >Although chaining characters <code >‣</code> and menu names works fine to indicate a user which menus to
+click, it is best to use the <code >menuselection</code> directive (see
+<a href="rst_cheat_sheet.html#contributing-specialized-directives" class="reference internal"><span class="std std-ref">Spice up your writing with specialized directives</span></a>) for the same result. Indeed, it renders the menus chain
+consistently with the rest of the documentation and would automatically adapt to the new graphic
+chart if we were to switch to a new one. This directive is used inline as follows:
+<code >:menuselection:`Settings --&gt; Products --&gt; Variants`</code>.</p></section><section id="write-resilient-code"><i id="contributing-resilient-code"></i><h2 >Write resilient code</h2><ul ><li >Prefer the use of <code >#.</code> in numbered lists instead of <code >1.</code>, <code >2.</code>, etc. This removes the risk
+of breaking the numbering when adding new elements to the list and is easier to maintain.</li><li >Avoid using implicit hyperlink targets and prefer internal hyperlink targets instead. Referencing
+the implicit target <code >How to print quotations?</code> is more prone to break than a reference to the
+explicit target <code >_print_quotation</code> which never appears in the rendered HTML and is thus even
+less likely to be modified.</li></ul></section><section id="prefix-hyperlink-targets-with-application-names"><i id="contributing-hyperlink-target-prefix"></i><h2 >Prefix hyperlink targets with application names</h2><p >As hyperlink targets are visible from the entire documentation when referenced with the <code >ref</code>
+directive, it is recommended to prefix the target name with that of the related application. For
+instance, naming a target <code >_amazon/form</code> instead of <code >_form</code> avoids unwanted behaviors and makes
+the purpose of the target clear.</p></section><section id="dont-break-hyperlink-targets"><i id="contributing-hyperlink-target-resilience"></i><h2 >Don’t break hyperlink targets</h2><p >When refactoring (improving without adding new content) section headings or hyperlink targets, take
+care not to break any hyperlink reference to these targets or update them accordingly.</p></section><section id="use-single-underscore-suffixes-for-hyperlink-references"><i id="contributing-single-underscore"></i><h2 >Use single-underscore suffixes for hyperlink references</h2><div class="line-block"><div class="line">Although using a double-underscore suffix works most of the time for classic hyperlink references,
+it is not recommended as double-underscores normally indicate an anonymous hyperlink reference.
+This is a special kind of hyperlink reference that makes use of nameless hyperlink targets
+consisting only of two underscore.</div><div class="line">tl;dr: Double-underscore suffixes work until they don’t and are bad practice, use
+single-underscore suffixes instead.</div></div></section>
+
+          </article>
+        </div>
+        
+        <div id="mask"></div>
+      </main>
+  </div>
+
+  <div class="floating_action_container">
+    <a id="floating_action" class="ripple" href="#">
+      <i class="mdi-action-explore"></i>
+    </a>
+    <div id="floating_action_menu">
+      <span class="bubble"></span>
+      <ul class="list-group content">
+        <li class="list-group-item ripple"><a>Cras justo odio</a></li>
+        <li class="list-group-item ripple"><a>Dapibus ac facilisis in</a></li>
+        <li class="list-group-item ripple"><a>Morbi leo risus</a></li>
+        <li class="list-group-item ripple"><a>Porta ac consectetur ac</a></li>
+        <li class="list-group-item ripple"><a>Vestibulum at eros</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div id="footer" class="container">
+      <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
+      <div class="row">
+        <div class="col-sm-7 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Community</span>
+              <ul>
+                <li><a href="https://github.com/odoo/odoo">Github</a></li>
+                <li><a href="http://www.odoo.com/page/download">Download</a></li>
+                <li class="divider"></li>
+                <li><a href="http://runbot.odoo.com/runbot/repo/git-github-com-odoo-enterprise-7">Runbot</a></li>
+                <li><a href="https://github.com/odoo/odoo/wiki/Translations">Translations</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/odoo-community">Mailing Lists</a></li>
+                <li><a href="http://www.odoo.com/forum/help-1">Forum</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Services</span>
+              <ul>
+                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/help">Support</a></li>
+                <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/partners">Find a partner</a></li>
+                <li><a href="http://www.odoo.com/page/become-a-partner">Become a partner</a></li>
+                <li class="divider"></li>
+                <li><a href="http://training.odoo.com/courses/odoo-functional">Training Center</a></li>
+                <li><a href="http://www.odoo.com/page/education-program">Education</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/security">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb64">
+              <span class="menu_title">About us</span>
+              <ul>
+                <li><a href="http://www.odoo.com/page/about-us">Our company</a></li>
+                <li><a href="http://www.odoo.com/page/contactus">Contact</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/event">Events</a></li>
+                <li><a href="http://www.odoo.com/blog">Blog</a></li>
+                <li><a href="http://www.odoo.com/blog/6">Customers</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/jobs">Jobs</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/page/legal">Legal</a> | <a href="http://www.odoo.com/privacy">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <p>
+            <small>
+              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              <br/><br/>
+              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="o_footer_bottom">
+      <div class="container">
+        <a class="small" href="http://www.odoo.com/page/website-builder">Website made with <span class="o_logo o_logo_inverse o_logo_15"></span></a>
+        <div class="social-links pull-right">
+          <a href="http://www.odoo.com/web/about/facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.odoo.com/web/about/twitter"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@odoo.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

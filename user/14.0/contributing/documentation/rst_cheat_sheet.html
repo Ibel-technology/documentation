@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RST cheat sheet &#8212; Odoo 14.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
+ 
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/prefixfree.min.js"></script>
+    <script src="../../_static/atom.js"></script>
+    <script src="../../_static/immutable.js"></script>
+    <script src="../../_static/react.min.js"></script>
+    <script src="../../_static/accounts.js"></script>
+    <script src="../../_static/chart-of-accounts.js"></script>
+    <script src="../../_static/entries.js"></script>
+    <script src="../../_static/reconciliation.js"></script>
+    <script src="../../_static/misc.js"></script>
+    <script src="../../_static/inventory.js"></script>
+    <script src="../../_static/coa-valuation-continental.js"></script>
+    <script src="../../_static/coa-valuation-anglo-saxon.js"></script>
+<script type="text/javascript" src="../../_static/jquery.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap.js"></script>
+<script type="text/javascript" src="../../_static/doc.js"></script>
+<script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
+    <link rel="canonical" href="" />
+  
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="RST guidelines" href="rst_guidelines.html" />
+    <link rel="prev" title="Introduction guide" href="introduction_guide.html" /> 
+  </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
+    <div class="o_main_header_main">
+      <a class="pull-left o_logo" href="/"></a>
+      <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="mdi-navigation-menu"></span>
+      </a>
+      <div class="o_header_buttons">
+        <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+      </div>
+      <ul class="o_primary_nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Apps</a>
+          <div class="dropdown-menu o_secondary_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 o_website_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Websites
+                    <div>Build great user experience</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/website-builder">Website Builder</a></li>
+                    <li><a href="https://www.odoo.com/page/e-commerce">eCommerce</a></li>
+                    <li><a href="https://www.odoo.com/page/blog-engine">Blogs</a></li>
+                    <li><a href="https://www.odoo.com/page/community-builder">Forums</a></li>
+                    <li><a href="https://www.odoo.com/page/learning-management-system">eLearning</a></li>
+                    <li><a href="https://www.odoo.com/page/live-chat">Live Chat</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_sale_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Sales
+                    <div>Boost your success rate</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/sales">Sales</a></li>
+                    <li><a href="https://www.odoo.com/page/crm">CRM</a></li>
+                    <li><a href="https://www.odoo.com/page/billing">Invoicing</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Point of Sale</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/point-of-sale">Shops</a></li>
+                        <li><a href="https://www.odoo.com/page/pos-restaurant">Restaurants</a></li>
+                        <li><a href="https://www.odoo.com/page/point-of-sale-hardware">Hardware</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/subscriptions">Subscriptions</a></li>
+                    <li><a href="https://www.odoo.com/page/sign">Sign</a></li>
+                    <li><a href="https://www.odoo.com/page/rental">Rental</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_operation_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Operations
+                    <div>It's all about efficiency</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/accounting/">Accounting</a></li>
+                    <li><a href="https://www.odoo.com/page/project-management/">Project</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Human Resources</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/referral">Referral</a></li>
+                        <li><a href="https://www.odoo.com/page/employees">Employees</a></li>
+                        <li><a href="https://www.odoo.com/page/expenses">Expenses</a></li>
+                        <li><a href="https://www.odoo.com/page/appraisal">Appraisal</a></li>
+                        <li><a href="https://www.odoo.com/page/fleet">Fleet</a></li>
+                        <li><a href="https://www.odoo.com/page/leaves">Time Off</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/warehouse">Inventory</a></li>
+                    <li><a href="https://www.odoo.com/page/purchase">Purchase</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Manufacturing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/manufacturing">MRP</a></li>
+                        <li><a href="https://www.odoo.com/page/plm">PLM</a></li>
+                        <li><a href="https://www.odoo.com/page/maintenance">Maintenance</a></li>
+                        <li><a href="https://www.odoo.com/page/quality">Quality</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/helpdesk">Helpdesk</a></li>
+                    <li><a href="https://www.odoo.com/page/field-service-management">Field Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_productivity_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Productivity Tools
+                    <div>Great Tools = Happy People</div>
+                  </div>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Communication</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/discuss">Discuss</a></li>
+                        <li><a href="https://www.odoo.com/page/discuss-groups">Mailing Lists</a></li>
+                        <li><a href="https://www.odoo.com/page/notes">Notes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/timesheet">Timesheet</a></li>
+                    <li><a href="https://www.odoo.com/page/events">Events</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Marketing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/marketing-automation">Automation</a></li>
+                        <li><a href="https://www.odoo.com/page/email-marketing">Email</a></li>
+                        <li><a href="https://www.odoo.com/page/social-marketing">Social</a></li>
+                        <li><a href="https://www.odoo.com/page/sms-marketing">SMS</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/survey">Survey</a></li>
+                    <li><a href="https://www.odoo.com/page/approval-workflow">Approvals</a></li>
+                    <li><a href="https://www.odoo.com/page/appointments">Appointments</a></li>
+                    <li><a href="https://www.odoo.com/page/documents">Documents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="http://www.odoo.com/apps/modules" class="o_store_link"><i class="fa fa-cube fa-fw"></i> Third party apps</a>
+          </div>
+        </li>
+        <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
+        <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
+        <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
+      </ul>
+    </div>
+    <nav class="navbar o_sub_nav">
+      <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed text-left btn-block" data-toggle="collapse" data-target="#o_sub-menu" aria-expanded="false">
+              Navigate
+              <span class="mdi-hardware-keyboard-arrow-down pull-right"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="o_sub-menu">
+          <ol class="o_breadcrumb breadcrumb nav navbar-left">
+              
+              
+
+
+
+
+
+    
+        
+            
+                <li><a href="../../index.html">User Doc</a></li>
+            
+        
+    
+        
+            
+                
+                    <li><a href="../../contributing.html">Contributing</a></li>
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+    <li class="active"><a href="#">RST cheat sheet</a></li>
+
+              
+          </ol>
+
+          <div class="call-to-action navbar-right hidden-xs">
+            <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+
+            
+            
+
+<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
+<li><a href="https://training.odoo.com">Training Center</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
+<li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
+    <form class="search form-inline input-group-sm" action="../../search.html" method="get">
+        <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
+        <input type="hidden" name="area" value="default" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <button type="submit" value="Go" class="btn btn-default btn-sm">Go</button>
+    </form>
+</li>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+            
+
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><div id="wrap" class="">
+    
+    
+    
+    <figure class="card top has_banner">
+      <span class="card-img" style="background-image: url('../../_static/banners/contributing.png');"></span>
+      <div class="container text-center">
+        <h1> RST cheat sheet </h1>
+      </div>
+    </figure>
+    
+    
+    
+      <main class="container ">
+        
+        <div class="o_content row">
+          
+          <aside>
+            <div class="navbar-aside text-center">
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#headings" class="reference ripple internal">Headings</a></li><li class="list-group-item"><a href="#markup" class="reference ripple internal">Markup</a><ul ><li class="list-group-item"><a href="#inline-markup" class="reference ripple internal">Inline markup</a></li><li class="list-group-item"><a href="#bulleted-list" class="reference ripple internal">Bulleted list</a></li><li class="list-group-item"><a href="#numbered-list" class="reference ripple internal">Numbered list</a></li><li class="list-group-item"><a href="#nested-lists" class="reference ripple internal">Nested lists</a></li></ul></li><li class="list-group-item"><a href="#hyperlinks" class="reference ripple internal">Hyperlinks</a><ul ><li class="list-group-item"><a href="#hyperlink-references" class="reference ripple internal">Hyperlink references</a><ul ><li class="list-group-item"><a href="#example" class="reference ripple internal">Example</a></li></ul></li><li class="list-group-item"><a href="#external-hyperlink-targets" class="reference ripple internal">External hyperlink targets</a><ul ><li class="list-group-item"><a href="#id1" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#rst" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#render" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#internal-hyperlink-targets" class="reference ripple internal">Internal hyperlink targets</a><ul ><li class="list-group-item"><a href="#id2" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#id3" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id4" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#implicit-hyperlink-targets" class="reference ripple internal">Implicit hyperlink targets</a><ul ><li class="list-group-item"><a href="#id5" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#id6" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id7" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#the-doc-directive" class="reference ripple internal">The <code >doc</code> directive</a><ul ><li class="list-group-item"><a href="#id8" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#id9" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id10" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#the-download-directive" class="reference ripple internal">The <code >download</code> directive</a><ul ><li class="list-group-item"><a href="#id11" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#id12" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id13" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#the-image-directive" class="reference ripple internal">The <code >image</code> directive</a><ul ><li class="list-group-item"><a href="#id14" class="reference ripple internal">Example</a><ul ><li class="list-group-item"><a href="#id15" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id16" class="reference ripple internal">Render</a></li></ul></li></ul></li></ul></li><li class="list-group-item"><a href="#admonitions-alert-blocks" class="reference ripple internal">Admonitions (alert blocks)</a><ul ><li class="list-group-item"><a href="#seealso" class="reference ripple internal">Seealso</a><ul ><li class="list-group-item"><a href="#id17" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id18" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#note" class="reference ripple internal">Note</a><ul ><li class="list-group-item"><a href="#id19" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id20" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#tip" class="reference ripple internal">Tip</a><ul ><li class="list-group-item"><a href="#id21" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id22" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#important" class="reference ripple internal">Important</a><ul ><li class="list-group-item"><a href="#id23" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id24" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#warning" class="reference ripple internal">Warning</a><ul ><li class="list-group-item"><a href="#id25" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id26" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#danger" class="reference ripple internal">Danger</a><ul ><li class="list-group-item"><a href="#id27" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id28" class="reference ripple internal">Render</a></li></ul></li></ul></li><li class="list-group-item"><a href="#formatting-tips" class="reference ripple internal">Formatting tips</a><ul ><li class="list-group-item"><a href="#add-banners-on-top-of-documents" class="reference ripple internal">Add banners on top of documents</a></li><li class="list-group-item"><a href="#break-the-line-but-not-the-paragraph" class="reference ripple internal">Break the line but not the paragraph</a><ul ><li class="list-group-item"><a href="#id29" class="reference ripple internal">RST</a></li><li class="list-group-item"><a href="#id30" class="reference ripple internal">Render</a></li></ul></li><li class="list-group-item"><a href="#add-comments" class="reference ripple internal">Add comments</a></li><li class="list-group-item"><a href="#use-tables" class="reference ripple internal">Use tables</a></li><li class="list-group-item"><a href="#spice-up-your-writing-with-specialized-directives" class="reference ripple internal">Spice up your writing with specialized directives</a></li><li class="list-group-item"><a href="#escape-markup-symbols-advanced" class="reference ripple internal">Escape markup symbols (Advanced)</a></li></ul></li></ul>
+              
+              <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/contributing/documentation/rst_cheat_sheet.rst" class="gith-link">
+                  Edit on GitHub
+              </a></p>
+              
+            </div>
+          </aside>
+          
+          <article class="doc-body ">
+            
+            
+  <section id="rst-cheat-sheet"></section><section id="headings"><i id="contributing-headings"></i><h2 >Headings</h2><div class="line-block"><div class="line">For each formatting line (e.g., <code >===</code>), write as many symbols (<code >=</code>) as there are characters in
+the header.</div><div class="line">The symbols used for the formatting are, in fact, not important. Only the order in which they are
+written matters, as it determines the size of the decorated heading. This means that you may
+encounter different heading formatting and in a different order, in which case you should follow
+the formatting in place in the document. In any other case, use the formatting shown below.</div></div><table class="table"><thead ><tr ><th >Heading size</th><th >Formatting</th><th >Min/Max number of occurrences</th></tr></thead><tbody ><tr ><td >H1</td><td ><div class="line-block"><div class="line"><code >=======</code></div><div class="line"><code >Heading</code></div><div class="line"><code >=======</code></div></div></td><td >1/1</td></tr><tr ><td >H2</td><td ><div class="line-block"><div class="line"><code >Heading</code></div><div class="line"><code >=======</code></div></div></td><td >0/∞</td></tr><tr ><td >H3</td><td ><div class="line-block"><div class="line"><code >Heading</code></div><div class="line"><code >-------</code></div></div></td><td >0/∞</td></tr><tr ><td >H4</td><td ><div class="line-block"><div class="line"><code >Heading</code></div><div class="line"><code >~~~~~~~</code></div></div></td><td >0/∞</td></tr><tr ><td >H5</td><td ><div class="line-block"><div class="line"><code >Heading</code></div><div class="line"><code >*******</code></div></div></td><td >0/∞</td></tr><tr ><td >H6</td><td ><div class="line-block"><div class="line"><code >Heading</code></div><div class="line"><code >^^^^^^^</code></div></div></td><td >0/∞</td></tr></tbody></table></section><section id="markup"><i id="contributing-markup"></i><h2 >Markup</h2></section><section id="inline-markup"><i id="contributing-inline-markup"></i><h3 >Inline markup</h3><p >Use the following markups to emphasize your text to your liking:</p><table class="table"><tbody ><tr ><td >**Text**</td><td ><strong >Text</strong></td></tr><tr ><td >*Text*</td><td ><em >Text</em></td></tr><tr ><td >``Text``</td><td ><code >Text</code></td></tr></tbody></table><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="#contributing-specialized-directives" class="reference internal alert-link"><span class="std std-ref">Spice up your writing with specialized directives</span></a></li></ul></div></section><section id="bulleted-list"><i id="contributing-bulleted-list"></i><h3 >Bulleted list</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">-</span> This is a bulleted list.
+<span class="m">-</span> It has two items, the second
+  item uses two lines.
+</pre></div>
+</div>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">*</span> This is a bulleted list too.
+<span class="m">*</span> The principle stays the same.
+</pre></div>
+</div>
+</section><section id="numbered-list"><i id="contributing-numbered-list"></i><h3 >Numbered list</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">#.</span> This is a numbered list.
+<span class="m">#.</span> Numbering is automatic.
+</pre></div>
+</div>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">1.</span> This is a numbered list too.
+<span class="m">2.</span> Use this format to specify the numbering.
+</pre></div>
+</div>
+</section><section id="nested-lists"><i id="contributing-nested-list"></i><h3 >Nested lists</h3><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="m">-</span> This is the first item of a bulleted list.
+
+  <span class="m">1.</span> It has a nested numbered list
+  <span class="m">2.</span> with two items.
+</pre></div>
+</div>
+</section><section id="hyperlinks"><i id="contributing-hyperlinks"></i><h2 >Hyperlinks</h2></section><section id="hyperlink-references"><i id="contributing-hyperlink-references"></i><h3 >Hyperlink references</h3><p >Hyperlink references are links to a URL with a custom label. They follow this syntax:
+<code >`label &lt;URL&gt;`_</code></p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The URL can be a relative path to a file within the documentation.</p></div></section><section id="example"><h4 >Example</h4><p >This excerpt of <abbr title="reStructuredText">RST</abbr>: <code >For instance, `this is a hyperlink reference
+&lt;https://odoo.com&gt;`_.</code> is rendered as follows in HTML: “For instance, <a href="https://odoo.com" class="reference external">this is a hyperlink
+reference</a>.”</p></section><section id="external-hyperlink-targets"><i id="contributing-external-hyperlink-targets"></i><h3 >External hyperlink targets</h3><div class="line-block"><div class="line">External hyperlink targets allow creating shortcuts for hyperlink references.</div><div class="line">The definition syntax is as follows: <code >.. _target: URL</code></div><div class="line">There are two ways to reference them, depending on the use case:</div></div><ol ><li ><code >target_</code> creates a hyperlink with the target name as label and the URL as reference. Note that
+the <code >_</code> moved after the target!</li><li ><code >`label &lt;target_&gt;`_</code> does exactly what you expect: the label replaces the name of the target,
+and the target is replaced by the URL.</li></ol></section><section id="id1"><h4 >Example</h4></section><section id="rst"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_proof-of-concept:</span> https://en.wikipedia.org/wiki/Proof_of_concept
+
+A proof-of-concept_ is a simplified version, a prototype of what is expected to agree on the main
+lines of expected changes. <span class="s">`PoC </span><span class="si">&lt;proof-of-concept_&gt;</span><span class="s">`_</span> is a common abbreviation.
+</pre></div>
+</div>
+</section><section id="render"><h5 >Render</h5><p >A <a href="https://en.wikipedia.org/wiki/Proof_of_concept" class="reference external">proof-of-concept</a> is a simplified version, a
+prototype of what is expected to agree on the main lines of expected changes. <a href="https://en.wikipedia.org/wiki/Proof_of_concept" class="reference external">PoC</a> is a common abbreviation.</p></section><section id="internal-hyperlink-targets"><i id="contributing-internal-hyperlink-targets"></i><h3 >Internal hyperlink targets</h3><p >Internal hyperlink targets follow the same syntax as external hyperlink targets but without any URL.
+Indeed, they are internal. They allow referencing a specific part of a document by using the target
+as an anchor. When the user clicks on the reference, the documentation scrolls to the part of the
+page containing the target.</p><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Targets can be referenced from other files than the ones in which they are defined.</p></div><div class="line-block"><div class="line">The definition syntax is: <code >.. _target:</code></div><div class="line">There are two ways to reference them, both using the <code >ref</code> directive:</div></div><ol ><li ><code >:ref:`target`</code> creates a hyperlink to the anchor with the heading defined below as label.</li><li ><code >:ref:`label &lt;target&gt;`</code> creates a hyperlink to the anchor with the given label.</li></ol><p >See <a href="rst_guidelines.html#contributing-relative-links" class="reference internal"><span class="std std-ref">Use relative links for internal URLs</span></a> to learn how to write proper relative links for internal
+references.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Notice that there is no <code >_</code> at the end, as it is done with <a href="#contributing-hyperlink-references" class="reference internal alert-link"><span class="std std-ref">hyperlink targets</span></a>.</p></div></section><section id="id2"><h4 >Example</h4></section><section id="id3"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_sales/quotation/start-of-page:</span>
+
+This can easily be done by creating a new product, see <span class="na">:ref:</span><span class="nv">`product`</span> for additional help.
+
+<span class="p">..</span> <span class="nt">_sales/quotation/product:</span>
+
+<span class="gh">How to create a product?</span>
+<span class="gh">=========================</span>
+
+As explained at the <span class="na">:ref:</span><span class="nv">`start of the page &lt;sales/quotation/start-of-page&gt;`</span>, ...
+</pre></div>
+</div>
+</section><section id="id4"><h5 >Render</h5><p >This can easily be done by creating a new product, see <a href="https://example.com/product" class="reference external">How to create a product?</a> for additional help.</p><p ><strong >How to create a product?</strong></p><p >As explained at the <a href="https://example.com/scroll-to-start-of-page" class="reference external">start of the page</a>, …</p></section><section id="implicit-hyperlink-targets"><i id="contributing-implicit-hyperlink-targets"></i><h3 >Implicit hyperlink targets</h3><div class="line-block"><div class="line">Implicit hyperlink targets are a special kind of internal hyperlink targets: they are
+automatically generated by section titles, footnotes, etc. Consequently, they don’t have a
+definition syntax.</div><div class="line">They can be referenced the same first way as external hyperlink targets by using the name of the
+section title as URL.</div></div></section><section id="id5"><h4 >Example</h4></section><section id="id6"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span>This can easily be done by creating a new user, see <span class="s">`How to create a new user?`_</span> for
+additional help.  ...
+</pre></div>
+</div>
+</section><section id="id7"><h5 >Render</h5><p >This can easily be done by creating a new user, see <a href="https://example.com/how-to-create-a-user" class="reference external">How to create a new user?</a> for additional help. …</p></section><section id="the-doc-directive"><i id="contributing-doc"></i><h3 >The <code >doc</code> directive</h3><div class="line-block"><div class="line">The <code >doc</code> directive allows referencing a documentation page wherever it is in the file tree
+through a relative file path.</div><div class="line">As usual, there are two ways to use the directive:</div></div><ol ><li ><code >:doc:`path_to_doc_page`</code> creates a hyperlink reference to the documentation page with the
+title of the page as label.</li><li ><code >:doc:`label &lt;path_to_doc_page&gt;`</code> creates a hyperlink reference to the documentation page with
+the given label.</li></ol></section><section id="id8"><h4 >Example</h4></section><section id="id9"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span>Please refer to <span class="na">:doc:</span><span class="nv">`this documentation &lt;customer_invoices&gt;`</span> and to
+<span class="na">:doc:</span><span class="nv">`../sales/invoicing/proforma`</span>.
+</pre></div>
+</div>
+</section><section id="id10"><h5 >Render</h5><p >Please refer to <a href="https://example.com/doc/accounting/invoices.html" class="reference external">this documentation</a> and to
+<a href="https://example.com/doc/sales/proforma.html" class="reference external">Send a pro-forma invoice</a>.</p></section><section id="the-download-directive"><i id="contributing-download"></i><h3 >The <code >download</code> directive</h3><p >The <code >download</code> directive allows referencing files (that are not necessarily <abbr title="reStructuredText">RST</abbr> documents) within the source tree to be downloaded.</p></section><section id="id11"><h4 >Example</h4></section><section id="id12"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span>Download this <span class="na">:download:</span><span class="nv">`module structure template &lt;extras/my_module.zip&gt;`</span> to start building your
+module in no time.
+</pre></div>
+</div>
+</section><section id="id13"><h5 >Render</h5><p >Download this <a href="https://example.com/doc/odoosh/extras/my_module.zip" class="reference external">module structure template</a> to
+start building your module in no time.</p></section><section id="the-image-directive"><i id="contributing-image"></i><h3 >The <code >image</code> directive</h3><p >The <code >image</code> directive allows inserting images in a document. It comes with a set of optional
+parameter directives that can individually be omitted if considered redundant.</p></section><section id="id14"><h4 >Example</h4></section><section id="id15"><h5 >RST</h5><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> media/create_invoice.png
+   <span class="nc">:align:</span> center
+   <span class="nc">:alt:</span> Create an invoice
+   <span class="nc">:height:</span> 100
+   <span class="nc">:width:</span> 200
+   <span class="nc">:scale:</span> 50
+   <span class="nc">:class:</span> img-thumbnail
+   <span class="nc">:target:</span> ../invoicing.html#create-an-invoice
+</pre></div>
+</div>
+</section><section id="id16"><h5 >Render</h5><a href="https://example.com/doc/sales/invoicing.html#create-an-invoice" class="reference external"><img src="../../_images/create-invoice.png" alt="Create an invoice" style="width:200px; height:100px" class="img-responsive center-block img-thumbnail"></a></section><section id="admonitions-alert-blocks"><i id="contributing-admonitions"></i><h2 >Admonitions (alert blocks)</h2></section><section id="seealso"><i id="contributing-seealso"></i><h3 >Seealso</h3></section><section id="id17"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span>
+   <span class="m">-</span> <span class="na">:doc:</span><span class="nv">`customer_invoices`</span>
+   <span class="m">-</span> <span class="s">`Pro-forma invoices </span><span class="si">&lt;../sales/invoicing/proforma.html#activate-the-feature&gt;</span><span class="s">`_</span>
+</pre></div>
+</div>
+</section><section id="id18"><h4 >Render</h4><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://example.com/doc/accounting/invoices.html" class="alert-link reference external">Customer invoices</a></li><li ><a href="https://example.com/doc/sales/proforma.html#activate-the-feature" class="alert-link reference external">Pro-forma invoices</a></li></ul></div></section><section id="note"><i id="contributing-note"></i><h3 >Note</h3></section><section id="id19"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span>
+   Use this to get the attention of the reader about additional information.
+</pre></div>
+</div>
+</section><section id="id20"><h4 >Render</h4><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Use this to get the attention of the reader about additional information.</p></div></section><section id="tip"><i id="contributing-tip"></i><h3 >Tip</h3></section><section id="id21"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tip</span><span class="p">::</span>
+   Use this to inform the reader about a useful trick that requires an
+   action.
+</pre></div>
+</div>
+</section><section id="id22"><h4 >Render</h4><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >Use this to inform the reader about a useful trick that requires an
+action.</p></div></section><section id="important"><i id="contributing-important"></i><h3 >Important</h3></section><section id="id23"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span>
+   Use this to notify the reader about an important information.
+</pre></div>
+</div>
+</section><section id="id24"><h4 >Render</h4><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Use this to notify the reader about an important information.</p></div></section><section id="warning"><i id="contributing-warning"></i><h3 >Warning</h3></section><section id="id25"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">warning</span><span class="p">::</span>
+   Use this to require the reader to proceed with caution with what is
+   described in the warning.
+</pre></div>
+</div>
+</section><section id="id26"><h4 >Render</h4><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >Use this to require the reader to proceed with caution with what is
+described in the warning.</p></div></section><section id="danger"><i id="contributing-danger"></i><h3 >Danger</h3></section><section id="id27"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">danger</span><span class="p">::</span>
+   Use this to alarm the reader about a serious threat.
+</pre></div>
+</div>
+</section><section id="id28"><h4 >Render</h4><div role="alert" class="alert-danger alert"><p class="alert-title">Danger</p><p >Use this to alarm the reader about a serious threat.</p></div></section><section id="formatting-tips"><i id="contributing-formatting-tips"></i><h2 >Formatting tips</h2></section><section id="add-banners-on-top-of-documents"><i id="contributing-banners"></i><h3 >Add banners on top of documents</h3><span class="badge" style="background-color:#AD5E99">Odoo feature</span><p >The Odoo theme supports banner images at the top of documents. At the first line of your documents,
+insert the directive <code >:banner: banners/file_name.png</code>. Replace <code >file_name.png</code> with the file
+that you placed in <code class="file">_static/banners</code> to server as a banner of your document.</p></section><section id="break-the-line-but-not-the-paragraph"><i id="contributing-line-break"></i><h3 >Break the line but not the paragraph</h3></section><section id="id29"><h4 >RST</h4><div class="highlight-rst"><div class="highlight"><pre><span></span><span class="o">|</span> First super long line that you break in two…
+  here is rendered as a single line.
+<span class="o">|</span> Second line that follows a line break.
+</pre></div>
+</div>
+</section><section id="id30"><h4 >Render</h4><div class="line-block"><div class="line">First super long line that you break in two…
+here is rendered as a single line.</div><div class="line">Second line that follows a line break.</div></div></section><section id="add-comments"><i id="contributing-comments"></i><h3 >Add comments</h3><p >If you made a particular choice of writing or formatting that a future writer should be able to
+understand and take into account, consider writing a comment. Comments are blocks of text that do
+not count as a part of the documentation and that are used to pass a message to writers of the
+source code. They consist of a line starting with two dots and a space, followed by the comment.</p><p ><code >.. For instance, this line will not be rendered in the documentation.</code></p></section><section id="use-tables"><i id="contributing-tables"></i><h3 >Use tables</h3><p >Make use of <a href="https://www.tablesgenerator.com/text_tables" class="reference external">this convenient table generator</a> to
+build your tables. Then, copy-paste the generated formatting into your document.</p></section><section id="spice-up-your-writing-with-specialized-directives"><i id="contributing-specialized-directives"></i><h3 >Spice up your writing with specialized directives</h3><p >Use these additional directives to fine-tune your content:</p><table class="table"><tbody ><tr ><td rowspan="2"><strong >Directive</strong></td><td rowspan="2"><strong >Purpose</strong></td><td colspan="2"><strong >Example</strong></td></tr><tr ><td ><strong >RST</strong></td><td ><strong >HTML</strong></td></tr><tr ><td ><code >abbr</code></td><td >Self-defining abbreviations</td><td ><code >:abbr:`SO (Sales Order)`</code></td><td ><abbr title="Sales Order">SO</abbr></td></tr><tr ><td ><code >command</code></td><td >Highlight a command</td><td ><code >:command:`python example.py`</code></td><td ><strong class="command">python example.py</strong></td></tr><tr ><td ><code >dfn</code></td><td >Define a term</td><td ><code >:dfn:`a definition for a new term`</code></td><td ><em class="dfn">a definition for a new term</em></td></tr><tr ><td ><code >file</code></td><td >Indicate a file path</td><td ><code >:file:`~/odoo/odoo-bin`</code></td><td ><code class="file">~/odoo/odoo-bin</code></td></tr><tr ><td ><code >menuselection</code></td><td >Guide a user through a sequence of menus</td><td ><code >:menuselection:`Sales --&gt; Configuration --&gt; Settings`</code></td><td ><span class="menuselection">Sales ‣ Configuration ‣ Settings</span></td></tr></tbody></table></section><section id="escape-markup-symbols-advanced"><i id="contributing-escaping"></i><h3 >Escape markup symbols (Advanced)</h3><p >Markup symbols escaped with backslashes (<code >\</code>) are rendered normally. For instance, <code >this
+\*\*line of text\*\* with \*markup\* symbols</code> is rendered as “this **line of text** with
+*markup* symbols”.</p><p >When it comes to backticks (<code >`</code>), which are used in many case such as <a href="#contributing-hyperlink-references" class="reference internal"><span class="std std-ref">hyperlink references</span></a>, using backslashes for escaping is no longer an option because
+the outer backticks interpret enclosed backslashes and thus prevent them from escaping inner
+backticks. For instance, <code >`\`this formatting\``</code> produces an <code >[UNKNOWN NODE title_reference]</code>
+error. Instead, <code >```this formatting```</code> should be used to produce the following result:
+<code >`this formatting`</code>.</p></section>
+
+          </article>
+        </div>
+        
+        <div id="mask"></div>
+      </main>
+  </div>
+
+  <div class="floating_action_container">
+    <a id="floating_action" class="ripple" href="#">
+      <i class="mdi-action-explore"></i>
+    </a>
+    <div id="floating_action_menu">
+      <span class="bubble"></span>
+      <ul class="list-group content">
+        <li class="list-group-item ripple"><a>Cras justo odio</a></li>
+        <li class="list-group-item ripple"><a>Dapibus ac facilisis in</a></li>
+        <li class="list-group-item ripple"><a>Morbi leo risus</a></li>
+        <li class="list-group-item ripple"><a>Porta ac consectetur ac</a></li>
+        <li class="list-group-item ripple"><a>Vestibulum at eros</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div id="footer" class="container">
+      <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
+      <div class="row">
+        <div class="col-sm-7 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Community</span>
+              <ul>
+                <li><a href="https://github.com/odoo/odoo">Github</a></li>
+                <li><a href="http://www.odoo.com/page/download">Download</a></li>
+                <li class="divider"></li>
+                <li><a href="http://runbot.odoo.com/runbot/repo/git-github-com-odoo-enterprise-7">Runbot</a></li>
+                <li><a href="https://github.com/odoo/odoo/wiki/Translations">Translations</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/odoo-community">Mailing Lists</a></li>
+                <li><a href="http://www.odoo.com/forum/help-1">Forum</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Services</span>
+              <ul>
+                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/help">Support</a></li>
+                <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/partners">Find a partner</a></li>
+                <li><a href="http://www.odoo.com/page/become-a-partner">Become a partner</a></li>
+                <li class="divider"></li>
+                <li><a href="http://training.odoo.com/courses/odoo-functional">Training Center</a></li>
+                <li><a href="http://www.odoo.com/page/education-program">Education</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/security">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb64">
+              <span class="menu_title">About us</span>
+              <ul>
+                <li><a href="http://www.odoo.com/page/about-us">Our company</a></li>
+                <li><a href="http://www.odoo.com/page/contactus">Contact</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/event">Events</a></li>
+                <li><a href="http://www.odoo.com/blog">Blog</a></li>
+                <li><a href="http://www.odoo.com/blog/6">Customers</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/jobs">Jobs</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/page/legal">Legal</a> | <a href="http://www.odoo.com/privacy">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <p>
+            <small>
+              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              <br/><br/>
+              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="o_footer_bottom">
+      <div class="container">
+        <a class="small" href="http://www.odoo.com/page/website-builder">Website made with <span class="o_logo o_logo_inverse o_logo_15"></span></a>
+        <div class="social-links pull-right">
+          <a href="http://www.odoo.com/web/about/facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.odoo.com/web/about/twitter"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@odoo.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

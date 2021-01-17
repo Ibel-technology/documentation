@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How is the Scheduled Delivery Date Computed &#8212; Odoo 14.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
+ 
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/prefixfree.min.js"></script>
+    <script src="../../../_static/atom.js"></script>
+    <script src="../../../_static/immutable.js"></script>
+    <script src="../../../_static/react.min.js"></script>
+    <script src="../../../_static/accounts.js"></script>
+    <script src="../../../_static/chart-of-accounts.js"></script>
+    <script src="../../../_static/entries.js"></script>
+    <script src="../../../_static/reconciliation.js"></script>
+    <script src="../../../_static/misc.js"></script>
+    <script src="../../../_static/inventory.js"></script>
+    <script src="../../../_static/coa-valuation-continental.js"></script>
+    <script src="../../../_static/coa-valuation-anglo-saxon.js"></script>
+<script type="text/javascript" src="../../../_static/jquery.min.js"></script>
+<script type="text/javascript" src="../../../_static/bootstrap.js"></script>
+<script type="text/javascript" src="../../../_static/doc.js"></script>
+<script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
+    <link rel="canonical" href="" />
+  
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Configure and Run Schedulers" href="schedulers.html" />
+    <link rel="prev" title="Planning" href="../planning.html" /> 
+  </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
+    <div class="o_main_header_main">
+      <a class="pull-left o_logo" href="/"></a>
+      <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="mdi-navigation-menu"></span>
+      </a>
+      <div class="o_header_buttons">
+        <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+      </div>
+      <ul class="o_primary_nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Apps</a>
+          <div class="dropdown-menu o_secondary_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 o_website_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Websites
+                    <div>Build great user experience</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/website-builder">Website Builder</a></li>
+                    <li><a href="https://www.odoo.com/page/e-commerce">eCommerce</a></li>
+                    <li><a href="https://www.odoo.com/page/blog-engine">Blogs</a></li>
+                    <li><a href="https://www.odoo.com/page/community-builder">Forums</a></li>
+                    <li><a href="https://www.odoo.com/page/learning-management-system">eLearning</a></li>
+                    <li><a href="https://www.odoo.com/page/live-chat">Live Chat</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_sale_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Sales
+                    <div>Boost your success rate</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/sales">Sales</a></li>
+                    <li><a href="https://www.odoo.com/page/crm">CRM</a></li>
+                    <li><a href="https://www.odoo.com/page/billing">Invoicing</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Point of Sale</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/point-of-sale">Shops</a></li>
+                        <li><a href="https://www.odoo.com/page/pos-restaurant">Restaurants</a></li>
+                        <li><a href="https://www.odoo.com/page/point-of-sale-hardware">Hardware</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/subscriptions">Subscriptions</a></li>
+                    <li><a href="https://www.odoo.com/page/sign">Sign</a></li>
+                    <li><a href="https://www.odoo.com/page/rental">Rental</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_operation_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Operations
+                    <div>It's all about efficiency</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/accounting/">Accounting</a></li>
+                    <li><a href="https://www.odoo.com/page/project-management/">Project</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Human Resources</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/referral">Referral</a></li>
+                        <li><a href="https://www.odoo.com/page/employees">Employees</a></li>
+                        <li><a href="https://www.odoo.com/page/expenses">Expenses</a></li>
+                        <li><a href="https://www.odoo.com/page/appraisal">Appraisal</a></li>
+                        <li><a href="https://www.odoo.com/page/fleet">Fleet</a></li>
+                        <li><a href="https://www.odoo.com/page/leaves">Time Off</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/warehouse">Inventory</a></li>
+                    <li><a href="https://www.odoo.com/page/purchase">Purchase</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Manufacturing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/manufacturing">MRP</a></li>
+                        <li><a href="https://www.odoo.com/page/plm">PLM</a></li>
+                        <li><a href="https://www.odoo.com/page/maintenance">Maintenance</a></li>
+                        <li><a href="https://www.odoo.com/page/quality">Quality</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/helpdesk">Helpdesk</a></li>
+                    <li><a href="https://www.odoo.com/page/field-service-management">Field Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_productivity_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Productivity Tools
+                    <div>Great Tools = Happy People</div>
+                  </div>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Communication</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/discuss">Discuss</a></li>
+                        <li><a href="https://www.odoo.com/page/discuss-groups">Mailing Lists</a></li>
+                        <li><a href="https://www.odoo.com/page/notes">Notes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/timesheet">Timesheet</a></li>
+                    <li><a href="https://www.odoo.com/page/events">Events</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Marketing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/marketing-automation">Automation</a></li>
+                        <li><a href="https://www.odoo.com/page/email-marketing">Email</a></li>
+                        <li><a href="https://www.odoo.com/page/social-marketing">Social</a></li>
+                        <li><a href="https://www.odoo.com/page/sms-marketing">SMS</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/survey">Survey</a></li>
+                    <li><a href="https://www.odoo.com/page/approval-workflow">Approvals</a></li>
+                    <li><a href="https://www.odoo.com/page/appointments">Appointments</a></li>
+                    <li><a href="https://www.odoo.com/page/documents">Documents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="http://www.odoo.com/apps/modules" class="o_store_link"><i class="fa fa-cube fa-fw"></i> Third party apps</a>
+          </div>
+        </li>
+        <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
+        <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
+        <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
+      </ul>
+    </div>
+    <nav class="navbar o_sub_nav">
+      <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed text-left btn-block" data-toggle="collapse" data-target="#o_sub-menu" aria-expanded="false">
+              Navigate
+              <span class="mdi-hardware-keyboard-arrow-down pull-right"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="o_sub-menu">
+          <ol class="o_breadcrumb breadcrumb nav navbar-left">
+              
+              
+
+
+
+
+
+    
+        
+            
+                <li><a href="../../../index.html">User Doc</a></li>
+            
+        
+    
+        
+            
+                
+                    <li><a href="../../../inventory.html">Inventory</a></li>
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+    <li class="active"><a href="#">How is the Scheduled Delivery Date Computed</a></li>
+
+              
+          </ol>
+
+          <div class="call-to-action navbar-right hidden-xs">
+            <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+
+            
+            
+
+<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
+<li><a href="https://training.odoo.com">Training Center</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
+<li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
+    <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
+        <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
+        <input type="hidden" name="area" value="default" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <button type="submit" value="Go" class="btn btn-default btn-sm">Go</button>
+    </form>
+</li>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+            
+
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><div id="wrap" class="">
+    
+    <figure class="card top ">
+      <span class="card-img" ></span>
+      <div class="container text-center">
+        <h1> How is the Scheduled Delivery Date Computed </h1>
+      </div>
+    </figure>
+    
+    
+    
+      <main class="container ">
+        
+        <div class="o_content row">
+          
+          <aside>
+            <div class="navbar-aside text-center">
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#how-are-lead-times-calculated" class="reference ripple internal">How are Lead Times Calculated?</a></li><li class="list-group-item"><a href="#sales-lead-times" class="reference ripple internal">Sales - Lead Times</a><ul ><li class="list-group-item"><a href="#customer-lead-time" class="reference ripple internal">Customer Lead Time</a></li><li class="list-group-item"><a href="#security-lead-time" class="reference ripple internal">Security Lead Time</a></li><li class="list-group-item"><a href="#deliver-several-products" class="reference ripple internal">Deliver several products</a></li></ul></li><li class="list-group-item"><a href="#purchase-lead-times" class="reference ripple internal">Purchase - Lead Times</a><ul ><li class="list-group-item"><a href="#supplier-lead-time" class="reference ripple internal">Supplier Lead Time</a></li><li class="list-group-item"><a href="#id1" class="reference ripple internal">Security Lead Time</a></li></ul></li><li class="list-group-item"><a href="#manufacturing-lead-times" class="reference ripple internal">Manufacturing - Lead Times</a><ul ><li class="list-group-item"><a href="#manufacturing-lead-time" class="reference ripple internal">Manufacturing Lead Time</a></li><li class="list-group-item"><a href="#id2" class="reference ripple internal">Security Lead Time</a></li></ul></li><li class="list-group-item"><a href="#global-example" class="reference ripple internal">Global Example</a></li></ul>
+              
+              <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/management/planning/scheduled_dates.rst" class="gith-link">
+                  Edit on GitHub
+              </a></p>
+              
+            </div>
+          </aside>
+          
+          <article class="doc-body ">
+            
+            
+  <section id="how-is-the-scheduled-delivery-date-computed"><p >Providing the best possible service to customers is vital for business. It implies planning
+every move: manufacturing orders, deliveries, receptions, and so on. To do so, you need to
+configure lead time properly and coordinate scheduled dates.</p><p >By using lead times, Odoo provides end dates, the <strong >Commitment
+Date</strong>, for each process. On a sales order, for example, this is the
+date your customer will get the products he ordered.</p><p >From the customers’ side, the commitment date is important because it
+gives them an estimation of when they will receive their products. The
+dates take all other lead times, such as manufacturing, delivery, or
+suppliers, into account.</p></section><section id="how-are-lead-times-calculated"><h2 >How are Lead Times Calculated?</h2><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQbjAf6_Py7n3bLLO0w8X7HA51ndQDn8fCWIEndg5Mt_AK9WtcaTuRM24FQ7AvIX-WS6FFQYyfjgiCI/embed?start=true&loop=false&delayms=30000" frameborder="0" width="100%" height="509px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><p >As said above, there are several types of lead times. Each is calculated
+based on various indicators. Before going through the configuration,
+here is a brief summary of how lead times are calculated and what they
+are:</p><ul ><li ><strong >Customer Lead Time</strong>: the customer lead time is the default
+duration you set. Therefore, the expected date on the sales
+orders is today + customer lead time.</li><li ><strong >Sales Security Lead Time</strong>: the purpose is to be ready shipping
+that many days before the actual commitment taken with the
+customer. Then, the default scheduled date on the delivery order
+is <strong >SO delivery date - Security Lead Time</strong>.</li><li ><strong >Purchase Security Lead Time</strong>: additional time to mitigate the risk
+of a vendor delay. The receipt will be scheduled that many days
+earlier to cope with unexpected vendor delays. In case of a
+<em >Replenish to Order</em>, the <strong >Delivery order scheduled date -
+Security lead time</strong> for purchase will be the default
+<em >Receipt</em> scheduled date.</li><li ><strong >Purchase Delivery Lead Time</strong>: this is the expected time between a
+PO being confirmed and the receipt of the ordered products. The
+<strong >Receipt scheduled date - Vendor delivery date</strong> is the
+default <em >PO Order By</em> date.</li><li ><strong >Days to Purchase</strong>: number of days the purchasing department takes
+to validate a PO. If another RFQ to the same vendor is already
+opened, Odoo adds the line to the RFQ instead of creating a new
+one. Then, the specific date is set on the line.</li><li ><strong >Manufacturing Lead Time</strong>: this is the expected time it takes to
+manufacture a product. This lead time is independent of the
+quantity to produce and does not take the routing time into
+account.</li><li ><strong >Manufacturing Security Lead Time</strong>: additional time to mitigate the
+risk of a manufacturing delay. In case of a <em >Replenish to
+Order</em>, the <strong >Delivery Order scheduled date - Manufacturing
+Lead Time - Manufacturing Security Lead Time</strong> is the default
+<em >Manufacturing Order</em> planned date.</li></ul></section><section id="sales-lead-times"><h2 >Sales - Lead Times</h2><p >In the <em >Sales</em> app, there is an option called <em >Delivery Date</em>. It
+allows seeing an additional field on the sales orders, <em >Expected
+Date</em>. This one is automatically computed based on the different lead
+times previously configured.</p><img src="../../../_images/scheduled_dates_02.png" alt="View of the delivery settings to have the delivery lead time taken into account" style="" class="img-responsive center-block"><p >If the set up <em >Delivery Date</em> is earlier than the the <em >Expected
+Date</em>, a warning message is displayed.</p><img src="../../../_images/scheduled_dates_03.png" alt="View of the error that occurs when trying to choose an earlier date than what calculated by Odoo" style="" class="img-responsive center-block"><p >But, for all of this properly working, it is still necessary to
+configure all the lead times that could occur.</p></section><section id="customer-lead-time"><h3 >Customer Lead Time</h3><p >The <em >Customer Lead Time</em> is the time needed for your product to go
+from your warehouse to the customer place. It can be configured on any
+product by going to <span class="menuselection">Sales ‣ Products ‣ Products</span>.
+There, open your product form, go in the inventory tab, and add your
+<em >Customer Lead Time</em>.</p><img src="../../../_images/scheduled_dates_04.png" alt="View of the customer lead time configuration from the product form" style="" class="img-responsive center-block"><p >For example, product B is ordered on the 2nd of April but the <em >Customer
+Lead Time</em> is two days. In that case, the expected delivery date is the
+4th of April.</p></section><section id="security-lead-time"><h3 >Security Lead Time</h3><p >In sales, <em >Security Lead Time</em> corresponds to backup days to ensure
+you are able to deliver the products in time. The purpose is to be ready
+shipping earlier in order to arrive on time.</p><p >The number of security days is subtracted from the calculation to
+compute a scheduled date earlier than the one promised to the customer.</p><p >To set this up, go to <span class="menuselection">Inventory ‣ Configuration ‣
+Settings</span> and enable the feature <em >Security Lead Time for Sales</em>.</p><img src="../../../_images/scheduled_dates_05.png" alt="View of the security lead time for sales configuration from the sales settings" style="" class="img-responsive center-block"><p >For example, product B is scheduled to be delivered on the 6th of April
+but the <em >Security Lead Time</em> is one day. In that case, the scheduled
+date for the delivery order is the 5th of April.</p></section><section id="deliver-several-products"><h3 >Deliver several products</h3><p >In many cases, customers order several products at the same time. Those
+can have different lead times but still need to be delivered, at once or
+separately. Fortunately, Odoo can help you handle these cases easily.</p><p >From the <em >Other Info</em> tab of your <em >Sale Order</em>, you can choose
+between <em >When all products are ready</em> and <em >As soon as possible</em>. The
+first one is to deliver products at once, while the second is to deliver
+them separately.</p><p >For example, products A and B are ordered at the same time. A has 8 lead
+days and B has 5. With the first option, the <em >Expected Date</em> is
+calculated based on the product with the most lead days, here A. If the
+order is confirmed on the 2nd of April, then the <em >Expected Date</em> is on
+the 10th of April.</p><p >With the second option, the <em >Expected Date</em> is calculated based on the
+product with the least customer lead days. In this example, B is the
+product with the least lead days. So, the <em >Expected Date</em> is on the
+7th of April.</p></section><section id="purchase-lead-times"><h2 >Purchase - Lead Times</h2></section><section id="supplier-lead-time"><h3 >Supplier Lead Time</h3><p >The <em >Supplier Lead Time</em> is the time needed for a product you
+purchased to be delivered. To configure it, open a product from
+<span class="menuselection">Purchase ‣ Products ‣ Products</span> and add a vendor
+under the <em >Purchase</em> tab.</p><img src="../../../_images/scheduled_dates_06.png" alt="View of the way to add vendors to products" style="" class="img-responsive center-block"><p >By clicking on <em >Add a line</em>, a new window is displayed. You can
+specify the <em >Delivery Lead Time</em> there. If done so, the delivery day
+for every purchase of that product is now equal to <em >Date of the
+Purchase Order + Delivery Lead Time</em>.</p><img src="../../../_images/scheduled_dates_07.png" alt="View of the delivery lead time configuration from a vendor form" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >It is possible to add different vendors and, thus, different lead times
+depending on the vendor.</p></div></section><section id="id1"><h3 >Security Lead Time</h3><p >The <em >Security Lead Time</em> for purchase follows the same logic as the
+one for <em >Sales</em>, except that you are the customer. Then, it is the
+margin of error for your supplier to deliver your order.</p><p >To set up <em >Security Lead Time</em> for purchase, go to
+<span class="menuselection">Inventory ‣ Configuration ‣ Settings</span> and enable
+the feature.</p><img src="../../../_images/scheduled_dates_08.png" alt="View of the security lead time for purchase from the inventory settings" style="" class="img-responsive center-block"><p >Doing so, every time the system generates purchase orders, those are
+scheduled that many days earlier to cope with unexpected vendor delays.</p></section><section id="manufacturing-lead-times"><h2 >Manufacturing - Lead Times</h2></section><section id="manufacturing-lead-time"><h3 >Manufacturing Lead Time</h3><p >The <em >Manufacturing Lead Time</em> is the time needed to manufacture the
+product. To specify it, open the <em >Inventory</em> tab of your product form
+and add the number of days the manufacturing takes.</p><img src="../../../_images/scheduled_dates_09.png" alt="View of the manufacturing lead time configuration from the product form" style="" class="img-responsive center-block"><p >When working with <em >Manufacturing Lead Times</em>, the <em >Deadline Start</em>
+of the <em >MO</em> is <strong >Commitment Date - Manufacturing Lead Time</strong>. For
+example, the MO’s deadline start date for an order having a commitment
+date on the 10th of July is June 27th.</p></section><section id="id2"><h3 >Security Lead Time</h3><p >The <em >Security Lead Time</em> for manufacturing allows generating
+manufacturing orders earlier to cope with the risk of manufacturing
+delays.</p><p >To enable it, go to <span class="menuselection">Manufacturing ‣ Configuration ‣
+Settings</span> and tick <em >Security Lead Time</em>.</p><img src="../../../_images/scheduled_dates_10.png" alt="View of the security lead time for manufacturing from the manufacturing app settings" style="" class="img-responsive center-block"><p >For example, a customer orders B with a delivery date scheduled on the
+20th of June. The <em >Manufacturing Lead Time</em> is 14 days and the
+<em >Security Lead Time</em> is 3 days, so the manufacturing of B needs to
+start at the latest on the 3rd of June, which is the MO’s planned date.</p></section><section id="global-example"><h2 >Global Example</h2><p >Here is a configuration:</p><ul ><li >1 day of security lead time for Sales</li><li >2 days of security lead time for Manufacturing</li><li >3 days of manufacturing lead time</li><li >1 day of security lead time for Purchase</li><li >4 days of supplier lead time</li></ul><p >Let’s say that a customer orders B on the 1st of September and the
+delivery date is planned to be within 20 days (September 20th). In such
+a scenario, here is when all the various steps are triggered.</p><ul ><li ><strong >September 1st</strong>: the sales order is created</li><li ><strong >September 10th</strong>: the deadline to order components from the supplier
+because of the manufacturing process (4 days of supplier lead
+time)</li><li ><strong >September 13th</strong>: the reception of the product from the supplier (1 day
+of security lead time for Purchase)</li><li ><strong >September 14th</strong>: the deadline start date for the manufacturing (19th -
+3 days of manufacturing lead time - 2 days of security lead time
+for Manufacturing)</li><li ><strong >September 19th</strong>: the expected date on the delivery order form (1 day
+of security lead time for sales)</li></ul></section>
+
+          </article>
+        </div>
+        
+        <div id="mask"></div>
+      </main>
+  </div>
+
+  <div class="floating_action_container">
+    <a id="floating_action" class="ripple" href="#">
+      <i class="mdi-action-explore"></i>
+    </a>
+    <div id="floating_action_menu">
+      <span class="bubble"></span>
+      <ul class="list-group content">
+        <li class="list-group-item ripple"><a>Cras justo odio</a></li>
+        <li class="list-group-item ripple"><a>Dapibus ac facilisis in</a></li>
+        <li class="list-group-item ripple"><a>Morbi leo risus</a></li>
+        <li class="list-group-item ripple"><a>Porta ac consectetur ac</a></li>
+        <li class="list-group-item ripple"><a>Vestibulum at eros</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div id="footer" class="container">
+      <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
+      <div class="row">
+        <div class="col-sm-7 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Community</span>
+              <ul>
+                <li><a href="https://github.com/odoo/odoo">Github</a></li>
+                <li><a href="http://www.odoo.com/page/download">Download</a></li>
+                <li class="divider"></li>
+                <li><a href="http://runbot.odoo.com/runbot/repo/git-github-com-odoo-enterprise-7">Runbot</a></li>
+                <li><a href="https://github.com/odoo/odoo/wiki/Translations">Translations</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/odoo-community">Mailing Lists</a></li>
+                <li><a href="http://www.odoo.com/forum/help-1">Forum</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Services</span>
+              <ul>
+                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/help">Support</a></li>
+                <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/partners">Find a partner</a></li>
+                <li><a href="http://www.odoo.com/page/become-a-partner">Become a partner</a></li>
+                <li class="divider"></li>
+                <li><a href="http://training.odoo.com/courses/odoo-functional">Training Center</a></li>
+                <li><a href="http://www.odoo.com/page/education-program">Education</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/security">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb64">
+              <span class="menu_title">About us</span>
+              <ul>
+                <li><a href="http://www.odoo.com/page/about-us">Our company</a></li>
+                <li><a href="http://www.odoo.com/page/contactus">Contact</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/event">Events</a></li>
+                <li><a href="http://www.odoo.com/blog">Blog</a></li>
+                <li><a href="http://www.odoo.com/blog/6">Customers</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/jobs">Jobs</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/page/legal">Legal</a> | <a href="http://www.odoo.com/privacy">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <p>
+            <small>
+              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              <br/><br/>
+              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="o_footer_bottom">
+      <div class="container">
+        <a class="small" href="http://www.odoo.com/page/website-builder">Website made with <span class="o_logo o_logo_inverse o_logo_15"></span></a>
+        <div class="social-links pull-right">
+          <a href="http://www.odoo.com/web/about/facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.odoo.com/web/about/twitter"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@odoo.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

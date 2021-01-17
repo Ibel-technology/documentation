@@ -1,0 +1,1196 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applications &#8212; Odoo 14.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/accounting.css" />
+    <link rel="stylesheet" type="text/css" href="_static/legal.css" />
+ 
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/prefixfree.min.js"></script>
+    <script src="_static/atom.js"></script>
+    <script src="_static/immutable.js"></script>
+    <script src="_static/react.min.js"></script>
+    <script src="_static/accounts.js"></script>
+    <script src="_static/chart-of-accounts.js"></script>
+    <script src="_static/entries.js"></script>
+    <script src="_static/reconciliation.js"></script>
+    <script src="_static/misc.js"></script>
+    <script src="_static/inventory.js"></script>
+    <script src="_static/coa-valuation-continental.js"></script>
+    <script src="_static/coa-valuation-anglo-saxon.js"></script>
+<script type="text/javascript" src="_static/jquery.min.js"></script>
+<script type="text/javascript" src="_static/bootstrap.js"></script>
+<script type="text/javascript" src="_static/doc.js"></script>
+<script type="text/javascript" src="_static/jquery.noconflict.js"></script>
+    <link rel="canonical" href="" />
+  
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="General" href="general.html" />
+    <link rel="prev" title="Odoo User Documentation" href="index.html" /> 
+  </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
+    <div class="o_main_header_main">
+      <a class="pull-left o_logo" href="/"></a>
+      <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="mdi-navigation-menu"></span>
+      </a>
+      <div class="o_header_buttons">
+        <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+      </div>
+      <ul class="o_primary_nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Apps</a>
+          <div class="dropdown-menu o_secondary_nav">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 o_website_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Websites
+                    <div>Build great user experience</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/website-builder">Website Builder</a></li>
+                    <li><a href="https://www.odoo.com/page/e-commerce">eCommerce</a></li>
+                    <li><a href="https://www.odoo.com/page/blog-engine">Blogs</a></li>
+                    <li><a href="https://www.odoo.com/page/community-builder">Forums</a></li>
+                    <li><a href="https://www.odoo.com/page/learning-management-system">eLearning</a></li>
+                    <li><a href="https://www.odoo.com/page/live-chat">Live Chat</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_sale_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Sales
+                    <div>Boost your success rate</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/sales">Sales</a></li>
+                    <li><a href="https://www.odoo.com/page/crm">CRM</a></li>
+                    <li><a href="https://www.odoo.com/page/billing">Invoicing</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Point of Sale</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/point-of-sale">Shops</a></li>
+                        <li><a href="https://www.odoo.com/page/pos-restaurant">Restaurants</a></li>
+                        <li><a href="https://www.odoo.com/page/point-of-sale-hardware">Hardware</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/subscriptions">Subscriptions</a></li>
+                    <li><a href="https://www.odoo.com/page/sign">Sign</a></li>
+                    <li><a href="https://www.odoo.com/page/rental">Rental</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_operation_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Operations
+                    <div>It's all about efficiency</div>
+                  </div>
+                  <ul>
+                    <li><a href="https://www.odoo.com/page/accounting/">Accounting</a></li>
+                    <li><a href="https://www.odoo.com/page/project-management/">Project</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Human Resources</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/referral">Referral</a></li>
+                        <li><a href="https://www.odoo.com/page/employees">Employees</a></li>
+                        <li><a href="https://www.odoo.com/page/expenses">Expenses</a></li>
+                        <li><a href="https://www.odoo.com/page/appraisal">Appraisal</a></li>
+                        <li><a href="https://www.odoo.com/page/fleet">Fleet</a></li>
+                        <li><a href="https://www.odoo.com/page/leaves">Time Off</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/warehouse">Inventory</a></li>
+                    <li><a href="https://www.odoo.com/page/purchase">Purchase</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Manufacturing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/manufacturing">MRP</a></li>
+                        <li><a href="https://www.odoo.com/page/plm">PLM</a></li>
+                        <li><a href="https://www.odoo.com/page/maintenance">Maintenance</a></li>
+                        <li><a href="https://www.odoo.com/page/quality">Quality</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/helpdesk">Helpdesk</a></li>
+                    <li><a href="https://www.odoo.com/page/field-service-management">Field Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 o_productivity_apps">
+                  <div class="o_nav_app_family">
+                    <span></span> Productivity Tools
+                    <div>Great Tools = Happy People</div>
+                  </div>
+                  <ul>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Communication</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/discuss">Discuss</a></li>
+                        <li><a href="https://www.odoo.com/page/discuss-groups">Mailing Lists</a></li>
+                        <li><a href="https://www.odoo.com/page/notes">Notes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/timesheet">Timesheet</a></li>
+                    <li><a href="https://www.odoo.com/page/events">Events</a></li>
+                    <li class="dropdown">
+                      <a href="#0" class="dropdown-toggle">Marketing</a>
+                      <ul>
+                        <li><a href="https://www.odoo.com/page/marketing-automation">Automation</a></li>
+                        <li><a href="https://www.odoo.com/page/email-marketing">Email</a></li>
+                        <li><a href="https://www.odoo.com/page/social-marketing">Social</a></li>
+                        <li><a href="https://www.odoo.com/page/sms-marketing">SMS</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.odoo.com/page/survey">Survey</a></li>
+                    <li><a href="https://www.odoo.com/page/approval-workflow">Approvals</a></li>
+                    <li><a href="https://www.odoo.com/page/appointments">Appointments</a></li>
+                    <li><a href="https://www.odoo.com/page/documents">Documents</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="http://www.odoo.com/apps/modules" class="o_store_link"><i class="fa fa-cube fa-fw"></i> Third party apps</a>
+          </div>
+        </li>
+        <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
+        <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
+        <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
+      </ul>
+    </div>
+    <nav class="navbar o_sub_nav">
+      <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed text-left btn-block" data-toggle="collapse" data-target="#o_sub-menu" aria-expanded="false">
+              Navigate
+              <span class="mdi-hardware-keyboard-arrow-down pull-right"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="o_sub-menu">
+          <ol class="o_breadcrumb breadcrumb nav navbar-left">
+              
+              
+
+
+
+
+
+    
+    <li class="active"><a href="#">Applications</a></li>
+
+              
+          </ol>
+
+          <div class="call-to-action navbar-right hidden-xs">
+            <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+
+            
+            
+
+<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
+<li><a href="https://training.odoo.com">Training Center</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
+<li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
+<li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
+    <form class="search form-inline input-group-sm" action="search.html" method="get">
+        <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
+        <input type="hidden" name="area" value="default" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <button type="submit" value="Go" class="btn btn-default btn-sm">Go</button>
+    </form>
+</li>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+            
+
+            
+          </ul>
+
+          <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
+            
+              <li class="divider"></li>
+            
+
+            
+            
+
+
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><div id="wrap" class="">
+    
+    <figure class="card top ">
+      <span class="card-img" ></span>
+      <div class="container text-center">
+        <h1> Applications </h1>
+      </div>
+    </figure>
+    
+    
+    
+      <main class="container ">
+        
+        <div class="o_content row">
+          
+          <aside>
+            <div class="navbar-aside text-center">
+              <ul class="list-group text-left nav"><div class="row tutorials toc-section"><h2 class="col-sm-12">General</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/odoo_basics.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Basics</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/unsplash.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Unsplash</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/base_import.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Data Import</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/multi_companies.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Multi Companies</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/auth.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Authentication</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/payment_acquirers.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Payment Acquirers</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/voip.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>VoIP (Voice over Internet Protocol)</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/calendars.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Calendars</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/in_app_purchase.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>In-App Purchase</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="general/developer_mode.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Developer Mode</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Discuss</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="discuss/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="discuss/advanced.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">CRM</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="crm/pipeline.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Organize the pipeline</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="crm/acquire_leads.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Acquire leads</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="crm/track_leads.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Assign and track leads</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="crm/performance.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Analyze performance</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="crm/optimize.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Optimize your Day-to-Day work</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Sales</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/send_quotations.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Send Quotations</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/invoicing.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Invoicing Method</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/products_prices.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Products & Prices</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/amazon_connector.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Amazon Connector</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/ebay_connector.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>eBay Connector</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sales/advanced.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced Topics</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Purchase</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="purchase/products.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Products</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="purchase/agreements.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Purchase Agreements</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="purchase/advanced.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Invoicing and Accounting</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/receivables.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Account Receivables</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/payables.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Account Payables</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/bank.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Bank & Cash</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/fiscality.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Fiscality</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/reporting.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Reporting</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/others.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Others</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="accounting/fiscal_localizations.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Fiscal Localizations</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Subscriptions</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="subscriptions/configuration.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Configuration</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="subscriptions/sales_flow.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Sales flow</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="subscriptions/follow_up.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Follow-up</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="subscriptions/reporting.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Reporting</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Project</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="project/tasks.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Tasks</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="project/planning.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Planning</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Timesheets</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="timesheets/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Planning</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="planning/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Field Service</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="fsm/sales.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Sales</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="fsm/helpdesk.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Helpdesk</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Sign</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sign/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Point of Sale</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/shop.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Shop Features</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/restaurant.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Restaurant Features</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/payment.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Payment Terminals</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/advanced_pricing_features.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Pricing Features</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/belgian_fdm.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Fiscal Data Modules</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Inventory</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="inventory/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="inventory/management.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Warehouse Management</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="inventory/shipping.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Shipping</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="inventory/routes.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced Routes</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="inventory/barcode.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Barcodes</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Manufacturing</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="manufacturing/overview.html" class="card-img">
+                        <span style="background-image: url('_static/banners/manufacturing.png')"></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="manufacturing/management.html" class="card-img">
+                        <span style="background-image: url('_static/banners/manufacturing.png')"></span>
+                        <figcaption>Manufacturing Management</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="manufacturing/repair.html" class="card-img">
+                        <span style="background-image: url('_static/banners/repair.png')"></span>
+                        <figcaption>Repair Management</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Quality</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="quality/control.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Control</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="quality/alert.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Alert</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="quality/checks.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Checks</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Internet of Things (IoT)</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="iot/config.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Configuration</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="iot/devices.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Devices</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="point_of_sale/payment.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Payment Terminals</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Website</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="website/publish.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Publish</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="website/optimize.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Optimize</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">eCommerce</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/getting_started.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Get started</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/managing_products.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Manage my products</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/taxes.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Collect taxes</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/shopper_experience.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Get paid</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/publish.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Launch my website</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="ecommerce/maximizing_revenue.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Maximize my revenue</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Helpdesk</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="helpdesk/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="helpdesk/timesheet_and_invoice.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Timesheet and Invoice</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="helpdesk/advanced.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Live Chat</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="livechat/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Email Marketing</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="email_marketing/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Social Marketing</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="social_marketing/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">SMS Marketing</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sms_marketing/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="sms_marketing/pricing.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Pricing and FAQ</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Marketing Automation</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="marketing_automation/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="marketing_automation/advanced.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Advanced</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Events</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="events/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="events/integrations.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Integrations</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Survey</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="survey/overview.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Overview</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-single-entry"><h2 class="col-sm-12">Expenses</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="expense/expense.html" class="card-img">
+                        <span style="background-image: url('_static/banners/expense.png')"></span>
+                        <figcaption>Expenses</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-section"><h2 class="col-sm-12">Studio</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="studio/concepts.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Concepts</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="studio/use_cases.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>Use Cases</figcaption>
+                    </a>
+                </figure>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="studio/how_to.html" class="card-img">
+                        <span style=""></span>
+                        <figcaption>How To</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div><div class="row tutorials toc-single-entry"><h2 class="col-sm-12">Mobile</h2>
+                <div class="col-sm-6 col-md-3">
+                <figure class="card">
+                    <a href="mobile/firebase.html" class="card-img">
+                        <span style="background-image: url('_static/banners/mobile.png')"></span>
+                        <figcaption>Mobile</figcaption>
+                    </a>
+                </figure>
+                </div>
+                </div></ul>
+              
+              <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/applications.rst" class="gith-link">
+                  Edit on GitHub
+              </a></p>
+              
+            </div>
+          </aside>
+          
+          <article class="doc-body ">
+            
+            
+  <section id="applications"><div class="toctree-wrapper"><ul ><li class="toctree-l1"><span >General</span><ul ><li class="toctree-l2"><span >Basics</span><ul ><li class="toctree-l3"><a href="general/odoo_basics/choose_language.html" class="reference internal">Manage Odoo in your own language</a></li><li class="toctree-l3"><a href="general/odoo_basics/add_user.html" class="reference internal">Add Users and Manage Access Rights</a></li><li class="toctree-l3"><a href="general/odoo_basics/export-data.html" class="reference internal">Export Data From Odoo</a></li></ul></li><li class="toctree-l2"><span >Unsplash</span><ul ><li class="toctree-l3"><a href="general/unsplash/unsplash_access_key.html" class="reference internal">How to generate an Unsplash access key</a></li><li class="toctree-l3"><a href="general/unsplash/unsplash_application_id.html" class="reference internal">How to generate an Unsplash application ID</a></li></ul></li><li class="toctree-l2"><span >Data Import</span><ul ><li class="toctree-l3"><a href="general/base_import/adapt_template.html" class="reference internal">How to adapt an import template</a></li><li class="toctree-l3"><a href="general/base_import/import_faq.html" class="reference internal">Import data</a></li></ul></li><li class="toctree-l2"><span >Multi Companies</span><ul ><li class="toctree-l3"><a href="general/multi_companies/manage_multi_companies.html" class="reference internal">Multi Companies</a></li></ul></li><li class="toctree-l2"><span >Authentication</span><ul ><li class="toctree-l3"><a href="general/auth/google.html" class="reference internal">How to allow users to sign in with their Google account</a></li><li class="toctree-l3"><a href="general/auth/google_spreadsheets.html" class="reference internal">How to use Google Spreadsheet in Addition to my Data?</a></li><li class="toctree-l3"><a href="general/auth/azure.html" class="reference internal">OAuth</a></li><li class="toctree-l3"><a href="general/auth/ldap.html" class="reference internal">How to allow users to sign in with LDAP</a></li><li class="toctree-l3"><a href="general/auth/2fa.html" class="reference internal">Two-factor Authentication</a></li></ul></li><li class="toctree-l2"><span >Payment Acquirers</span><ul ><li class="toctree-l3"><a href="general/payment_acquirers/payment_acquirers.html" class="reference internal">Payment Acquirers (Credit Cards, Online Payment)</a></li><li class="toctree-l3"><a href="general/payment_acquirers/wire_transfer.html" class="reference internal">How to get paid with wire transfers</a></li><li class="toctree-l3"><a href="general/payment_acquirers/authorize.html" class="reference internal">Authorize.Net</a></li><li class="toctree-l3"><a href="general/payment_acquirers/paypal.html" class="reference internal">Configure your Paypal account</a></li><li class="toctree-l3"><a href="general/payment_acquirers/stripe.html" class="reference internal">Stripe</a></li></ul></li><li class="toctree-l2"><span >VoIP (Voice over Internet Protocol)</span><ul ><li class="toctree-l3"><a href="general/voip/asterisk.html" class="reference internal">Configure your VoIP Asterisk server for Odoo</a></li><li class="toctree-l3"><a href="general/voip/onsip.html" class="reference internal">Use VoIP services in Odoo with OnSIP</a></li><li class="toctree-l3"><a href="general/voip/axivox.html" class="reference internal">Use VoIP services in Odoo with Axivox</a></li></ul></li><li class="toctree-l2"><span >Calendars</span><ul ><li class="toctree-l3"><a href="general/calendars/outlook/outlook_calendar.html" class="reference internal">Synchronization with Outlook’s Calendar</a></li><li class="toctree-l3"><a href="general/calendars/google/google_calendar_credentials.html" class="reference internal">Synchronize Google Calendar with Odoo</a></li></ul></li><li class="toctree-l2"><span >In-App Purchase</span><ul ><li class="toctree-l3"><a href="general/in_app_purchase/in_app_purchase.html" class="reference internal">General guide about In-App Purchase (IAP) Services</a></li></ul></li><li class="toctree-l2"><span >Developer Mode</span><ul ><li class="toctree-l3"><a href="general/developer_mode/activate.html" class="reference internal">Activate the Developer (Debug) Mode</a></li></ul></li></ul></li><li class="toctree-l1"><span >Discuss</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="discuss/overview/get_started.html" class="reference internal">Get Started with Discuss</a></li><li class="toctree-l3"><a href="discuss/overview/team_communication.html" class="reference internal">Efficiently Communicate Using Channels</a></li><li class="toctree-l3"><a href="discuss/overview/plan_activities.html" class="reference internal">Get Organized by Planning Activities</a></li></ul></li><li class="toctree-l2"><span >Advanced</span><ul ><li class="toctree-l3"><a href="discuss/advanced/email_servers.html" class="reference internal">How to Use my Mail Server to Send and Receive Emails in Odoo</a></li><li class="toctree-l3"><a href="discuss/advanced/email_template.html" class="reference internal">Email Templates</a></li></ul></li></ul></li><li class="toctree-l1"><span >CRM</span><ul ><li class="toctree-l2"><span >Organize the pipeline</span><ul ><li class="toctree-l3"><a href="discuss/overview/plan_activities.html" class="reference internal">Get Organized by Planning Activities</a></li><li class="toctree-l3"><a href="crm/pipeline/lost_opportunities.html" class="reference internal">Manage lost opportunities</a></li><li class="toctree-l3"><a href="crm/pipeline/multi_sales_team.html" class="reference internal">Manage multiple sales teams</a></li></ul></li><li class="toctree-l2"><span >Acquire leads</span><ul ><li class="toctree-l3"><a href="crm/acquire_leads/convert.html" class="reference internal">Convert leads into opportunities</a></li><li class="toctree-l3"><a href="crm/acquire_leads/generate_from_email.html" class="reference internal">Generate leads/opportunities from emails</a></li><li class="toctree-l3"><a href="crm/acquire_leads/generate_from_website.html" class="reference internal">Generate leads/opportunities from your website contact page</a></li><li class="toctree-l3"><a href="crm/acquire_leads/send_quotes.html" class="reference internal">Send quotations</a></li><li class="toctree-l3"><a href="crm/acquire_leads/lead_mining.html" class="reference internal">Lead mining</a></li></ul></li><li class="toctree-l2"><span >Assign and track leads</span><ul ><li class="toctree-l3"><a href="crm/track_leads/prospect_visits.html" class="reference internal">Track your prospects visits</a></li><li class="toctree-l3"><a href="crm/track_leads/lead_scoring.html" class="reference internal">Assign leads based on scoring</a></li></ul></li><li class="toctree-l2"><span >Analyze performance</span><ul ><li class="toctree-l3"><a href="crm/performance/win_loss.html" class="reference internal">Check your Win/Loss Ratio</a></li></ul></li><li class="toctree-l2"><span >Optimize your Day-to-Day work</span><ul ><li class="toctree-l3"><a href="crm/optimize/partner_autocomplete.html" class="reference internal">Enrich your contacts base with Partner Autocomplete</a></li><li class="toctree-l3"><a href="crm/optimize/outlook_extension.html" class="reference internal">Outlook Extension</a></li><li class="toctree-l3"><a href="crm/optimize/gamification.html" class="reference internal">How to motivate and reward my salespeople?</a></li></ul></li></ul></li><li class="toctree-l1"><span >Sales</span><ul ><li class="toctree-l2"><span >Send Quotations</span><ul ><li class="toctree-l3"><a href="sales/send_quotations/quote_template.html" class="reference internal">Use quotation templates</a></li><li class="toctree-l3"><a href="sales/send_quotations/optional_products.html" class="reference internal">Add optional products</a></li><li class="toctree-l3"><a href="sales/send_quotations/get_signature_to_validate.html" class="reference internal">Get a signature to confirm an order</a></li><li class="toctree-l3"><a href="sales/send_quotations/get_paid_to_validate.html" class="reference internal">Get paid to confirm an order</a></li><li class="toctree-l3"><a href="sales/send_quotations/deadline.html" class="reference internal">Use quotations deadline to stimulate your customers</a></li><li class="toctree-l3"><a href="sales/send_quotations/different_addresses.html" class="reference internal">Deliver and invoice to different addresses</a></li><li class="toctree-l3"><a href="sales/send_quotations/terms_and_conditions.html" class="reference internal">Add terms &amp; conditions</a></li></ul></li><li class="toctree-l2"><span >Invoicing Method</span><ul ><li class="toctree-l3"><a href="sales/invoicing/invoicing_policy.html" class="reference internal">Invoice based on delivered or ordered quantities</a></li><li class="toctree-l3"><a href="sales/invoicing/down_payment.html" class="reference internal">Request a down payment</a></li><li class="toctree-l3"><a href="sales/invoicing/proforma.html" class="reference internal">Send a pro-forma invoice</a></li><li class="toctree-l3"><a href="sales/invoicing/time_materials.html" class="reference internal">Invoice based on time and materials</a></li><li class="toctree-l3"><a href="sales/invoicing/milestone.html" class="reference internal">Invoice project milestones</a></li><li class="toctree-l3"><a href="sales/invoicing/expense.html" class="reference internal">Re-invoice expenses to customers</a></li><li class="toctree-l3"><a href="sales/invoicing/subscriptions.html" class="reference internal">Sell subscriptions</a></li></ul></li><li class="toctree-l2"><span >Products &amp; Prices</span><ul ><li class="toctree-l3"><span >Manage your products</span><ul ><li class="toctree-l4"><a href="sales/products_prices/products/import.html" class="reference internal">How to import products with categories and variants</a></li><li class="toctree-l4"><a href="sales/products_prices/products/variants.html" class="reference internal">Using product variants</a></li></ul></li><li class="toctree-l3"><span >Set taxes</span><ul ><li class="toctree-l4"><a href="accounting/fiscality/taxes/default_taxes.html" class="reference internal">Default Taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/fiscal_positions.html" class="reference internal">Fiscal Positions (tax and account mapping)</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/taxes.html" class="reference internal">Taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/taxcloud.html" class="reference internal">Get correct tax rates in the United States using TaxCloud</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/B2B_B2C.html" class="reference internal">Manage prices for B2B (tax excluded) and B2C (tax included)</a></li></ul></li><li class="toctree-l3"><span >Manage your pricing</span><ul ><li class="toctree-l4"><a href="sales/products_prices/prices/pricing.html" class="reference internal">How to adapt your prices to your customers and apply discounts</a></li><li class="toctree-l4"><a href="sales/products_prices/prices/currencies.html" class="reference internal">How to sell in foreign currencies</a></li></ul></li></ul></li><li class="toctree-l2"><span >Amazon Connector</span><ul ><li class="toctree-l3"><a href="sales/amazon_connector/features.html" class="reference internal">Amazon Connector Features</a></li><li class="toctree-l3"><a href="sales/amazon_connector/setup.html" class="reference internal">Configure Amazon Connector in Odoo</a></li><li class="toctree-l3"><a href="sales/amazon_connector/manage.html" class="reference internal">Manage Amazon orders in Odoo</a></li><li class="toctree-l3"><a href="sales/amazon_connector/update.html" class="reference internal">Install the Amazon Connector Authentication Update</a></li></ul></li><li class="toctree-l2"><span >eBay Connector</span><ul ><li class="toctree-l3"><a href="sales/ebay_connector/setup.html" class="reference internal">How to configure eBay in Odoo?</a></li><li class="toctree-l3"><a href="sales/ebay_connector/manage.html" class="reference internal">How to list a product?</a></li></ul></li><li class="toctree-l2"><span >Advanced Topics</span><ul ><li class="toctree-l3"><a href="sales/advanced/portal.html" class="reference internal">How to give portal access rights to my customers?</a></li></ul></li></ul></li><li class="toctree-l1"><span >Purchase</span><ul ><li class="toctree-l2"><span >Products</span><ul ><li class="toctree-l3"><a href="purchase/products/reordering.html" class="reference internal">Don’t run out of stock thanks to reordering rules</a></li><li class="toctree-l3"><a href="purchase/products/uom.html" class="reference internal">Purchase in different units of measure than sales</a></li></ul></li><li class="toctree-l2"><span >Purchase Agreements</span><ul ><li class="toctree-l3"><a href="purchase/agreements/blanket_order.html" class="reference internal">Manage blanket orders</a></li><li class="toctree-l3"><a href="purchase/agreements/call_for_tender.html" class="reference internal">Manage calls for tenders</a></li></ul></li><li class="toctree-l2"><span >Advanced</span><ul ><li class="toctree-l3"><a href="purchase/advanced/3_way_matching.html" class="reference internal">Determine when to pay a vendor bill with 3-way matching</a></li><li class="toctree-l3"><a href="purchase/advanced/dropshipping.html" class="reference internal">Dropshipping</a></li><li class="toctree-l3"><a href="purchase/advanced/analyze.html" class="reference internal">Analyze the performance of your vendors</a></li></ul></li></ul></li><li class="toctree-l1"><span >Invoicing and Accounting</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><span >Main Concepts</span><ul ><li class="toctree-l4"><a href="accounting/overview/main_concepts/in_odoo.html" class="reference internal">The Accounting behind Odoo</a></li><li class="toctree-l4"><a href="accounting/overview/main_concepts/memento.html" class="reference internal">Accounting Memento For Entrepreneurs (US GAAP)</a></li></ul></li><li class="toctree-l3"><span >Getting Started</span><ul ><li class="toctree-l4"><a href="accounting/overview/getting_started/setup.html" class="reference internal">Initial setup of Odoo Accounting and Odoo Invoicing</a></li><li class="toctree-l4"><a href="accounting/overview/getting_started/chart_of_accounts.html" class="reference internal">Chart of Accounts</a></li></ul></li><li class="toctree-l3"><span >Process overview</span><ul ><li class="toctree-l4"><a href="accounting/overview/process_overview/customer_invoice.html" class="reference internal">From Customer Invoice to Payments Collection</a></li><li class="toctree-l4"><a href="accounting/overview/process_overview/supplier_bill.html" class="reference internal">From Vendor Bill to Payment</a></li></ul></li></ul></li><li class="toctree-l2"><span >Account Receivables</span><ul ><li class="toctree-l3"><span >Customer Invoices</span><ul ><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/overview.html" class="reference internal">Overview of the invoicing process</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/cash_discounts.html" class="reference internal">Offer cash discounts</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/cash_rounding.html" class="reference internal">Cash Rounding</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/payment_terms.html" class="reference internal">Payment Terms and Installment Plans</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/deferred_revenues.html" class="reference internal">Deferred Revenues</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/credit_notes.html" class="reference internal">Credit Notes and Refunds</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/epc_qr_code.html" class="reference internal">Add EPC QR Codes to invoices</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_invoices/snailmail.html" class="reference internal">Send your Invoices by Post (Snailmail)</a></li></ul></li><li class="toctree-l3"><span >Customer Payments</span><ul ><li class="toctree-l4"><a href="accounting/receivables/customer_payments/recording.html" class="reference internal">Different ways to record a payment</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_payments/online_payment.html" class="reference internal">Invoice Online Payment</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_payments/check.html" class="reference internal">Register customer payments by checks</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_payments/batch.html" class="reference internal">Batch Payments: Batch Deposits (checks, cash etc.)</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_payments/batch_sdd.html" class="reference internal">Batch Payments: SEPA Direct Debit (SDD)</a></li><li class="toctree-l4"><a href="accounting/receivables/customer_payments/followup.html" class="reference internal">Follow-up on invoices and get paid faster</a></li></ul></li></ul></li><li class="toctree-l2"><span >Account Payables</span><ul ><li class="toctree-l3"><span >Vendor Bills</span><ul ><li class="toctree-l4"><a href="accounting/payables/supplier_bills/manage.html" class="reference internal">Manage vendor Bills</a></li><li class="toctree-l4"><a href="accounting/payables/supplier_bills/purchase_receipts.html" class="reference internal">Purchase Receipts</a></li><li class="toctree-l4"><a href="accounting/payables/supplier_bills/deferred_expenses.html" class="reference internal">Deferred Expenses and Prepayments</a></li><li class="toctree-l4"><a href="accounting/payables/supplier_bills/assets.html" class="reference internal">Non-current Assets and Fixed Assets</a></li><li class="toctree-l4"><a href="accounting/payables/supplier_bills/ocr.html" class="reference internal">Digitize Vendor Bills with Optical Character Recognition (OCR)</a></li></ul></li><li class="toctree-l3"><span >Vendor Payments</span><ul ><li class="toctree-l4"><a href="accounting/payables/pay/sepa.html" class="reference internal">Pay with SEPA</a></li><li class="toctree-l4"><a href="accounting/payables/pay/check.html" class="reference internal">Pay by Checks</a></li><li class="toctree-l4"><a href="accounting/payables/pay/multiple.html" class="reference internal">Pay several bills at once</a></li></ul></li><li class="toctree-l3"><span >Miscellaneous</span><ul ><li class="toctree-l4"><a href="accounting/payables/misc/forecast.html" class="reference internal">Forecast future bills to pay</a></li></ul></li></ul></li><li class="toctree-l2"><span >Bank &amp; Cash</span><ul ><li class="toctree-l3"><span >Setup</span><ul ><li class="toctree-l4"><a href="accounting/bank/setup/bank_accounts.html" class="reference internal">Bank Accounts</a></li><li class="toctree-l4"><a href="accounting/bank/setup/manage_cash_register.html" class="reference internal">Manage a cash register</a></li><li class="toctree-l4"><a href="accounting/bank/setup/foreign_currency.html" class="reference internal">Manage a bank in a foreign currency</a></li></ul></li><li class="toctree-l3"><span >Bank Feeds</span><ul ><li class="toctree-l4"><a href="accounting/bank/feeds/bank_statements.html" class="reference internal">Bank Statements</a></li><li class="toctree-l4"><a href="accounting/bank/feeds/bank_synchronization.html" class="reference internal">Bank Synchronization: Automatic Import</a></li><li class="toctree-l4"><a href="accounting/bank/feeds/ponto.html" class="reference internal">Ponto as Bank Synchronization provider</a></li><li class="toctree-l4"><a href="accounting/bank/feeds/paypal.html" class="reference internal">Synchronize your PayPal account with Odoo</a></li></ul></li><li class="toctree-l3"><span >Miscellaneous</span><ul ><li class="toctree-l4"><a href="accounting/bank/misc/interbank.html" class="reference internal">Do a bank wire transfer from one bank to another</a></li></ul></li><li class="toctree-l3"><span >Bank Reconciliation</span><ul ><li class="toctree-l4"><a href="accounting/bank/reconciliation/use_cases.html" class="reference internal">Bank reconciliation process - use cases</a></li><li class="toctree-l4"><a href="accounting/bank/reconciliation/reconciliation_models.html" class="reference internal">Reconciliation Models</a></li></ul></li></ul></li><li class="toctree-l2"><span >Fiscality</span><ul ><li class="toctree-l3"><span >Taxes</span><ul ><li class="toctree-l4"><a href="accounting/fiscality/taxes/taxes.html" class="reference internal">Taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/default_taxes.html" class="reference internal">Default Taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/fiscal_positions.html" class="reference internal">Fiscal Positions (tax and account mapping)</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/taxcloud.html" class="reference internal">Get correct tax rates in the United States using TaxCloud</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/retention.html" class="reference internal">Manage withholding taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/B2B_B2C.html" class="reference internal">Manage prices for B2B (tax excluded) and B2C (tax included)</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/cash_basis_taxes.html" class="reference internal">Manage cash basis taxes</a></li><li class="toctree-l4"><a href="accounting/fiscality/taxes/vat_validation.html" class="reference internal">VIES VAT numbers validation</a></li></ul></li><li class="toctree-l3"><span >Fiscal Year</span><ul ><li class="toctree-l4"><a href="accounting/fiscality/fiscal_year/fiscal_year.html" class="reference internal">Manage Fiscal Years</a></li><li class="toctree-l4"><a href="accounting/fiscality/fiscal_year/close_fiscal_year.html" class="reference internal">Do a year end in Odoo (close a fiscal year)</a></li></ul></li></ul></li><li class="toctree-l2"><span >Reporting</span><ul ><li class="toctree-l3"><span >Overview</span><ul ><li class="toctree-l4"><a href="accounting/reporting/overview/main_reports.html" class="reference internal">Main reports available</a></li><li class="toctree-l4"><a href="accounting/reporting/overview/customize.html" class="reference internal">Create a customized reports with your own formulas</a></li></ul></li><li class="toctree-l3"><span >Declarations</span><ul ><li class="toctree-l4"><a href="accounting/reporting/declarations/tax_returns.html" class="reference internal">Tax Return (VAT Declaration)</a></li></ul></li></ul></li><li class="toctree-l2"><span >Others</span><ul ><li class="toctree-l3"><span >Analytic</span><ul ><li class="toctree-l4"><a href="accounting/others/analytic/usage.html" class="reference internal">Analytic account use cases</a></li><li class="toctree-l4"><a href="accounting/others/analytic/timesheets.html" class="reference internal">Track costs of human resources with timesheets</a></li><li class="toctree-l4"><a href="accounting/others/analytic/purchases_expenses.html" class="reference internal">Track costs of purchases, expenses, subcontracting</a></li></ul></li><li class="toctree-l3"><span >Adviser</span><ul ><li class="toctree-l4"><a href="accounting/others/adviser/budget.html" class="reference internal">Manage a financial budget</a></li></ul></li><li class="toctree-l3"><span >Multicurrency</span><ul ><li class="toctree-l4"><a href="accounting/others/multicurrencies/how_it_works.html" class="reference internal">Odoo’s multi-currency system</a></li><li class="toctree-l4"><a href="accounting/others/multicurrencies/invoices_payments.html" class="reference internal">Manage invoices and payment in multiple currencies</a></li><li class="toctree-l4"><a href="accounting/others/multicurrencies/exchange.html" class="reference internal">Record exchange rates at payments</a></li></ul></li><li class="toctree-l3"><span >Inventory</span><ul ><li class="toctree-l4"><a href="accounting/others/inventory/avg_price_valuation.html" class="reference internal">Impact on the average price valuation when returning goods</a></li><li class="toctree-l4"><a href="inventory/management/reporting/inventory_valuation_config.html" class="reference internal">Inventory valuation configuration</a></li></ul></li></ul></li><li class="toctree-l2"><span >Fiscal Localizations</span><ul ><li class="toctree-l3"><span >Overview</span><ul ><li class="toctree-l4"><a href="accounting/fiscal_localizations/overview/fiscal_localization_packages.html" class="reference internal">Fiscal Localization Packages</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/overview/localizations_list.html" class="reference internal">List of supported countries</a></li></ul></li><li class="toctree-l3"><span >Localizations</span><ul ><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/argentina.html" class="reference internal">Argentina</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/chile.html" class="reference internal">Chile</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/colombia.html" class="reference internal">Colombia</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/colombia_ES.html" class="reference internal">Colombia (ES)</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/france.html" class="reference internal">France</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/germany.html" class="reference internal">Germany</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/indonesia.html" class="reference internal">Indonesia</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/italy_IT.html" class="reference internal">Italy (IT)</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/mexico.html" class="reference internal">Mexico</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/netherlands.html" class="reference internal">Netherlands</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/spain.html" class="reference internal">Spain</a></li><li class="toctree-l4"><a href="accounting/fiscal_localizations/localizations/switzerland.html" class="reference internal">Switzerland</a></li></ul></li></ul></li></ul></li><li class="toctree-l1"><span >Subscriptions</span><ul ><li class="toctree-l2"><span >Configuration</span><ul ><li class="toctree-l3"><a href="subscriptions/configuration/subscription_templates.html" class="reference internal">Use subscription templates</a></li><li class="toctree-l3"><a href="subscriptions/configuration/subscription_products.html" class="reference internal">Add subscription products</a></li></ul></li><li class="toctree-l2"><span >Sales flow</span><ul ><li class="toctree-l3"><a href="subscriptions/sales_flow/create_a_quotation.html" class="reference internal">Create a quotation using subscription products</a></li><li class="toctree-l3"><a href="subscriptions/sales_flow/renewals.html" class="reference internal">Renew a subscription</a></li><li class="toctree-l3"><a href="subscriptions/sales_flow/upselling.html" class="reference internal">Upsell a subscription</a></li><li class="toctree-l3"><a href="subscriptions/sales_flow/closing.html" class="reference internal">Close a subscription</a></li></ul></li><li class="toctree-l2"><span >Follow-up</span><ul ><li class="toctree-l3"><a href="subscriptions/follow_up/automatic_alerts.html" class="reference internal">Set up automatic alerts</a></li></ul></li><li class="toctree-l2"><span >Reporting</span><ul ><li class="toctree-l3"><a href="subscriptions/reporting/subscription_reports.html" class="reference internal">Generate subscription reports</a></li></ul></li></ul></li><li class="toctree-l1"><span >Project</span><ul ><li class="toctree-l2"><span >Tasks</span><ul ><li class="toctree-l3"><a href="project/tasks/email_alias.html" class="reference internal">Create Project’s Tasks from an Email Alias</a></li></ul></li><li class="toctree-l2"><span >Planning</span><ul ><li class="toctree-l3"><a href="project/planning/forecast.html" class="reference internal">Forecast Resources Across Projects</a></li></ul></li></ul></li><li class="toctree-l1"><span >Timesheets</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="timesheets/overview/time_off.html" class="reference internal">Create Timesheets upon Time Off Validation</a></li></ul></li></ul></li><li class="toctree-l1"><span >Planning</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="planning/overview/duplicate_a_planning.html" class="reference internal">Create a Schedule and Make Encoding Easier</a></li><li class="toctree-l3"><a href="planning/overview/send_planned_shifts.html" class="reference internal">Send Planned Shifts and Give Employees Autonomy Over Shifts</a></li></ul></li></ul></li><li class="toctree-l1"><span >Field Service</span><ul ><li class="toctree-l2"><span >Sales</span><ul ><li class="toctree-l3"><a href="fsm/sales/onsite_tasks_from_sales_orders.html" class="reference internal">Create onsite interventions from sales orders</a></li></ul></li><li class="toctree-l2"><span >Helpdesk</span><ul ><li class="toctree-l3"><a href="fsm/helpdesk/plan_onsite.html" class="reference internal">Plan onsite interventions from helpdesk tickets</a></li></ul></li></ul></li><li class="toctree-l1"><span >Sign</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="sign/overview/signature_validity.html" class="reference internal">Validity of electronic signatures</a></li></ul></li></ul></li><li class="toctree-l1"><span >Point of Sale</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="point_of_sale/overview/getting_started.html" class="reference internal">Getting started</a></li><li class="toctree-l3"><a href="point_of_sale/overview/register.html" class="reference internal">Register customers</a></li></ul></li><li class="toctree-l2"><span >Shop Features</span><ul ><li class="toctree-l3"><a href="point_of_sale/shop/invoice.html" class="reference internal">Invoice from the PoS interface</a></li><li class="toctree-l3"><a href="point_of_sale/shop/cash_control.html" class="reference internal">Set-up Cash Control in Point of Sale</a></li><li class="toctree-l3"><a href="point_of_sale/shop/barcode.html" class="reference internal">Using barcodes in PoS</a></li><li class="toctree-l3"><a href="point_of_sale/shop/multicashiers.html" class="reference internal">Log in with employee</a></li><li class="toctree-l3"><a href="point_of_sale/shop/reprint.html" class="reference internal">Reprint Receipts</a></li><li class="toctree-l3"><a href="point_of_sale/shop/cash_rounding.html" class="reference internal">Cash Rounding</a></li></ul></li><li class="toctree-l2"><span >Restaurant Features</span><ul ><li class="toctree-l3"><a href="point_of_sale/restaurant/restaurant.html" class="reference internal">Manage your tables</a></li><li class="toctree-l3"><a href="point_of_sale/restaurant/split.html" class="reference internal">Offer a bill-splitting option</a></li><li class="toctree-l3"><a href="point_of_sale/restaurant/bill_printing.html" class="reference internal">Print the Bill</a></li><li class="toctree-l3"><a href="point_of_sale/restaurant/kitchen_printing.html" class="reference internal">Print orders at the kitchen or bar</a></li><li class="toctree-l3"><a href="point_of_sale/restaurant/fiscal_position.html" class="reference internal">Using fiscal positions in PoS</a></li><li class="toctree-l3"><a href="point_of_sale/restaurant/tips.html" class="reference internal">Integrate a tip option into payment</a></li></ul></li><li class="toctree-l2"><span >Payment Terminals</span><ul ><li class="toctree-l3"><a href="point_of_sale/payment/ingenico.html" class="reference internal">Connect an Ingenico Payment Terminal to your PoS</a></li><li class="toctree-l3"><a href="point_of_sale/payment/vantiv.html" class="reference internal">Connect a Vantiv Payment Terminal to your PoS</a></li><li class="toctree-l3"><a href="point_of_sale/payment/six.html" class="reference internal">Connect a SIX Payment Terminal to your PoS</a></li></ul></li><li class="toctree-l2"><span >Pricing Features</span><ul ><li class="toctree-l3"><a href="point_of_sale/advanced_pricing_features/discounts.html" class="reference internal">Apply Discounts</a></li><li class="toctree-l3"><a href="point_of_sale/advanced_pricing_features/discount_tags.html" class="reference internal">Using discount tags with a barcode scanner</a></li><li class="toctree-l3"><a href="point_of_sale/advanced_pricing_features/loyalty.html" class="reference internal">Manage a loyalty program</a></li><li class="toctree-l3"><a href="point_of_sale/advanced_pricing_features/pricelists.html" class="reference internal">Using Pricelists in Point of Sale</a></li></ul></li><li class="toctree-l2"><span >Fiscal Data Modules</span><ul ><li class="toctree-l3"><a href="point_of_sale/belgian_fdm/setup.html" class="reference internal">Setting up the Fiscal Data Module with the Odoo POS</a></li></ul></li></ul></li><li class="toctree-l1"><span >Inventory</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><span >Process Overview</span><ul ><li class="toctree-l4"><a href="inventory/overview/process/receive_in_stock.html" class="reference internal">Receive Products in Stock</a></li><li class="toctree-l4"><a href="inventory/overview/process/deliver_from_stock.html" class="reference internal">Deliver Products from Stock</a></li><li class="toctree-l4"><a href="inventory/overview/process/initial_stock.html" class="reference internal">Set your Initial Stock</a></li></ul></li></ul></li><li class="toctree-l2"><span >Warehouse Management</span><ul ><li class="toctree-l3"><span >Products</span><ul ><li class="toctree-l4"><a href="inventory/management/products/uom.html" class="reference internal">Use Different Units of Measure</a></li><li class="toctree-l4"><a href="inventory/management/products/usage.html" class="reference internal">When Should you Use Packages, Units of Measure or Special Packaging?</a></li><li class="toctree-l4"><a href="inventory/management/products/strategies.html" class="reference internal">How to select the right replenishment strategy</a></li></ul></li><li class="toctree-l3"><span >Warehouses</span><ul ><li class="toctree-l4"><a href="inventory/management/warehouses/difference_warehouse_location.html" class="reference internal">What is the difference between warehouses and locations?</a></li><li class="toctree-l4"><a href="inventory/management/warehouses/warehouse_creation.html" class="reference internal">Create a New Warehouse</a></li><li class="toctree-l4"><a href="inventory/management/warehouses/location_creation.html" class="reference internal">Create a New Location</a></li></ul></li><li class="toctree-l3"><span >Inventory Adjustment</span><ul ><li class="toctree-l4"><a href="inventory/management/replenishment_strategies/min_stock_rule_vs_mto.html" class="reference internal">Choose Between Reordering Rules and Make to Order</a></li><li class="toctree-l4"><a href="inventory/management/replenishment_strategies/virtual_warehouses.html" class="reference internal">Resupply from another Warehouse</a></li></ul></li><li class="toctree-l3"><span >Delivery Orders</span><ul ><li class="toctree-l4"><a href="inventory/management/delivery/inventory_flow.html" class="reference internal">How to choose the right inventory flow to handle delivery orders?</a></li><li class="toctree-l4"><a href="inventory/management/delivery/one_step.html" class="reference internal">Process Delivery Orders in one Step (Shipping)</a></li><li class="toctree-l4"><a href="inventory/management/delivery/two_steps.html" class="reference internal">Process Delivery Orders in two Steps (Pick + Ship)</a></li><li class="toctree-l4"><a href="inventory/management/delivery/three_steps.html" class="reference internal">Process Delivery Orders in three Steps (Pick + Pack + Ship)</a></li><li class="toctree-l4"><a href="inventory/management/delivery/dropshipping.html" class="reference internal">Send Products to Customers Directly from Suppliers (Drop-shipping)</a></li><li class="toctree-l4"><a href="inventory/management/delivery/label_type.html" class="reference internal">How can I change the label type?</a></li><li class="toctree-l4"><a href="inventory/management/delivery/packaging_type.html" class="reference internal">Deliver Products in Packages</a></li><li class="toctree-l4"><a href="inventory/management/delivery/delivery_countries.html" class="reference internal">How can I limit a delivery method to a certain number of countries?</a></li><li class="toctree-l4"><a href="inventory/management/delivery/cancel_order.html" class="reference internal">How do I cancel a delivery order?</a></li></ul></li><li class="toctree-l3"><span >Incoming Shipments</span><ul ><li class="toctree-l4"><a href="inventory/management/incoming/handle_receipts.html" class="reference internal">How to choose the right flow to handle receipts?</a></li><li class="toctree-l4"><a href="inventory/management/incoming/one_step.html" class="reference internal">Process a Receipt in one step (Receipt)</a></li><li class="toctree-l4"><a href="inventory/management/incoming/two_steps.html" class="reference internal">Process a Receipt in two steps (Input + Stock)</a></li><li class="toctree-l4"><a href="inventory/management/incoming/three_steps.html" class="reference internal">Process a Receipt in three steps (Input + Quality + Stock)</a></li></ul></li><li class="toctree-l3"><span >Miscellaneous Operations</span><ul ><li class="toctree-l4"><a href="inventory/management/misc/scrap.html" class="reference internal">Scrap Products</a></li><li class="toctree-l4"><a href="inventory/management/misc/owned_stock.html" class="reference internal">Manage Stock that you don’t own</a></li><li class="toctree-l4"><a href="inventory/management/misc/email_delivery.html" class="reference internal">Send Automated Emails at Delivery</a></li><li class="toctree-l4"><a href="inventory/management/misc/sms_delivery.html" class="reference internal">Send Automated SMS at Delivery</a></li><li class="toctree-l4"><a href="inventory/management/misc/batch_transfers.html" class="reference internal">Process Batch Transfers</a></li></ul></li><li class="toctree-l3"><span >Planning</span><ul ><li class="toctree-l4"><a href="inventory/management/planning/scheduled_dates.html" class="reference internal">How is the Scheduled Delivery Date Computed</a></li><li class="toctree-l4"><a href="inventory/management/planning/schedulers.html" class="reference internal">Configure and Run Schedulers</a></li></ul></li><li class="toctree-l3"><span >Lots and Serial Numbers</span><ul ><li class="toctree-l4"><a href="inventory/management/lots_serial_numbers/differences.html" class="reference internal">What’s the difference between lots and serial numbers?</a></li><li class="toctree-l4"><a href="inventory/management/lots_serial_numbers/serial_numbers.html" class="reference internal">Work with serial numbers</a></li><li class="toctree-l4"><a href="inventory/management/lots_serial_numbers/lots.html" class="reference internal">Manage lots of identical products</a></li><li class="toctree-l4"><a href="inventory/management/lots_serial_numbers/expiration_dates.html" class="reference internal">Manage expiration dates</a></li></ul></li><li class="toctree-l3"><span >Valuation Methods</span><ul ><li class="toctree-l4"><a href="inventory/management/reporting/inventory_valuation_config.html" class="reference internal">Inventory valuation configuration</a></li><li class="toctree-l4"><a href="inventory/management/reporting/using_inventory_valuation.html" class="reference internal">Using the inventory valuation</a></li><li class="toctree-l4"><a href="inventory/management/reporting/integrating_landed_costs.html" class="reference internal">Integrating additional costs to products (landed costs)</a></li><li class="toctree-l4"><a href="accounting/others/inventory/avg_price_valuation.html" class="reference internal">Impact on the average price valuation when returning goods</a></li></ul></li></ul></li><li class="toctree-l2"><span >Shipping</span><ul ><li class="toctree-l3"><span >Shipping Setup</span><ul ><li class="toctree-l4"><a href="inventory/shipping/setup/delivery_method.html" class="reference internal">How to setup a delivery method?</a></li><li class="toctree-l4"><a href="inventory/shipping/setup/third_party_shipper.html" class="reference internal">How to integrate a third party shipper?</a></li><li class="toctree-l4"><a href="inventory/shipping/setup/ups_credentials.html" class="reference internal">How to get UPS credentials for integration with Odoo?</a></li><li class="toctree-l4"><a href="inventory/shipping/setup/dhl_credentials.html" class="reference internal">How to get DHL credentials for integration with Odoo?</a></li></ul></li><li class="toctree-l3"><span >Shipping Operations</span><ul ><li class="toctree-l4"><a href="inventory/shipping/operation/invoicing.html" class="reference internal">How to invoice the shipping cost to the customer?</a></li><li class="toctree-l4"><a href="inventory/shipping/operation/multipack.html" class="reference internal">How to manage multiple packs for the same delivery order?</a></li><li class="toctree-l4"><a href="inventory/shipping/operation/labels.html" class="reference internal">How to print shipping labels?</a></li><li class="toctree-l4"><a href="inventory/shipping/operation/cancel.html" class="reference internal">How to cancel a shipping request to a shipper?</a></li></ul></li></ul></li><li class="toctree-l2"><span >Advanced Routes</span><ul ><li class="toctree-l3"><span >Concepts</span><ul ><li class="toctree-l4"><a href="inventory/routes/concepts/use-routes.html" class="reference internal">Using Routes and Pull/Push Rules</a></li><li class="toctree-l4"><a href="inventory/routes/concepts/inter_warehouse.html" class="reference internal">How to do inter-warehouses transfers?</a></li><li class="toctree-l4"><a href="inventory/routes/concepts/cross_dock.html" class="reference internal">Organize a cross-dock in a warehouse</a></li><li class="toctree-l4"><a href="inventory/routes/concepts/stock_warehouses.html" class="reference internal">Taking stock from different warehouses</a></li></ul></li><li class="toctree-l3"><span >Putaway &amp; Removal Strategies</span><ul ><li class="toctree-l4"><a href="inventory/routes/strategies/putaway.html" class="reference internal">What is a Putaway Rule?</a></li><li class="toctree-l4"><a href="inventory/routes/strategies/removal.html" class="reference internal">What is a Removal Strategy (FIFO, LIFO, and FEFO)?</a></li></ul></li></ul></li><li class="toctree-l2"><span >Barcodes</span><ul ><li class="toctree-l3"><span >Setup</span><ul ><li class="toctree-l4"><a href="inventory/barcode/setup/hardware.html" class="reference internal">Set up your barcode scanner</a></li><li class="toctree-l4"><a href="inventory/barcode/setup/software.html" class="reference internal">Activate the Barcodes in Odoo</a></li></ul></li><li class="toctree-l3"><span >Daily Operations</span><ul ><li class="toctree-l4"><a href="inventory/barcode/operations/adjustments.html" class="reference internal">Process to an Inventory Adjustment with Barcodes</a></li><li class="toctree-l4"><a href="inventory/barcode/operations/internal.html" class="reference internal">Process to Transfers</a></li><li class="toctree-l4"><a href="inventory/barcode/operations/transfers_scratch.html" class="reference internal">Create a Transfer from Scratch</a></li><li class="toctree-l4"><a href="inventory/barcode/operations/barcode_nomenclature.html" class="reference internal">Overview</a></li></ul></li></ul></li></ul></li><li class="toctree-l1"><span >Manufacturing</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="https://www.odoo.com/page/mrp-cloud-software" class="reference external">I want to use Odoo Manufacturing</a></li></ul></li><li class="toctree-l2"><span >Manufacturing Management</span><ul ><li class="toctree-l3"><a href="manufacturing/management/bill_configuration.html" class="reference internal">Create Bills of Materials</a></li><li class="toctree-l3"><a href="manufacturing/management/manufacturing_order.html" class="reference internal">Process Manufacturing Orders</a></li><li class="toctree-l3"><a href="manufacturing/management/kit_shipping.html" class="reference internal">Sell sets of products as kits</a></li><li class="toctree-l3"><a href="manufacturing/management/product_variants.html" class="reference internal">How to manage BoMs for product variants</a></li><li class="toctree-l3"><a href="manufacturing/management/sub_assemblies.html" class="reference internal">Manage semi-finished products</a></li><li class="toctree-l3"><a href="manufacturing/management/flexible_components_consumption.html" class="reference internal">Use flexible components consumption</a></li><li class="toctree-l3"><a href="manufacturing/management/plan_work_orders.html" class="reference internal">Plan Work Orders</a></li><li class="toctree-l3"><a href="manufacturing/management/alternative_wc.html" class="reference internal">Using an alternative Work Center</a></li><li class="toctree-l3"><a href="manufacturing/management/unbuild.html" class="reference internal">Unbuild a product</a></li><li class="toctree-l3"><a href="manufacturing/management/subcontracting.html" class="reference internal">Subcontract your Manufacturing</a></li><li class="toctree-l3"><a href="manufacturing/management/routing_kit_bom.html" class="reference internal">Set routings on kit Bills of materials</a></li><li class="toctree-l3"><a href="manufacturing/management/use_mps.html" class="reference internal">Use the Master Production Schedule</a></li></ul></li><li class="toctree-l2"><span >Repair Management</span><ul ><li class="toctree-l3"><a href="manufacturing/repair/repair.html" class="reference internal">Repair products</a></li></ul></li></ul></li><li class="toctree-l1"><span >Quality</span><ul ><li class="toctree-l2"><span >Control</span><ul ><li class="toctree-l3"><a href="quality/control/control_points.html" class="reference internal">Define Quality Control Points</a></li></ul></li><li class="toctree-l2"><span >Alert</span><ul ><li class="toctree-l3"><a href="quality/alert/alert_mo.html" class="reference internal">Generate a Quality Alert from a Manufacturing Order</a></li><li class="toctree-l3"><a href="quality/alert/alert_transfer.html" class="reference internal">Generate a Quality Alert from a Transfer</a></li></ul></li><li class="toctree-l2"><span >Checks</span><ul ><li class="toctree-l3"><a href="quality/checks/quality_mo.html" class="reference internal">Perform Quality Checks on Manufacturing Orders</a></li><li class="toctree-l3"><a href="quality/checks/quality_transfers.html" class="reference internal">Perform Quality Checks on Transfers</a></li></ul></li></ul></li><li class="toctree-l1"><span >Internet of Things (IoT)</span><ul ><li class="toctree-l2"><span >Configuration</span><ul ><li class="toctree-l3"><a href="iot/config/connect.html" class="reference internal">Connect an IoT Box to your database</a></li><li class="toctree-l3"><a href="iot/config/pos.html" class="reference internal">Use the IoT Box for the PoS</a></li><li class="toctree-l3"><a href="iot/config/flash_sdcard.html" class="reference internal">Flashing your SD Card</a></li><li class="toctree-l3"><a href="iot/config/troubleshooting.html" class="reference internal">Troubleshooting</a></li></ul></li><li class="toctree-l2"><span >Devices</span><ul ><li class="toctree-l3"><a href="iot/devices/measurement_tool.html" class="reference internal">Connect a Measurement Tool</a></li><li class="toctree-l3"><a href="iot/devices/camera.html" class="reference internal">Connect a Camera</a></li><li class="toctree-l3"><a href="iot/devices/footswitch.html" class="reference internal">Connect a Footswitch</a></li><li class="toctree-l3"><a href="iot/devices/printer.html" class="reference internal">Connect a Printer</a></li></ul></li><li class="toctree-l2"><span >Payment Terminals</span><ul ><li class="toctree-l3"><a href="point_of_sale/payment/ingenico.html" class="reference internal">Connect an Ingenico Payment Terminal to your PoS</a></li><li class="toctree-l3"><a href="point_of_sale/payment/vantiv.html" class="reference internal">Connect a Vantiv Payment Terminal to your PoS</a></li><li class="toctree-l3"><a href="point_of_sale/payment/six.html" class="reference internal">Connect a SIX Payment Terminal to your PoS</a></li></ul></li></ul></li><li class="toctree-l1"><span >Website</span><ul ><li class="toctree-l2"><span >Publish</span><ul ><li class="toctree-l3"><a href="website/publish/domain_name.html" class="reference internal">How to use my own domain name</a></li><li class="toctree-l3"><a href="website/publish/translate.html" class="reference internal">How to translate my website</a></li><li class="toctree-l3"><a href="website/publish/multi_website.html" class="reference internal">Manage Multi Websites</a></li></ul></li><li class="toctree-l2"><span >Optimize</span><ul ><li class="toctree-l3"><a href="website/optimize/seo.html" class="reference internal">How to do Search Engine Optimisation (SEO) in Odoo</a></li><li class="toctree-l3"><a href="website/optimize/google_analytics.html" class="reference internal">How to track your website’s traffic in Google Analytics</a></li><li class="toctree-l3"><a href="website/optimize/google_analytics_dashboard.html" class="reference internal">How to track your website traffic from your Odoo Dashboard</a></li><li class="toctree-l3"><a href="website/optimize/link_tracker.html" class="reference internal">Track clicks and visitors using Link Trackers</a></li></ul></li></ul></li><li class="toctree-l1"><span >eCommerce</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="ecommerce/overview/introduction.html" class="reference internal">Introduction to Odoo eCommerce</a></li></ul></li><li class="toctree-l2"><span >Get started</span><ul ><li class="toctree-l3"><a href="ecommerce/getting_started/product_page.html" class="reference internal">How to build a product page</a></li><li class="toctree-l3"><a href="ecommerce/getting_started/catalog.html" class="reference internal">How to customize my catalog page</a></li></ul></li><li class="toctree-l2"><span >Manage my products</span><ul ><li class="toctree-l3"><a href="ecommerce/managing_products/multi_images.html" class="reference internal">How to display several images per product</a></li><li class="toctree-l3"><a href="ecommerce/managing_products/variants.html" class="reference internal">How to manage product variants</a></li><li class="toctree-l3"><a href="ecommerce/managing_products/stock.html" class="reference internal">How to show product availability</a></li><li class="toctree-l3"><a href="sales/products_prices/products/import.html" class="reference internal">How to import products with categories and variants</a></li></ul></li><li class="toctree-l2"><span >Collect taxes</span><ul ><li class="toctree-l3"><a href="accounting/fiscality/taxes/default_taxes.html" class="reference internal">Default Taxes</a></li><li class="toctree-l3"><a href="accounting/fiscality/taxes/fiscal_positions.html" class="reference internal">Fiscal Positions (tax and account mapping)</a></li><li class="toctree-l3"><a href="accounting/fiscality/taxes/taxes.html" class="reference internal">Taxes</a></li><li class="toctree-l3"><a href="accounting/fiscality/taxes/taxcloud.html" class="reference internal">Get correct tax rates in the United States using TaxCloud</a></li></ul></li><li class="toctree-l2"><span >Get paid</span><ul ><li class="toctree-l3"><a href="ecommerce/shopper_experience/payment_acquirer.html" class="reference internal">How to manage orders paid with payment acquirers</a></li><li class="toctree-l3"><a href="ecommerce/shopper_experience/portal.html" class="reference internal">How customers can access their customer account</a></li></ul></li><li class="toctree-l2"><span >Launch my website</span><ul ><li class="toctree-l3"><a href="website/publish/domain_name.html" class="reference internal">How to use my own domain name</a></li><li class="toctree-l3"><a href="website/publish/on-premise_geo-ip-installation.html" class="reference internal">Geo IP installation (on-premises database)</a></li><li class="toctree-l3"><a href="website/publish/translate.html" class="reference internal">How to translate my website</a></li></ul></li><li class="toctree-l2"><span >Maximize my revenue</span><ul ><li class="toctree-l3"><a href="ecommerce/maximizing_revenue/upselling.html" class="reference internal">How to sell pricier alternative products (upselling)</a></li><li class="toctree-l3"><a href="ecommerce/maximizing_revenue/cross_selling.html" class="reference internal">How to sell accessories and optional products (cross-selling)</a></li><li class="toctree-l3"><a href="ecommerce/maximizing_revenue/reviews.html" class="reference internal">How to enable comments &amp; rating</a></li><li class="toctree-l3"><a href="ecommerce/maximizing_revenue/pricing.html" class="reference internal">How to adapt the prices to my website visitors</a></li><li class="toctree-l3"><a href="ecommerce/maximizing_revenue/promo_code.html" class="reference internal">How to create &amp; share promotional codes</a></li></ul></li></ul></li><li class="toctree-l1"><span >Helpdesk</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="helpdesk/overview/getting_started.html" class="reference internal">Getting Started</a></li><li class="toctree-l3"><a href="helpdesk/overview/sla.html" class="reference internal">Service Level Agreements (SLA)</a></li><li class="toctree-l3"><a href="helpdesk/overview/receiving_tickets.html" class="reference internal">Start Receiving Tickets</a></li><li class="toctree-l3"><a href="helpdesk/overview/reports.html" class="reference internal">Reports for a Better Support</a></li><li class="toctree-l3"><a href="helpdesk/overview/forum_and_elearning.html" class="reference internal">Forum and eLearning</a></li><li class="toctree-l3"><a href="helpdesk/overview/ratings.html" class="reference internal">Ratings</a></li></ul></li><li class="toctree-l2"><span >Timesheet and Invoice</span><ul ><li class="toctree-l3"><a href="helpdesk/timesheet_and_invoice/invoice_time.html" class="reference internal">Invoice Time Spent on Tickets (Prepaid Support Services)</a></li><li class="toctree-l3"><a href="helpdesk/timesheet_and_invoice/reinvoice_from_project.html" class="reference internal">Invoice Time Spent on Tickets (Postpaid Support Services)</a></li></ul></li><li class="toctree-l2"><span >Advanced</span><ul ><li class="toctree-l3"><a href="helpdesk/advanced/after_sales.html" class="reference internal">After Sales Features</a></li><li class="toctree-l3"><a href="helpdesk/advanced/close_tickets.html" class="reference internal">Allow Customers to Close their Tickets</a></li></ul></li></ul></li><li class="toctree-l1"><span >Live Chat</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="livechat/overview/get_started.html" class="reference internal">Get Started with Live Chat</a></li><li class="toctree-l3"><a href="livechat/overview/ratings.html" class="reference internal">Ratings</a></li><li class="toctree-l3"><a href="livechat/overview/responses.html" class="reference internal">Commands and Canned Responses</a></li></ul></li></ul></li><li class="toctree-l1"><span >Email Marketing</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="email_marketing/overview/send_emails.html" class="reference internal">Send Emails Marketing and Manage Campaigns</a></li><li class="toctree-l3"><a href="email_marketing/overview/mailing_lists.html" class="reference internal">Work with Mailing Lists</a></li><li class="toctree-l3"><a href="email_marketing/overview/manage_unsubscriptions.html" class="reference internal">Manage Unsubscriptions and Blacklist</a></li></ul></li></ul></li><li class="toctree-l1"><span >Social Marketing</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="social_marketing/overview/manage_social.html" class="reference internal">Manage Social Media Pages and Create Content</a></li><li class="toctree-l3"><a href="social_marketing/overview/push_notifications.html" class="reference internal">Use Web Push Notifications</a></li><li class="toctree-l3"><a href="social_marketing/overview/livechat.html" class="reference internal">Interact with Customers and Visitors with Live Chat</a></li><li class="toctree-l3"><a href="social_marketing/overview/campaigns.html" class="reference internal">Connecting to my Marketplace with Campaigns</a></li></ul></li></ul></li><li class="toctree-l1"><span >SMS Marketing</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="sms_marketing/overview/sms_mailing_reports.html" class="reference internal">Build, Send and Get Reports from a SMS Mailing</a></li><li class="toctree-l3"><a href="sms_marketing/overview/integrations_and_template.html" class="reference internal">Integrations and Templates</a></li><li class="toctree-l3"><a href="sms_marketing/overview/contact_lists_and_blacklist.html" class="reference internal">Contact Lists and Blacklist</a></li></ul></li><li class="toctree-l2"><span >Pricing and FAQ</span><ul ><li class="toctree-l3"><a href="sms_marketing/pricing/pricing_and_faq.html" class="reference internal">SMS Pricing and FAQ</a></li></ul></li></ul></li><li class="toctree-l1"><span >Marketing Automation</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="marketing_automation/overview/automate_actions.html" class="reference internal">Automate Actions and Create a Workflow</a></li><li class="toctree-l3"><a href="marketing_automation/overview/segment.html" class="reference internal">Segment the Database with Filters</a></li><li class="toctree-l3"><a href="marketing_automation/overview/test.html" class="reference internal">Launch a Test and Start a Campaign</a></li></ul></li><li class="toctree-l2"><span >Advanced</span><ul ><li class="toctree-l3"><a href="marketing_automation/advanced/understanding_metrics.html" class="reference internal">Understanding Metrics</a></li></ul></li></ul></li><li class="toctree-l1"><span >Events</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="events/overview/create_event.html" class="reference internal">Create your First Event</a></li><li class="toctree-l3"><a href="events/overview/tickets.html" class="reference internal">Selling Tickets</a></li><li class="toctree-l3"><a href="events/overview/track_attendees.html" class="reference internal">Track your Attendees</a></li><li class="toctree-l3"><a href="events/overview/track_talks.html" class="reference internal">Track and Manage Talks</a></li></ul></li><li class="toctree-l2"><span >Integrations</span><ul ><li class="toctree-l3"><a href="events/integrations/integration_sms.html" class="reference internal">Communicating about my Event using SMS Text Messages</a></li></ul></li></ul></li><li class="toctree-l1"><span >Survey</span><ul ><li class="toctree-l2"><span >Overview</span><ul ><li class="toctree-l3"><a href="survey/overview/create.html" class="reference internal">Get Started with Surveys</a></li><li class="toctree-l3"><a href="survey/overview/scoring.html" class="reference internal">Scoring Surveys</a></li><li class="toctree-l3"><a href="survey/overview/time_random.html" class="reference internal">Time and Randomize Questions</a></li></ul></li></ul></li><li class="toctree-l1"><a href="expense/expense.html" class="reference internal">Expenses</a></li><li class="toctree-l1"><span >Studio</span><ul ><li class="toctree-l2"><span >Concepts</span><ul ><li class="toctree-l3"><a href="studio/concepts/understanding_general.html" class="reference internal">Understanding General Concepts</a></li><li class="toctree-l3"><a href="studio/concepts/understanding_automated_actions.html" class="reference internal">Understanding Automated Actions</a></li></ul></li><li class="toctree-l2"><span >Use Cases</span><ul ><li class="toctree-l3"><a href="studio/use_cases/models_fields.html" class="reference internal">Advanced Use Cases: Creating Models and Adding Fields</a></li><li class="toctree-l3"><a href="studio/use_cases/filters_status_bar.html" class="reference internal">Advanced Use Cases: Filters and Status Bar</a></li><li class="toctree-l3"><a href="studio/use_cases/automated_actions.html" class="reference internal">Advanced Use Cases: Automated Actions</a></li><li class="toctree-l3"><a href="studio/use_cases/views.html" class="reference internal">Advanced Use Cases: Views</a></li></ul></li><li class="toctree-l2"><span >How To</span><ul ><li class="toctree-l3"><a href="studio/how_to/rainbow_man.html" class="reference internal">Customizing the Rainbow Man</a></li><li class="toctree-l3"><a href="studio/how_to/reports.html" class="reference internal">Customizing Reports</a></li><li class="toctree-l3"><a href="studio/how_to/export_import.html" class="reference internal">Export and Import Modules</a></li></ul></li></ul></li><li class="toctree-l1"><a href="mobile/firebase.html" class="reference internal">Mobile</a></li></ul></div></section>
+
+          </article>
+        </div>
+        
+        <div id="mask"></div>
+      </main>
+  </div>
+
+  <div class="floating_action_container">
+    <a id="floating_action" class="ripple" href="#">
+      <i class="mdi-action-explore"></i>
+    </a>
+    <div id="floating_action_menu">
+      <span class="bubble"></span>
+      <ul class="list-group content">
+        <li class="list-group-item ripple"><a>Cras justo odio</a></li>
+        <li class="list-group-item ripple"><a>Dapibus ac facilisis in</a></li>
+        <li class="list-group-item ripple"><a>Morbi leo risus</a></li>
+        <li class="list-group-item ripple"><a>Porta ac consectetur ac</a></li>
+        <li class="list-group-item ripple"><a>Vestibulum at eros</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div id="footer" class="container">
+      <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
+      <div class="row">
+        <div class="col-sm-7 col-md-7 col-lg-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Community</span>
+              <ul>
+                <li><a href="https://github.com/odoo/odoo">Github</a></li>
+                <li><a href="http://www.odoo.com/page/download">Download</a></li>
+                <li class="divider"></li>
+                <li><a href="http://runbot.odoo.com/runbot/repo/git-github-com-odoo-enterprise-7">Runbot</a></li>
+                <li><a href="https://github.com/odoo/odoo/wiki/Translations">Translations</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/odoo-community">Mailing Lists</a></li>
+                <li><a href="http://www.odoo.com/forum/help-1">Forum</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <span class="menu_title">Services</span>
+              <ul>
+                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/help">Support</a></li>
+                <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/partners">Find a partner</a></li>
+                <li><a href="http://www.odoo.com/page/become-a-partner">Become a partner</a></li>
+                <li class="divider"></li>
+                <li><a href="http://training.odoo.com/courses/odoo-functional">Training Center</a></li>
+                <li><a href="http://www.odoo.com/page/education-program">Education</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.odoo.com/page/security">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 mb64">
+              <span class="menu_title">About us</span>
+              <ul>
+                <li><a href="http://www.odoo.com/page/about-us">Our company</a></li>
+                <li><a href="http://www.odoo.com/page/contactus">Contact</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/event">Events</a></li>
+                <li><a href="http://www.odoo.com/blog">Blog</a></li>
+                <li><a href="http://www.odoo.com/blog/6">Customers</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/jobs">Jobs</a></li>
+                <li class="divider" />
+                <li><a href="http://www.odoo.com/page/legal">Legal</a> | <a href="http://www.odoo.com/privacy">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <p>
+            <small>
+              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              <br/><br/>
+              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="o_footer_bottom">
+      <div class="container">
+        <a class="small" href="http://www.odoo.com/page/website-builder">Website made with <span class="o_logo o_logo_inverse o_logo_15"></span></a>
+        <div class="social-links pull-right">
+          <a href="http://www.odoo.com/web/about/facebook"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.odoo.com/web/about/twitter"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@odoo.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
