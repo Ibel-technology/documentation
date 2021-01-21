@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Purchase in different units of measure than sales &#8212; Odoo 14.0 documentation</title>
+    <title>Purchase in different units of measure than sales &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Purchase Agreements" href="../agreements.html" />
-    <link rel="prev" title="Don’t run out of stock thanks to reordering rules" href="reordering.html" /> 
+    <link rel="prev" title="Don’t run out of stock thanks to reordering rules" href="reordering.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../purchase.html">Purchase</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Purchase in different units of measure than sales</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,58 +236,58 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Purchase in different units of measure than sales </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#enable-units-of-measure" class="reference ripple internal">Enable units of measure</a></li><li class="list-group-item"><a href="#specify-sales-and-purchase-units-of-measure" class="reference ripple internal">Specify sales and purchase units of measure</a><ul ><li class="list-group-item"><a href="#standard-units-of-measure" class="reference ripple internal">Standard units of measure</a></li><li class="list-group-item"><a href="#create-ynew-units-of-measure-and-units-of-measure-categories" class="reference ripple internal">Create ynew units of measure and units of measure categories</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/purchase/products/uom.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="purchase-in-different-units-of-measure-than-sales"><p >When you purchase a product, it may happen that your vendor uses a different unit of measure than
 you do when you sell it. This can cause confusion between sales and purchase representatives. It is
-also time-consuming to convert measures manually every time. With Odoo, you can configure your
-product once and let Odoo handle the conversion.</p><p >Consider the following examples:</p><ol ><li >You purchase orange juice from an American vendor, and they use <strong >gallons</strong>. However, your
+also time-consuming to convert measures manually every time. With Ibel, you can configure your
+product once and let Ibel handle the conversion.</p><p >Consider the following examples:</p><ol ><li >You purchase orange juice from an American vendor, and they use <strong >gallons</strong>. However, your
 customers are European and use <strong >liters</strong>.</li><li >You buy curtains from a vendor in the form of <strong >rolls</strong> and you sell pieces of the rolls to your
 customers using <strong >square meters</strong>.</li></ol></section><section id="enable-units-of-measure"><h2 >Enable units of measure</h2><p >Open your Sales app and go to <span class="menuselection">Configuration ‣ Settings</span>. Under Product Catalog,
 enable <em >Units of Measure</em>.</p><img src="../../_images/uom-enableoption.png" style="" class="img-responsive center-block"></section><section id="specify-sales-and-purchase-units-of-measure"><h2 >Specify sales and purchase units of measure</h2></section><section id="standard-units-of-measure"><h3 >Standard units of measure</h3><p >A variety of units of measure are available by default in your database. Each belongs to one of the
@@ -299,7 +299,7 @@ well as for other apps such as inventory). Then, select the <em >Purchase Unit o
 for purchases.</p><p >Back to the first example, if you purchase orange juice from your vendor in <strong >gallons</strong> and sell it
 to your customers in <strong >liters</strong>, first select <em >L</em> (liters) as the <em >Unit of Measure</em>, and <em >gal (US)</em>
 (gallons) as the <em >Purchase Unit of Measure</em>, then click on <em >Save</em>.</p><img src="../../_images/uom-productconfiguration.png" style="" class="img-responsive center-block"></section><section id="create-ynew-units-of-measure-and-units-of-measure-categories"><h3 >Create ynew units of measure and units of measure categories</h3><p >Sometimes you need to create your own units and categories, either because the measure is not
-pre-configured in Odoo or because the units do not relate with each other (e.g. kilos and
+pre-configured in Ibel or because the units do not relate with each other (e.g. kilos and
 centimeters).</p><p >If you take the second example where you buy curtains from a vendor in the form of <strong >rolls</strong> and you
 sell pieces of the rolls using <strong >square meters</strong>, you need to create a new <em >Units of Measure
 Category</em> in order to relate both units of measure.</p><p >To do so, go to <span class="menuselection">Configuration ‣ Units of Measure Categories</span>. Click on <em >Create</em>
@@ -307,7 +307,7 @@ and name the category.</p><img src="../../_images/uom-newcategory.png" style="" 
 ‣ Units of Measure</span>.</p><p >First, create the unit of measure used as the reference point for converting to other units of
 measure inside the category by clicking on <em >Create</em>. Name the unit and select the units of measure
 category you just created. For the <em >Type</em>, select <em >Reference Unit of Measure for this category
-type</em>. Enter the <em >Rounding Precision</em> you would like to use. The quantity computed by Odoo is always
+type</em>. Enter the <em >Rounding Precision</em> you would like to use. The quantity computed by Ibel is always
 a multiple of this value.</p><p >In the example, as you cannot purchase less than 1 roll and won’t use fractions of a roll as a unit
 of measure, you can enter 1.</p><img src="../../_images/uom-newreferenceunit.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >If you use a <em >Rounding Precision</em> inferior to 0.01, a warning message might appear stating
 that it is higher than the <em >Decimal Accuracy</em> and that it might cause inconsistencies. If you
@@ -317,11 +317,11 @@ accordingly. For example, if you want to use a rounding precision of 0.00001, se
 your reference unit. As <em >Type</em>, select <em >Smaller</em> or <em >Bigger than the reference Unit of Measure</em>,
 depending on your situation.</p><p >As the curtain roll equals to 100 square meters, you should select <em >Smaller</em>.</p><p >Next, you need to enter the <em >Ratio</em> between your reference unit and the second one. If the second
 unit is smaller, the <em >Ratio</em> should be greater than 1. If the second unit is larger, the ratio
-should be smaller than 1.</p><p >For your curtain roll, the ratio should be set to 100.</p><img src="../../_images/uom-secondunit.png" style="" class="img-responsive center-block"><p >You can now configure your product just as you would using Odoo’s standard units of measure.</p><img src="../../_images/uom-productconfigurationnewunit.png" style="" class="img-responsive center-block"></section>
+should be smaller than 1.</p><p >For your curtain roll, the ratio should be set to 100.</p><img src="../../_images/uom-secondunit.png" style="" class="img-responsive center-block"><p >You can now configure your product just as you would using Ibel’s standard units of measure.</p><img src="../../_images/uom-productconfigurationnewunit.png" style="" class="img-responsive center-block"></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -341,7 +341,7 @@ should be smaller than 1.</p><p >For your curtain roll, the ratio should be set 
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -363,7 +363,7 @@ should be smaller than 1.</p><p >For your curtain roll, the ratio should be set 
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -397,9 +397,9 @@ should be smaller than 1.</p><p >For your curtain roll, the ratio should be set 
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -416,6 +416,6 @@ should be smaller than 1.</p><p >For your curtain roll, the ratio should be set 
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

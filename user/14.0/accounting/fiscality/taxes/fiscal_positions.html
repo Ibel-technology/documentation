@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fiscal Positions (tax and account mapping) &#8212; Odoo 14.0 documentation</title>
+    <title>Fiscal Positions (tax and account mapping) &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Taxes" href="taxes.html" />
-    <link rel="prev" title="Default Taxes" href="default_taxes.html" /> 
+    <link rel="prev" title="Default Taxes" href="default_taxes.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../sales.html">Sales</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Fiscal Positions (tax and account mapping)</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,58 +242,58 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Fiscal Positions (tax and account mapping) </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#tax-and-account-mapping" class="reference ripple internal">Tax and Account Mapping</a></li><li class="list-group-item"><a href="#automatic-application" class="reference ripple internal">Automatic application</a></li></ul></li><li class="list-group-item"><a href="#application" class="reference ripple internal">Application</a><ul ><li class="list-group-item"><a href="#assign-a-fiscal-position-to-a-partner" class="reference ripple internal">Assign a Fiscal Position to a partner</a></li><li class="list-group-item"><a href="#choose-fiscal-positions-manually-on-sales-orders-invoices-and-bills" class="reference ripple internal">Choose Fiscal Positions manually on Sales Orders, Invoices, and Bills</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/fiscality/taxes/fiscal_positions.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="fiscal-positions-tax-and-account-mapping"><p >Default taxes and accounts are set on products and customers to create new transactions on the fly.
 However, you might have to use different taxes and record the transactions on different accounts,
 according to your customers’ and providers’ localizations and business types.</p><p ><strong >Fiscal Positions</strong> allow you to create <em >sets of rules</em> to automatically adapt the taxes and the
-accounts used for a transaction.</p><img src="../../../_images/fiscal-positions-intra-community.png" alt="Example: Belgian to Intra-Community tax mapping with Fiscal Positions in Odoo Accounting" style="" class="img-responsive center-block"><p >They can be applied in various ways:</p><ul ><li ><a href="#fiscal-positions-automatic" class="reference internal"><span class="std std-ref">automatically applied, based on some rules</span></a></li><li ><a href="#fiscal-positions-partner" class="reference internal"><span class="std std-ref">manually applied on a transaction</span></a></li><li ><a href="#fiscal-positions-transaction" class="reference internal"><span class="std std-ref">assigned to a partner, on its contact form</span></a></li></ul><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >A few Fiscal Positions are already preconfigured on your database, as part of your <a href="../../fiscal_localizations/overview/fiscal_localization_packages.html" class="reference internal alert-link"><span class="doc">Fiscal
+accounts used for a transaction.</p><img src="../../../_images/fiscal-positions-intra-community.png" alt="Example: Belgian to Intra-Community tax mapping with Fiscal Positions in Ibel Accounting" style="" class="img-responsive center-block"><p >They can be applied in various ways:</p><ul ><li ><a href="#fiscal-positions-automatic" class="reference internal"><span class="std std-ref">automatically applied, based on some rules</span></a></li><li ><a href="#fiscal-positions-partner" class="reference internal"><span class="std std-ref">manually applied on a transaction</span></a></li><li ><a href="#fiscal-positions-transaction" class="reference internal"><span class="std std-ref">assigned to a partner, on its contact form</span></a></li></ul><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >A few Fiscal Positions are already preconfigured on your database, as part of your <a href="../../fiscal_localizations/overview/fiscal_localization_packages.html" class="reference internal alert-link"><span class="doc">Fiscal
 Localization Package</span></a>.</p></div></section><section id="configuration"><h2 >Configuration</h2></section><section id="tax-and-account-mapping"><h3 >Tax and Account Mapping</h3><p >To edit or create a Fiscal Position, go to <span class="menuselection">Accounting ‣ Configuration ‣ Fiscal
 Positions</span>, and open the entry you want to modify or click on <em >Create</em>.</p><p >The mapping of taxes and accounts is based on the default taxes and accounts defined in the
 products’ forms.</p><ul ><li >To map to another tax or account, fill out the right column (<strong >Tax to Apply</strong>/<strong >Account to Use
@@ -304,12 +304,12 @@ out their billing details.</p></div><div role="alert" class="alert alert-warning
 Fiscal Position to apply if the conditions are met in multiple Fiscal Positions.</p><p >For example, if the first Fiscal Position targets <em >country A</em>, and the second Fiscal Position
 targets a <em >Country Group</em> that also comprises <em >country A</em>, only the first Fiscal Position will be
 applied to customers from <em >country A</em>.</p></div></section><section id="application"><i id="fiscal-positions-application"></i><h2 >Application</h2></section><section id="assign-a-fiscal-position-to-a-partner"><i id="fiscal-positions-partner"></i><h3 >Assign a Fiscal Position to a partner</h3><p >You can manually define which Fiscal Position must be used by default for a specific partner.</p><p >To do so, open the partner’s contact form, go to the <strong >Sales &amp; Purchase</strong> tab, edit the <strong >Fiscal
-Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_images/fiscal-positions-partner.png" alt="Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="choose-fiscal-positions-manually-on-sales-orders-invoices-and-bills"><i id="fiscal-positions-transaction"></i><h3 >Choose Fiscal Positions manually on Sales Orders, Invoices, and Bills</h3><p >To manually select which Fiscal Position to use for a new Sales Order, Invoice, or Bill, go to the
-<strong >Other Info</strong> tab and select the right <strong >Fiscal Position</strong> <em >before</em> adding product lines.</p><img src="../../../_images/fiscal-positions-transaction.png" alt="Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Odoo Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="taxes.html" class="reference internal alert-link"><span class="doc">Taxes</span></a></li><li ><a href="taxcloud.html" class="reference internal alert-link"><span class="doc">Get correct tax rates in the United States using TaxCloud</span></a></li><li ><a href="B2B_B2C.html" class="reference internal alert-link"><span class="doc">Manage prices for B2B (tax excluded) and B2C (tax included)</span></a></li></ul></div></section>
+Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_images/fiscal-positions-partner.png" alt="Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="choose-fiscal-positions-manually-on-sales-orders-invoices-and-bills"><i id="fiscal-positions-transaction"></i><h3 >Choose Fiscal Positions manually on Sales Orders, Invoices, and Bills</h3><p >To manually select which Fiscal Position to use for a new Sales Order, Invoice, or Bill, go to the
+<strong >Other Info</strong> tab and select the right <strong >Fiscal Position</strong> <em >before</em> adding product lines.</p><img src="../../../_images/fiscal-positions-transaction.png" alt="Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Ibel Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="taxes.html" class="reference internal alert-link"><span class="doc">Taxes</span></a></li><li ><a href="taxcloud.html" class="reference internal alert-link"><span class="doc">Get correct tax rates in the United States using TaxCloud</span></a></li><li ><a href="B2B_B2C.html" class="reference internal alert-link"><span class="doc">Manage prices for B2B (tax excluded) and B2C (tax included)</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -329,7 +329,7 @@ Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_ima
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -351,7 +351,7 @@ Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_ima
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -385,9 +385,9 @@ Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_ima
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -404,6 +404,6 @@ Position</strong> field, and click on <em >Save</em>.</p><img src="../../../_ima
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

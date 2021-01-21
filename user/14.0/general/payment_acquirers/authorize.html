@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Authorize.Net &#8212; Odoo 14.0 documentation</title>
+    <title>Authorize.Net &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Configure your Paypal account" href="paypal.html" />
-    <link rel="prev" title="How to get paid with wire transfers" href="wire_transfer.html" /> 
+    <link rel="prev" title="How to get paid with wire transfers" href="wire_transfer.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Authorize.Net</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,78 +236,78 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Authorize.Net </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#authorize-net-account" class="reference ripple internal">Authorize.Net account</a></li><li class="list-group-item"><a href="#payment-acquirer-configuration" class="reference ripple internal">Payment Acquirer Configuration</a><ul ><li class="list-group-item"><a href="#credentials" class="reference ripple internal">Credentials</a></li><li class="list-group-item"><a href="#payment-flow" class="reference ripple internal">Payment Flow</a></li><li class="list-group-item"><a href="#capture-the-payment-after-the-delivery" class="reference ripple internal">Capture the payment after the delivery</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/payment_acquirers/authorize.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="authorize-net"><p ><a href="https://www.authorize.net" class="reference external">Authorize.Net</a> is a United States-based online payment solution
 provider, allowing businesses to accept <strong >credit cards</strong>.</p><img src="../../_images/authorize-net.png" alt="Authorize.Net logo" style="" class="img-responsive center-block"><p >This Payment Acquirer offers additional options that are not available for other <a href="payment_acquirers.html" class="reference internal"><span class="doc">Payment
 Acquirers</span></a>, such as the ability to process your customer’s payment after
-delivery.</p></section><section id="authorize-net-account"><h2 >Authorize.Net account</h2><p >If not done yet, choose a plan and <a href="https://www.authorize.net/sign-up.html" class="reference external">Sign Up for an Authorize.Net account</a>.</p><p >Odoo needs your <strong >API Credentials &amp; Keys</strong> to connect with your Authorize.Net account, which
+delivery.</p></section><section id="authorize-net-account"><h2 >Authorize.Net account</h2><p >If not done yet, choose a plan and <a href="https://www.authorize.net/sign-up.html" class="reference external">Sign Up for an Authorize.Net account</a>.</p><p >Ibel needs your <strong >API Credentials &amp; Keys</strong> to connect with your Authorize.Net account, which
 comprise:</p><ul ><li >API Login ID</li><li >Transaction Key</li><li >Signature Key</li></ul><p >To retrieve them, log into your Authorize.Net account, go to <span class="menuselection">Account ‣ Security
 Settings ‣ General Security Settings ‣ API Credentials &amp; Keys</span>, and generate your <strong >Transaction
-Key</strong> and <strong >Signature Key</strong>.</p><img src="../../_images/authorize-api-keys.png" alt="Generate your Transaction Key and Signature Key on your Authorize.Net account" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://support.authorize.net/s/article/Authorize-Net-Getting-Started-Guide" class="alert-link reference external">Authorize.Net: Getting Started Guide</a></li></ul></div></section><section id="payment-acquirer-configuration"><h2 >Payment Acquirer Configuration</h2><p >To configure Authorize.Net as Payment Acquirer in Odoo, go to <span class="menuselection">Accounting ‣
+Key</strong> and <strong >Signature Key</strong>.</p><img src="../../_images/authorize-api-keys.png" alt="Generate your Transaction Key and Signature Key on your Authorize.Net account" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://support.authorize.net/s/article/Authorize-Net-Getting-Started-Guide" class="alert-link reference external">Authorize.Net: Getting Started Guide</a></li></ul></div></section><section id="payment-acquirer-configuration"><h2 >Payment Acquirer Configuration</h2><p >To configure Authorize.Net as Payment Acquirer in Ibel, go to <span class="menuselection">Accounting ‣
 Configuration ‣ Payment Acquirers</span>, open <strong >Authorize.Net</strong>, and change the <strong >State</strong> to <em >Enabled</em>.
 Don’t forget to click on <em >Save</em> once you’ve set everything up.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Please refer to the <a href="payment_acquirers.html" class="reference internal alert-link"><span class="doc">Payment Acquirers documentation</span></a> to read how to
 configure this payment acquirer.</p></div></section><section id="credentials"><h3 >Credentials</h3><p >Copy your credentials from your Authorize.Net account (API Login Id, API Transaction Key, and API
 Signature Key), paste them in the related fields under the <strong >Credentials</strong> tab, then click on
-<strong >Generate Client Key</strong>.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The <strong >API Client Key</strong> is necessary only if you select <em >Payment from Odoo</em> option as
+<strong >Generate Client Key</strong>.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The <strong >API Client Key</strong> is necessary only if you select <em >Payment from Ibel</em> option as
 <a href="payment_acquirers.html#payment-acquirers-payment-flow" class="reference internal alert-link"><span class="std std-ref">Payment Flow</span></a>.</p></div><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >If you are trying Authorize.Net as a test, with a <em >sandbox account</em>, change the <strong >State</strong> to
-<em >Test Mode</em>. We recommend doing this on a test Odoo database, rather than on your main database.</p></div></section><section id="payment-flow"><h3 >Payment Flow</h3><p >The <strong >Payment Flow</strong> lets you decide if to redirect the user to the payment acquirer’s portal to
-authenticate the payment, or if to stay on the current page and authenticate the payment from Odoo.
+<em >Test Mode</em>. We recommend doing this on a test Ibel database, rather than on your main database.</p></div></section><section id="payment-flow"><h3 >Payment Flow</h3><p >The <strong >Payment Flow</strong> lets you decide if to redirect the user to the payment acquirer’s portal to
+authenticate the payment, or if to stay on the current page and authenticate the payment from Ibel.
 This field is under the <strong >Configuration</strong> tab.</p><p >If you select <em >Redirection to the acquirer website</em>, make sure you add a <strong >Default Receipt URL</strong> and
 a <strong >Default Relay Response URL</strong> to your Authorize.net account.</p><p >To do so, log into your Authorize.Net account, go to <span class="menuselection">Account ‣ Transaction Format
 Settings ‣ Transaction Response Settings ‣ Response/Receipt URLs</span>, and set the default links:</p><ul ><li ><div class="line-block"><div class="line">Default Receipt URL:</div><div class="line"><em >https://[yourcompany.odoo.com]</em>/<strong >payment/authorize/return</strong></div></div></li><li ><div class="line-block"><div class="line">Default Relay Response URL:</div><div class="line"><em >https://[yourcompany.odoo.com]</em>/<strong >shop/confirmation</strong></div></div></li></ul><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><div class="line-block"><div class="line">Failing to complete this step results in the following error:</div><div class="line"><em >The referrer, relay response or receipt link URL is invalid.</em></div></div></div></section><section id="capture-the-payment-after-the-delivery"><h3 >Capture the payment after the delivery</h3><p >The <strong >Capture Amount Manually</strong> field is under the <strong >Configuration</strong> tab. If enabled, the funds are
-reserved for 30 days on the customer’s card, but not charged yet.</p><img src="../../_images/authorize-configuration.png" alt="Authorize.Net Configuration tab on Odoo" style="" class="img-responsive center-block"><p >To capture the payment, go to the related Sales Order and click on <em >Capture Transaction</em>. If the
-order is canceled, you can click on <em >Void Transaction</em> to unlock the funds from the customer’s card.</p><img src="../../_images/authorize-capture.png" alt="Hold the credit card payment until you capture or revoke it on Odoo" style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >After <strong >30 days</strong>, the transaction is <strong >voided automatically</strong> by Authorize.net.</p></div><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >With other payment acquirers, you can manage the capture in their own interfaces, not from Odoo.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://support.authorize.net/s/article/Authorize-Net-Getting-Started-Guide" class="alert-link reference external">Authorize.Net: Getting Started Guide</a></li><li ><a href="payment_acquirers.html" class="reference internal alert-link"><span class="doc">Payment Acquirers (Credit Cards, Online Payment)</span></a></li><li ><a href="../../ecommerce/shopper_experience/payment_acquirer.html" class="reference internal alert-link"><span class="doc">How to manage orders paid with payment acquirers</span></a></li></ul></div></section>
+reserved for 30 days on the customer’s card, but not charged yet.</p><img src="../../_images/authorize-configuration.png" alt="Authorize.Net Configuration tab on Ibel" style="" class="img-responsive center-block"><p >To capture the payment, go to the related Sales Order and click on <em >Capture Transaction</em>. If the
+order is canceled, you can click on <em >Void Transaction</em> to unlock the funds from the customer’s card.</p><img src="../../_images/authorize-capture.png" alt="Hold the credit card payment until you capture or revoke it on Ibel" style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >After <strong >30 days</strong>, the transaction is <strong >voided automatically</strong> by Authorize.net.</p></div><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >With other payment acquirers, you can manage the capture in their own interfaces, not from Ibel.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://support.authorize.net/s/article/Authorize-Net-Getting-Started-Guide" class="alert-link reference external">Authorize.Net: Getting Started Guide</a></li><li ><a href="payment_acquirers.html" class="reference internal alert-link"><span class="doc">Payment Acquirers (Credit Cards, Online Payment)</span></a></li><li ><a href="../../ecommerce/shopper_experience/payment_acquirer.html" class="reference internal alert-link"><span class="doc">How to manage orders paid with payment acquirers</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -349,7 +349,7 @@ order is canceled, you can click on <em >Void Transaction</em> to unlock the fun
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -383,9 +383,9 @@ order is canceled, you can click on <em >Void Transaction</em> to unlock the fun
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

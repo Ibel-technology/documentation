@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Invoice Time Spent on Tickets (Prepaid Support Services) &#8212; Odoo 14.0 documentation</title>
+    <title>Invoice Time Spent on Tickets (Prepaid Support Services) &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Invoice Time Spent on Tickets (Postpaid Support Services)" href="reinvoice_from_project.html" />
-    <link rel="prev" title="Timesheet and Invoice" href="../timesheet_and_invoice.html" /> 
+    <link rel="prev" title="Timesheet and Invoice" href="../timesheet_and_invoice.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../helpdesk.html">Helpdesk</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Invoice Time Spent on Tickets (Prepaid Support Services)</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,77 +236,77 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Invoice Time Spent on Tickets (Prepaid Support Services) </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#set-up" class="reference ripple internal">Set up</a><ul ><li class="list-group-item"><a href="#step-1-set-up-a-helpdesk-team" class="reference ripple internal">Step 1: Set up a helpdesk team</a></li><li class="list-group-item"><a href="#step-2-set-up-a-service" class="reference ripple internal">Step 2: Set up a service</a></li></ul></li><li class="list-group-item"><a href="#prevision-an-invoice-and-record-time" class="reference ripple internal">Prevision an invoice and record time</a><ul ><li class="list-group-item"><a href="#step-1-place-an-order" class="reference ripple internal">Step 1: Place an order</a></li><li class="list-group-item"><a href="#step-2-invoice-the-customer" class="reference ripple internal">Step 2: Invoice the customer</a></li><li class="list-group-item"><a href="#step-3-link-the-task-to-the-ticket" class="reference ripple internal">Step 3: Link the task to the ticket</a></li><li class="list-group-item"><a href="#step-4-record-the-time-spent" class="reference ripple internal">Step 4: Record the time spent</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/helpdesk/timesheet_and_invoice/invoice_time.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="invoice-time-spent-on-tickets-prepaid-support-services"><p >Have the option to work with prepaid support services, meaning that a sales order and a
-corresponding invoice are issued and, once the service is done, you can deduct the time spent. Odoo
+corresponding invoice are issued and, once the service is done, you can deduct the time spent. Ibel
 allows it to happen because the applications are fully integrated, resulting in faster responses
 to your customer needs.</p></section><section id="set-up"><h2 >Set up</h2></section><section id="step-1-set-up-a-helpdesk-team"><h3 >Step 1: Set up a helpdesk team</h3><div class="line-block"><div class="line">Go to <span class="menuselection">Helpdesk ‣ Configuration ‣ Helpdesk Teams</span>, create or edit an existing
 team, and enable <em >Timesheet on Ticket</em> and <em >Time Reinvoicing</em>.</div><div class="line">Select or create a project under <em >Timesheet on Ticket</em>. The selected/created is
 the one at which employees timesheet on by default. However, it can be ultimately modified on
-each ticket.</div></div><img src="../../_images/sell_track_hours.png" alt="View of a helpdesk team settings page emphasizing the timesheet on ticket and time reinvoicing features in Odoo Helpdesk" style="" class="img-responsive center-block"></section><section id="step-2-set-up-a-service"><h3 >Step 2: Set up a service</h3><div class="line-block"><div class="line">Go to <span class="menuselection">Sales ‣ Configuration ‣ Settings</span> and enable <em >Units of Measure</em> to
+each ticket.</div></div><img src="../../_images/sell_track_hours.png" alt="View of a helpdesk team settings page emphasizing the timesheet on ticket and time reinvoicing features in Ibel Helpdesk" style="" class="img-responsive center-block"></section><section id="step-2-set-up-a-service"><h3 >Step 2: Set up a service</h3><div class="line-block"><div class="line">Go to <span class="menuselection">Sales ‣ Configuration ‣ Settings</span> and enable <em >Units of Measure</em> to
 optionally be able to choose <em >hours</em> (for example) as the unit of measure of your service.</div><div class="line">Then, go to <span class="menuselection">Sales ‣ Products ‣ Products</span>, create or edit an existing one, and
-set its <em >Product Type</em> as <em >Service</em>.</div></div><img src="../../_images/product_type_unit.png" alt="View of a product's form emphasizing the product type and unit of measure fields in Odoo Sales" style="" class="img-responsive center-block"><p >Now, select the invoicing management you would like to have under the <em >Sales</em> tab. We recommend the
-following configuration:</p><img src="../../_images/product_invoicing.png" alt="View of a product form and the invoicing options under the tab sales in Odoo Sales" style="" class="img-responsive center-block"><p >This configuration ensures that the customer is invoiced by the number of hours predicted in the
+set its <em >Product Type</em> as <em >Service</em>.</div></div><img src="../../_images/product_type_unit.png" alt="View of a product's form emphasizing the product type and unit of measure fields in Ibel Sales" style="" class="img-responsive center-block"><p >Now, select the invoicing management you would like to have under the <em >Sales</em> tab. We recommend the
+following configuration:</p><img src="../../_images/product_invoicing.png" alt="View of a product form and the invoicing options under the tab sales in Ibel Sales" style="" class="img-responsive center-block"><p >This configuration ensures that the customer is invoiced by the number of hours predicted in the
 sales order, meaning that less or extra hours recorded are not taken into account. It also ensures
 that every time a sales order is confirmed, a new task is created under the right project,
 automating the process.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >We recommend setting up a specific project, as it was done for this flow example. The important
 thing to remember is that the sales order item needs to be set on the corresponding project or
 task, in order to reinvoice the time spent on a ticket.</p></div></section><section id="prevision-an-invoice-and-record-time"><h2 >Prevision an invoice and record time</h2></section><section id="step-1-place-an-order"><h3 >Step 1: Place an order</h3><p >Go to <span class="menuselection">Sales ‣ Orders ‣ Orders</span> and create one for the helpdesk service product
 you have previously set up, with the customer who needs the ticket to be opened. Set the number of
-hours needed to assist the customer and <em >Confirm</em> the order.</p><img src="../../_images/sales_order_new.png" alt="View of a sales order emphasizing the order lines in Odoo Sales" style="" class="img-responsive center-block"></section><section id="step-2-invoice-the-customer"><h3 >Step 2: Invoice the customer</h3><p >In <em >Sales</em>, select the respective sales order to <em >Create Invoice</em>.</p><a href="../../_images/create_invoice.png" class="reference internal"><img src="../../_images/create_invoice.png" alt="View of a sales order emphasizing the create invoice button in Odoo Sales" style="height:330px" class="img-responsive center-block"></a></section><section id="step-3-link-the-task-to-the-ticket"><h3 >Step 3: Link the task to the ticket</h3><p >Now, in <em >Helpdesk</em>, create or edit the respective ticket and link it to the task created by the
-confirmation of the sales order.</p><img src="../../_images/helpdesk_task.png" alt="View of a helpdesk ticket emphasizing the field task in Odoo Helpdesk" style="" class="img-responsive center-block"></section><section id="step-4-record-the-time-spent"><h3 >Step 4: Record the time spent</h3><p >Still on the respective helpdesk ticket, record the hours performed under the <em >Timesheets</em> tab.</p><img src="../../_images/helpdesk_timesheet.png" alt="View of a helpdesk ticket emphasizing the timesheets tab in Odoo Helpdesk" style="" class="img-responsive center-block"><p >Note that the hours recorded on the ticket form are shown on the <em >Delivered</em> column in the sales
-order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales order emphasizing the delivered column in Odoo Sales" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >Hours recorded on the ticket are automatically shown in <em >Timesheets</em> and on the dedicated task.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="reinvoice_from_project.html" class="reference internal alert-link"><span class="doc">Invoice Time Spent on Tickets (Postpaid Support Services)</span></a></li><li ><a href="../../inventory/management/products/uom.html" class="reference internal alert-link"><span class="doc">Use Different Units of Measure</span></a></li></ul></div></section>
+hours needed to assist the customer and <em >Confirm</em> the order.</p><img src="../../_images/sales_order_new.png" alt="View of a sales order emphasizing the order lines in Ibel Sales" style="" class="img-responsive center-block"></section><section id="step-2-invoice-the-customer"><h3 >Step 2: Invoice the customer</h3><p >In <em >Sales</em>, select the respective sales order to <em >Create Invoice</em>.</p><a href="../../_images/create_invoice.png" class="reference internal"><img src="../../_images/create_invoice.png" alt="View of a sales order emphasizing the create invoice button in Ibel Sales" style="height:330px" class="img-responsive center-block"></a></section><section id="step-3-link-the-task-to-the-ticket"><h3 >Step 3: Link the task to the ticket</h3><p >Now, in <em >Helpdesk</em>, create or edit the respective ticket and link it to the task created by the
+confirmation of the sales order.</p><img src="../../_images/helpdesk_task.png" alt="View of a helpdesk ticket emphasizing the field task in Ibel Helpdesk" style="" class="img-responsive center-block"></section><section id="step-4-record-the-time-spent"><h3 >Step 4: Record the time spent</h3><p >Still on the respective helpdesk ticket, record the hours performed under the <em >Timesheets</em> tab.</p><img src="../../_images/helpdesk_timesheet.png" alt="View of a helpdesk ticket emphasizing the timesheets tab in Ibel Helpdesk" style="" class="img-responsive center-block"><p >Note that the hours recorded on the ticket form are shown on the <em >Delivered</em> column in the sales
+order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales order emphasizing the delivered column in Ibel Sales" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >Hours recorded on the ticket are automatically shown in <em >Timesheets</em> and on the dedicated task.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="reinvoice_from_project.html" class="reference internal alert-link"><span class="doc">Invoice Time Spent on Tickets (Postpaid Support Services)</span></a></li><li ><a href="../../inventory/management/products/uom.html" class="reference internal alert-link"><span class="doc">Use Different Units of Measure</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -326,7 +326,7 @@ order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales 
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -348,7 +348,7 @@ order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales 
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -382,9 +382,9 @@ order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales 
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -401,6 +401,6 @@ order.</p><img src="../../_images/quotation_delivered.png" alt="View of a sales 
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

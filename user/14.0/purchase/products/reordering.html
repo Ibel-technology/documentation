@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Don’t run out of stock thanks to reordering rules &#8212; Odoo 14.0 documentation</title>
+    <title>Don’t run out of stock thanks to reordering rules &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Purchase in different units of measure than sales" href="uom.html" />
-    <link rel="prev" title="Products" href="../products.html" /> 
+    <link rel="prev" title="Products" href="../products.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../purchase.html">Purchase</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Don’t run out of stock thanks to reordering rules</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,61 +236,61 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Don’t run out of stock thanks to reordering rules </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#set-a-reordering-rule" class="reference ripple internal">Set a reordering rule</a></li><li class="list-group-item"><a href="#troubleshooting" class="reference ripple internal">Troubleshooting</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/purchase/products/reordering.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="dont-run-out-of-stock-thanks-to-reordering-rules"><p >To make sure you never run out of stock, you might want to define
-<em >Reordering Rules</em> on products. Thanks to reordering rules, Odoo will
+<em >Reordering Rules</em> on products. Thanks to reordering rules, Ibel will
 help you to replenish your stock when it reaches a minimum stock level.</p></section><section id="set-a-reordering-rule"><h2 >Set a reordering rule</h2><p >Open a stockable product, you’ll find the <em >Reordering Rules</em> tab.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >You can also access all your reordering rules from
 <span class="menuselection">Inventory ‣ Master Data ‣ Reordering Rules</span>.</p></div><img src="../../_images/setup_stock_rule01.png" style="" class="img-responsive center-block"><p >Once in the next menu, you can create the reordering rules linked to
 your product. From now on, every time this product reaches the minimum
 quantity it will replenish your stock to your <strong >maximum quantity</strong>.</p><img src="../../_images/setup_stock_rule02.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >The replenishments will take place when the scheduler in the
-<em >Inventory</em> module runs. By default in Odoo, the schedulers will run
+<em >Inventory</em> module runs. By default in Ibel, the schedulers will run
 every night at 12:00PM.</p><p >See also: <a href="../../inventory/management/planning/schedulers.html" class="reference internal alert-link"><span class="doc">Configure and Run Schedulers</span></a></p></div><p >From now on, every time a product with a reordering rule reaches the
 minimum stock, the system will automatically see how to fulfill that
 need based on the product configuration (e.g create an RfQ, create an
@@ -303,7 +303,7 @@ informing you there is an issue with the configuration.</p><img src="../../_imag
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -323,7 +323,7 @@ informing you there is an issue with the configuration.</p><img src="../../_imag
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -345,7 +345,7 @@ informing you there is an issue with the configuration.</p><img src="../../_imag
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -379,9 +379,9 @@ informing you there is an issue with the configuration.</p><img src="../../_imag
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -398,6 +398,6 @@ informing you there is an issue with the configuration.</p><img src="../../_imag
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

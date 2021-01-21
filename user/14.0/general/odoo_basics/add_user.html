@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add Users and Manage Access Rights &#8212; Odoo 14.0 documentation</title>
+    <title>Add Users and Manage Access Rights &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Export Data From Odoo" href="export-data.html" />
-    <link rel="prev" title="Manage Odoo in your own language" href="choose_language.html" /> 
+    <link rel="next" title="Export Data From Ibel" href="export-data.html" />
+    <link rel="prev" title="Manage Ibel in your own language" href="choose_language.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Add Users and Manage Access Rights</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,86 +236,86 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Add Users and Manage Access Rights </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#add-individual-users" class="reference ripple internal">Add individual users</a></li><li class="list-group-item"><a href="#access-rights-in-detail" class="reference ripple internal">Access Rights in detail</a><ul ><li class="list-group-item"><a href="#groups" class="reference ripple internal">Groups</a></li></ul></li><li class="list-group-item"><a href="#multi-companies" class="reference ripple internal">Multi Companies</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/odoo_basics/add_user.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="add-users-and-manage-access-rights"><p >Odoo defines a <em >user</em> as someone who has access to a database to perform daily tasks. You can add as
+
+
+  <section id="add-users-and-manage-access-rights"><p >Ibel defines a <em >user</em> as someone who has access to a database to perform daily tasks. You can add as
 many users as you need and, in order to restrict the type of information each user can access, rules
-can be applied. Users and access rights can be added and changed at any point.</p></section><section id="add-individual-users"><i id="general-odoo-basics-add-individual-user"></i><h2 >Add individual users</h2><p >Go to <span class="menuselection">Settings ‣ Manage Users</span> and click on <em >Create</em>.</p><a href="../../_images/manage_users.png" class="reference internal"><img src="../../_images/manage_users.png" alt="View of the settings page emphasizing the manage users field in Odoo" style="height:280px" class="img-responsive center-block"></a><div class="line-block"><div class="line">Fill in the form with the needed information. Under the tab
+can be applied. Users and access rights can be added and changed at any point.</p></section><section id="add-individual-users"><i id="general-odoo-basics-add-individual-user"></i><h2 >Add individual users</h2><p >Go to <span class="menuselection">Settings ‣ Manage Users</span> and click on <em >Create</em>.</p><a href="../../_images/manage_users.png" class="reference internal"><img src="../../_images/manage_users.png" alt="View of the settings page emphasizing the manage users field in Ibel" style="height:280px" class="img-responsive center-block"></a><div class="line-block"><div class="line">Fill in the form with the needed information. Under the tab
 <a href="#general-odoo-basics-add-user-access-rights" class="reference internal"><span class="std std-ref">Access Rights</span></a> choose the group within
-each application the user can have access to.</div><div class="line">The list of applications shown is based on the applications installed on the database.</div></div><img src="../../_images/new_user.png" alt="View of a user’s form emphasizing the access rights tab in Odoo" style="" class="img-responsive center-block"><p >When you are done editing the page and have <em >Saved</em> it, an invitation email is automatically sent to
-the user. The user must click on it to accept the invitation and create a login.</p><img src="../../_images/invitation_email.png" alt="View of a user’s form with a notification that the invitation email has been sent in Odoo" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Remember that subscription prices follow the number of users. Refer to our
+each application the user can have access to.</div><div class="line">The list of applications shown is based on the applications installed on the database.</div></div><img src="../../_images/new_user.png" alt="View of a user’s form emphasizing the access rights tab in Ibel" style="" class="img-responsive center-block"><p >When you are done editing the page and have <em >Saved</em> it, an invitation email is automatically sent to
+the user. The user must click on it to accept the invitation and create a login.</p><img src="../../_images/invitation_email.png" alt="View of a user’s form with a notification that the invitation email has been sent in Ibel" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Remember that subscription prices follow the number of users. Refer to our
 <a href="https://www.odoo.com/pricing" class="alert-link reference external">pricing page</a>
 for more information.</p></div><p >With the <a href="../developer_mode/activate.html" class="reference internal"><span class="doc">Developer mode</span></a> activated, <em >User Types</em> can
-be selected.</p><a href="../../_images/user_type.png" class="reference internal"><img src="../../_images/user_type.png" alt="View of a user’s form in developer mode emphasizing the user type field in Odoo" style="height:300px" class="img-responsive center-block"></a><p >The <em >Portal</em> and <em >Public</em> options do not allow you to choose access rights. Members have specific
-ones (such as record rules and restricted menus) and usually do not belong to the usual Odoo
+be selected.</p><a href="../../_images/user_type.png" class="reference internal"><img src="../../_images/user_type.png" alt="View of a user’s form in developer mode emphasizing the user type field in Ibel" style="height:300px" class="img-responsive center-block"></a><p >The <em >Portal</em> and <em >Public</em> options do not allow you to choose access rights. Members have specific
+ones (such as record rules and restricted menus) and usually do not belong to the usual Ibel
 groups.</p></section><section id="access-rights-in-detail"><i id="general-odoo-basics-add-user-access-rights"></i><h2 >Access Rights in detail</h2><p >Activate the <a href="../developer_mode/activate.html" class="reference internal"><span class="doc">Developer mode</span></a>, then go to
 <span class="menuselection">Settings ‣ Users &amp; Companies ‣ Groups</span>.</p></section><section id="groups"><h3 >Groups</h3><div class="line-block"><div class="line">When choosing the groups the user can have access under
 <a href="#general-odoo-basics-add-individual-user" class="reference internal"><span class="std std-ref">Access Rights</span></a>, details of the rules and
 inheritances of that group are not shown, so this is when the menu <em >Groups</em> comes along. <em >Groups</em>
 are created to define rules to models within an application.</div><div class="line">Under <em >Users</em>, have a list of the current ones. The ones with administrative rights are shown
-in black.</div></div><img src="../../_images/groups_users.png" alt="View of a group’s form emphasizing the tab users in Odoo" style="" class="img-responsive center-block"><p ><em >Inherited</em> means that users added to this application group are automatically added to the
+in black.</div></div><img src="../../_images/groups_users.png" alt="View of a group’s form emphasizing the tab users in Ibel" style="" class="img-responsive center-block"><p ><em >Inherited</em> means that users added to this application group are automatically added to the
 following ones. In the example below, users who have access to the group <em >Administrator</em> of <em >Sales</em>
-also have access to <em >Website/Restricted Editor</em> and <em >Sales/User: All Documents</em>.</p><a href="../../_images/groups_inherited.png" class="reference internal"><img src="../../_images/groups_inherited.png" alt="View of a group’s form emphasizing the tab inherited in Odoo" style="height:330px" class="img-responsive center-block"></a><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Remember to always test the settings being changed in order to ensure that they are being applied
-to the needed and right users.</p></div><p >The <em >Menus</em> tab is where you define which menus (models) the user can have access to.</p><a href="../../_images/groups_menus.png" class="reference internal"><img src="../../_images/groups_menus.png" alt="View of a group’s form emphasizing the tab menus in Odoo" style="height:330px" class="img-responsive center-block"></a><p ><em >Access Rights</em> rules are the first level of rights. The field is composed of the object name, which
-is the technical name given to a model. For each model, enable the following options as appropriate:</p><ul ><li ><em >Read</em>: the values of that object can be only seen by the user.</li><li ><em >Write</em>: the values of that object can be edited by the user.</li><li ><em >Create</em>: values for that object can be created by the user.</li><li ><em >Delete</em>: the values of that object can be deleted by the user.</li></ul><img src="../../_images/groups_access_rights.png" alt="View of a group’s form emphasizing the tab access rights in Odoo" style="" class="img-responsive center-block"><div class="line-block"><div class="line">As a second layer of editing and visibility rules, <em >Record Rules</em> can be formed. They overwrite,
+also have access to <em >Website/Restricted Editor</em> and <em >Sales/User: All Documents</em>.</p><a href="../../_images/groups_inherited.png" class="reference internal"><img src="../../_images/groups_inherited.png" alt="View of a group’s form emphasizing the tab inherited in Ibel" style="height:330px" class="img-responsive center-block"></a><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Remember to always test the settings being changed in order to ensure that they are being applied
+to the needed and right users.</p></div><p >The <em >Menus</em> tab is where you define which menus (models) the user can have access to.</p><a href="../../_images/groups_menus.png" class="reference internal"><img src="../../_images/groups_menus.png" alt="View of a group’s form emphasizing the tab menus in Ibel" style="height:330px" class="img-responsive center-block"></a><p ><em >Access Rights</em> rules are the first level of rights. The field is composed of the object name, which
+is the technical name given to a model. For each model, enable the following options as appropriate:</p><ul ><li ><em >Read</em>: the values of that object can be only seen by the user.</li><li ><em >Write</em>: the values of that object can be edited by the user.</li><li ><em >Create</em>: values for that object can be created by the user.</li><li ><em >Delete</em>: the values of that object can be deleted by the user.</li></ul><img src="../../_images/groups_access_rights.png" alt="View of a group’s form emphasizing the tab access rights in Ibel" style="" class="img-responsive center-block"><div class="line-block"><div class="line">As a second layer of editing and visibility rules, <em >Record Rules</em> can be formed. They overwrite,
 or refine, the <em >Access Rights</em>.</div><div class="line">A record rule is written using a <em >Domain</em>. Domains are conditions used to filter or searching
 data. Therefore, a domain expression is a list of conditions. For each rule, choose among the
-following options: <em >Read</em>, <em >Write</em>, <em >Create</em> and <em >Delete</em> values.</div></div><img src="../../_images/groups_record_rules.png" alt="View of a group’s form emphasizing the tab record rules in Odoo" style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Making changes in access rights can have a big impact on the database. For this reason, we
-recommend you to contact your Odoo Business Analyst or our Support Team, unless you have
-knowledge about Domains in Odoo.</p></div></section><section id="multi-companies"><h2 >Multi Companies</h2><p >The <em >Multi Companies</em> field allows you to set to which of the multiple companies database you hold
+following options: <em >Read</em>, <em >Write</em>, <em >Create</em> and <em >Delete</em> values.</div></div><img src="../../_images/groups_record_rules.png" alt="View of a group’s form emphasizing the tab record rules in Ibel" style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Making changes in access rights can have a big impact on the database. For this reason, we
+recommend you to contact your Ibel Business Analyst or our Support Team, unless you have
+knowledge about Domains in Ibel.</p></div></section><section id="multi-companies"><h2 >Multi Companies</h2><p >The <em >Multi Companies</em> field allows you to set to which of the multiple companies database you hold
 the user can have access.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Note that if not handled correctly, it may be the source of a lot of inconsistent multi-company
-behaviors. Therefore, a good knowledge of Odoo is required. For technical explanations refer
-to <a href="https://www.odoo.com/documentation/14.0/howtos/company.html" class="alert-link reference external">this</a> documentation.</p></div><a href="../../_images/multi_companies.png" class="reference internal"><img src="../../_images/multi_companies.png" alt="View of a user’s form emphasizing the multi companies field in Odoo" style="height:300px" class="img-responsive center-block"></a><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="../multi_companies/manage_multi_companies.html" class="reference internal alert-link"><span class="doc">Multi Companies</span></a></li><li ><a href="../../db_management/documentation.html" class="reference internal alert-link"><span class="doc">Users and Features</span></a></li></ul></div></section>
+behaviors. Therefore, a good knowledge of Ibel is required. For technical explanations refer
+to <a href="https://www.odoo.com/documentation/14.0/howtos/company.html" class="alert-link reference external">this</a> documentation.</p></div><a href="../../_images/multi_companies.png" class="reference internal"><img src="../../_images/multi_companies.png" alt="View of a user’s form emphasizing the multi companies field in Ibel" style="height:300px" class="img-responsive center-block"></a><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="../multi_companies/manage_multi_companies.html" class="reference internal alert-link"><span class="doc">Multi Companies</span></a></li><li ><a href="../../db_management/documentation.html" class="reference internal alert-link"><span class="doc">Users and Features</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -357,7 +357,7 @@ to <a href="https://www.odoo.com/documentation/14.0/howtos/company.html" class="
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -391,9 +391,9 @@ to <a href="https://www.odoo.com/documentation/14.0/howtos/company.html" class="
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

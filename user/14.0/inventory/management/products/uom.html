@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Use Different Units of Measure &#8212; Odoo 14.0 documentation</title>
+    <title>Use Different Units of Measure &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="When Should you Use Packages, Units of Measure or Special Packaging?" href="usage.html" />
-    <link rel="prev" title="Products" href="../products.html" /> 
+    <link rel="prev" title="Products" href="../products.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../inventory.html">Inventory</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Use Different Units of Measure</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,60 +242,60 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Use Different Units of Measure </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a></li><li class="list-group-item"><a href="#create-new-units-of-measure" class="reference ripple internal">Create New Units of Measure</a></li><li class="list-group-item"><a href="#specify-units-of-measure-on-your-products" class="reference ripple internal">Specify Units of Measure on your Products</a></li><li class="list-group-item"><a href="#transfer-from-one-unit-to-another" class="reference ripple internal">Transfer from One Unit to Another</a><ul ><li class="list-group-item"><a href="#buy-in-the-pruchase-uom" class="reference ripple internal">Buy in the Pruchase UoM</a></li><li class="list-group-item"><a href="#replenishment" class="reference ripple internal">Replenishment</a></li><li class="list-group-item"><a href="#sell-in-bigger-uom" class="reference ripple internal">Sell in bigger UoM</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/management/products/uom.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="use-different-units-of-measure"><p >In some cases, handling products in different units of measure is
 necessary. For example, if you buy products in a country where the
 metric system is of application and sell in a country where the imperial
 system is used, you will need to convert the units. Another common use
 case is buying products in bigger packs to your supplier and selling
-them in units to your customers.</p><p >You can set up Odoo to work with different units of measure for one
+them in units to your customers.</p><p >You can set up Ibel to work with different units of measure for one
 product.</p></section><section id="configuration"><h2 >Configuration</h2><p >In the <em >Inventory</em> application, go to <span class="menuselection">Configuration ‣ Settings</span>. In
 the <em >Products</em> section, activate <em >Units of Measure</em>, then <em >Save</em>.</p><img src="../../../_images/uom_01.png" style="" class="img-responsive center-block"></section><section id="create-new-units-of-measure"><h2 >Create New Units of Measure</h2><p >In the <em >Inventory</em> application go to <span class="menuselection">Configuration ‣ UoM</span>. There,
 hit <em >Create</em>. As an example, we will create a Box of 6 units that we
@@ -323,7 +323,7 @@ to the <em >UoM</em> used for stock management, in our use case, the Units.</p><
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -343,7 +343,7 @@ to the <em >UoM</em> used for stock management, in our use case, the Units.</p><
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -365,7 +365,7 @@ to the <em >UoM</em> used for stock management, in our use case, the Units.</p><
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -399,9 +399,9 @@ to the <em >UoM</em> used for stock management, in our use case, the Units.</p><
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -418,6 +418,6 @@ to the <em >UoM</em> used for stock management, in our use case, the Units.</p><
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

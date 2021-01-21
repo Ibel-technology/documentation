@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage invoices and payment in multiple currencies &#8212; Odoo 14.0 documentation</title>
+    <title>Manage invoices and payment in multiple currencies &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Record exchange rates at payments" href="exchange.html" />
-    <link rel="prev" title="Odoo’s multi-currency system" href="how_it_works.html" /> 
+    <link rel="prev" title="Ibel’s multi-currency system" href="how_it_works.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Manage invoices and payment in multiple currencies</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,63 +242,63 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Manage invoices and payment in multiple currencies </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#overview" class="reference ripple internal">Overview</a></li><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#enable-multi-currency" class="reference ripple internal">Enable Multi-Currency</a></li><li class="list-group-item"><a href="#configure-your-journal" class="reference ripple internal">Configure your journal</a></li></ul></li><li class="list-group-item"><a href="#multi-currency-invoices-vendor-bills" class="reference ripple internal">Multi-currency invoices &amp; Vendor Bills</a><ul ><li class="list-group-item"><a href="#invoices" class="reference ripple internal">Invoices</a></li><li class="list-group-item"><a href="#vendor-bills" class="reference ripple internal">Vendor Bills</a></li></ul></li><li class="list-group-item"><a href="#multi-currency-payments" class="reference ripple internal">Multi-currency Payments</a></li><li class="list-group-item"><a href="#multi-currency-bank-statements" class="reference ripple internal">Multi- Currency Bank Statements</a></li><li class="list-group-item"><a href="#exchange-rate-journal" class="reference ripple internal">Exchange Rate Journal</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/others/multicurrencies/invoices_payments.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="manage-invoices-and-payment-in-multiple-currencies"></section><section id="overview"><h2 >Overview</h2><p >Odoo provides multi-currency support with automatic currency gross or
-loss entry adjustment. There are a few things Odoo has been to ease the
+
+
+  <section id="manage-invoices-and-payment-in-multiple-currencies"></section><section id="overview"><h2 >Overview</h2><p >Ibel provides multi-currency support with automatic currency gross or
+loss entry adjustment. There are a few things Ibel has been to ease the
 user’s life.</p><p >All the account transactions will be done using the company currency.
 However you can see two extra fields with the journal entry where
 secondary currency and amount will visible. You can create
 multi-currency journals of force a specific currency.</p><p >When creating an invoice, the currency can be changed very easily;
-however Odoo takes the company currency as a default assignment. It will
+however Ibel takes the company currency as a default assignment. It will
 convert all the amounts automatically using that currency.</p></section><section id="configuration"><h2 >Configuration</h2></section><section id="enable-multi-currency"><h3 >Enable Multi-Currency</h3><p >For information about enabling Multi-Currency, please read the document:
-<a href="how_it_works.html" class="reference internal"><span class="doc">Odoo’s multi-currency system</span></a></p></section><section id="configure-your-journal"><h3 >Configure your journal</h3><p >In order to register payments in other currencies, you have to remove
+<a href="how_it_works.html" class="reference internal"><span class="doc">Ibel’s multi-currency system</span></a></p></section><section id="configure-your-journal"><h3 >Configure your journal</h3><p >In order to register payments in other currencies, you have to remove
 the currency constraint on the journal. Go to the accounting
 application, on the journal, click on <span class="menuselection">More ‣ Settings</span>.</p><img src="../../../_images/invoice01.png" style="" class="img-responsive center-block"><p >Check if the currency field is empty or in the foreign currency in which
 you will register the payments. If a currency is filled in, it means
@@ -312,7 +312,7 @@ payment and indicate that it was done in the foreign currency. Then
 click on <strong >Confirm</strong>.</p><img src="../../../_images/invoice05.png" style="" class="img-responsive center-block"><p >The journal entry has been posted but not allocated.</p><p >Go back to your invoice (<span class="menuselection">Sales ‣ Customer Invoices</span>) and click on
 <strong >Add</strong> to allocate the payment.</p><img src="../../../_images/invoice06.png" style="" class="img-responsive center-block"></section><section id="multi-currency-bank-statements"><h2 >Multi- Currency Bank Statements</h2><p >When creating or importing bank statements, the amount is in the company
 currency. But there are now two complementary fields, the amount that
-was actually paid and the currency in which it was paid.</p><img src="../../../_images/invoice07.png" style="" class="img-responsive center-block"><p >When reconciling it, Odoo will directly match the payment with the right
+was actually paid and the currency in which it was paid.</p><img src="../../../_images/invoice07.png" style="" class="img-responsive center-block"><p >When reconciling it, Ibel will directly match the payment with the right
 invoice. You will get the invoice price in the invoice currency and the
 amount in your company currency.</p><img src="../../../_images/invoice08.png" style="" class="img-responsive center-block"></section><section id="exchange-rate-journal"><h2 >Exchange Rate Journal</h2><p >Go to <span class="menuselection">Adviser ‣ Journal Entries</span> and look for the <strong >Exchange
 Difference</strong> journal entries. All the exchange rates differences are recorded in it.</p><img src="../../../_images/invoice09.png" style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >In order for an exchange difference entry to be created automatically, the
@@ -320,11 +320,11 @@ corresponding invoices and payments need to be fully reconciled. This means
 the invoices are fully paid and the payments are fully spent on invoices.
 If you partially pay 3 invoices from 2 payments, and the last invoice still
 has an amount due, there will be no exchange difference entry for any of
-them until that final amount is paid.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="how_it_works.html" class="reference internal alert-link"><span class="doc">Odoo’s multi-currency system</span></a></li><li ><a href="exchange.html" class="reference internal alert-link"><span class="doc">Record exchange rates at payments</span></a></li></ul></div></section>
+them until that final amount is paid.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="how_it_works.html" class="reference internal alert-link"><span class="doc">Ibel’s multi-currency system</span></a></li><li ><a href="exchange.html" class="reference internal alert-link"><span class="doc">Record exchange rates at payments</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -344,7 +344,7 @@ them until that final amount is paid.</p></div><div role="alert" class="alert al
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -366,7 +366,7 @@ them until that final amount is paid.</p></div><div role="alert" class="alert al
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -400,9 +400,9 @@ them until that final amount is paid.</p></div><div role="alert" class="alert al
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -419,6 +419,6 @@ them until that final amount is paid.</p></div><div role="alert" class="alert al
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

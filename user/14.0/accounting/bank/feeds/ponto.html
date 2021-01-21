@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ponto as Bank Synchronization provider &#8212; Odoo 14.0 documentation</title>
+    <title>Ponto as Bank Synchronization provider &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Synchronize your PayPal account with Odoo" href="paypal.html" />
-    <link rel="prev" title="Bank Synchronization: Automatic Import" href="bank_synchronization.html" /> 
+    <link rel="next" title="Synchronize your PayPal account with Ibel" href="paypal.html" />
+    <link rel="prev" title="Bank Synchronization: Automatic Import" href="bank_synchronization.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Ponto as Bank Synchronization provider</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,74 +242,74 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Ponto as Bank Synchronization provider </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
-              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#link-your-bank-accounts-with-ponto" class="reference ripple internal">Link your bank accounts with Ponto</a></li><li class="list-group-item"><a href="#link-your-ponto-account-with-your-odoo-database" class="reference ripple internal">Link your Ponto account with your Odoo database</a></li><li class="list-group-item"><a href="#update-your-synchronization-credentials" class="reference ripple internal">Update your synchronization credentials</a></li></ul></li><li class="list-group-item"><a href="#deprecated-api-tokens" class="reference ripple internal">Deprecated API tokens</a></li></ul>
-              
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#link-your-bank-accounts-with-ponto" class="reference ripple internal">Link your bank accounts with Ponto</a></li><li class="list-group-item"><a href="#link-your-ponto-account-with-your-odoo-database" class="reference ripple internal">Link your Ponto account with your Ibel database</a></li><li class="list-group-item"><a href="#update-your-synchronization-credentials" class="reference ripple internal">Update your synchronization credentials</a></li></ul></li><li class="list-group-item"><a href="#deprecated-api-tokens" class="reference ripple internal">Deprecated API tokens</a></li></ul>
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/bank/feeds/ponto.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="ponto-as-bank-synchronization-provider"><p ><strong >Ponto</strong> is a service that allows companies and professionals to aggregate their accounts in one
 place and directly see all their transactions within one app. It is a third-party solution that is
-continuously expanding the number of bank institutions that can be synchronized with Odoo.</p><img src="../../../_images/ponto_logo.png" alt="Logo of the Ponto brand" style="" class="img-responsive center-block"><p ><strong >Odoo Accounting</strong> can synchronize directly with your bank to get all bank statements imported
+continuously expanding the number of bank institutions that can be synchronized with Ibel.</p><img src="../../../_images/ponto_logo.png" alt="Logo of the Ponto brand" style="" class="img-responsive center-block"><p ><strong >Ibel Accounting</strong> can synchronize directly with your bank to get all bank statements imported
 automatically into your database. This allows for easier <strong >bank reconciliation</strong>. When <a href="../setup/bank_accounts.html" class="reference internal"><span class="doc">adding
-a bank account on Odoo</span></a>, you can see if your bank requires a
-connection through Ponto by searching for your bank institution, and clicking on it.</p><img src="../../../_images/ponto_add_bank.png" alt="Click on a bank institution to see which third party service is required to synchronize your bank with Odoo Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >You can find more information about bank synchronization <a href="bank_synchronization.html" class="reference internal alert-link"><span class="doc">on this page</span></a>.</p></div></section><section id="configuration"><h2 >Configuration</h2></section><section id="link-your-bank-accounts-with-ponto"><h3 >Link your bank accounts with Ponto</h3><ol ><li >Go to <a href="https://myponto.com" class="reference external">Ponto’s website (https://myponto.com)</a>.</li><li >Create an account if you don’t have one yet.</li><li ><p >Once you are logged in, create an <em >organization</em>.</p><img src="../../../_images/ponto_organization.png" alt="Fill out the form to add an organization in Ponto" style="" class="img-responsive"></li><li ><div class="line-block"><div class="line">Go to <span class="menuselection">Accounts ‣ Live</span>, and click on <em >Add account</em>.</div><div class="line">You might have to add your <strong >Billing Information</strong> first.</div></div></li><li >Select your bank institution and follow the steps on-screen to link your bank account with your
-Ponto account.</li><li >Make sure to add  all the bank accounts you want to synchronize with your Odoo database before
-moving on to the next steps.</li></ol></section><section id="link-your-ponto-account-with-your-odoo-database"><i id="ponto-link-odoo"></i><h3 >Link your Ponto account with your Odoo database</h3><p >Odoo requires you to insert your Ponto’s <strong >Client ID</strong> and <strong >Secret ID</strong> to synchronize both
+a bank account on Ibel</span></a>, you can see if your bank requires a
+connection through Ponto by searching for your bank institution, and clicking on it.</p><img src="../../../_images/ponto_add_bank.png" alt="Click on a bank institution to see which third party service is required to synchronize your bank with Ibel Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >You can find more information about bank synchronization <a href="bank_synchronization.html" class="reference internal alert-link"><span class="doc">on this page</span></a>.</p></div></section><section id="configuration"><h2 >Configuration</h2></section><section id="link-your-bank-accounts-with-ponto"><h3 >Link your bank accounts with Ponto</h3><ol ><li >Go to <a href="https://myponto.com" class="reference external">Ponto’s website (https://myponto.com)</a>.</li><li >Create an account if you don’t have one yet.</li><li ><p >Once you are logged in, create an <em >organization</em>.</p><img src="../../../_images/ponto_organization.png" alt="Fill out the form to add an organization in Ponto" style="" class="img-responsive"></li><li ><div class="line-block"><div class="line">Go to <span class="menuselection">Accounts ‣ Live</span>, and click on <em >Add account</em>.</div><div class="line">You might have to add your <strong >Billing Information</strong> first.</div></div></li><li >Select your bank institution and follow the steps on-screen to link your bank account with your
+Ponto account.</li><li >Make sure to add  all the bank accounts you want to synchronize with your Ibel database before
+moving on to the next steps.</li></ol></section><section id="link-your-ponto-account-with-your-odoo-database"><i id="ponto-link-odoo"></i><h3 >Link your Ponto account with your Ibel database</h3><p >Ibel requires you to insert your Ponto’s <strong >Client ID</strong> and <strong >Secret ID</strong> to synchronize both
 platforms.</p><img src="../../../_images/ponto_link_odoo.png" alt="Logo of the Ponto brand" style="" class="img-responsive center-block"><ol ><li >To generate these IDs, go to <span class="menuselection">Ponto Dashboard ‣ Integration ‣ Live</span>, click on
-<em >Add Integration</em>, fill out the form, and select which accounts you want to synchronize.</li><li >Copy the Client ID and Secret ID generated and paste them in Odoo.</li><li ><p >Configure the synchronization options:</p><ul ><li ><strong >Action</strong>: define if Odoo must create a new <em >Journal</em> for this bank account, link to an
-existing Journal, or create no link.</li><li ><strong >Journal</strong>: select the appropriate <em >Journal</em>.</li><li ><strong >Synchronization Frequency</strong>: define how often Odoo should fetch the bank statements.</li></ul></li></ol><img src="../../../_images/ponto_synchronization.png" alt="Configure the bank synchronization through Ponto on your Odoo database" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >It is good practice to have one Journal per bank account. If you synchronize a single bank
+<em >Add Integration</em>, fill out the form, and select which accounts you want to synchronize.</li><li >Copy the Client ID and Secret ID generated and paste them in Ibel.</li><li ><p >Configure the synchronization options:</p><ul ><li ><strong >Action</strong>: define if Ibel must create a new <em >Journal</em> for this bank account, link to an
+existing Journal, or create no link.</li><li ><strong >Journal</strong>: select the appropriate <em >Journal</em>.</li><li ><strong >Synchronization Frequency</strong>: define how often Ibel should fetch the bank statements.</li></ul></li></ol><img src="../../../_images/ponto_synchronization.png" alt="Configure the bank synchronization through Ponto on your Ibel database" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >It is good practice to have one Journal per bank account. If you synchronize a single bank
 account, link it to the existing <em >Bank</em> journal. If you have multiple accounts, it is recommended
 to pick the <em >Create new journal</em> option for all additional accounts.</p></div></section><section id="update-your-synchronization-credentials"><i id="ponto-update-credentials"></i><h3 >Update your synchronization credentials</h3><p >You might have to update your Ponto credentials or modify the synchronization settings.</p><p >To do so, activate the <a href="../../../general/developer_mode/activate.html" class="reference internal"><span class="doc">Developer Mode</span></a>, and go to
 <span class="menuselection">Accounting ‣ Configuration ‣ Online Synchronization</span>.</p><p >Click on <em >Update Accounts</em> to enter your new Client ID and Secret ID, or click on <em >Edit</em> to modify
-the synchronization settings.</p></section><section id="deprecated-api-tokens"><h2 >Deprecated API tokens</h2><p >Ponto’s previous synchronization system using API tokens is now deprecated.</p><p >This section is only relevant for users who had previously linked Ponto with Odoo using a single API
-token instead of the current synchronization system with a <em >Client ID</em> and a <em >Secret ID</em>.</p><ol ><li ><p ><strong >Update</strong> your database.</p><ul ><li ><div class="line-block"><div class="line"><em >SaaS</em> and <em >Odoo.sh</em> users:</div><div class="line">you can skip this step, as your database is automatically updated.</div></div></li><li ><div class="line-block"><div class="line"><em >Community</em> and <em >Enterprise</em> users:</div><div class="line">download the latest Odoo source code for your version (you can download it from <a href="https://odoo.com/download" class="reference external">this link</a> or from GitHub), install it, and restart your server.</div></div></li></ul></li><li ><div class="line-block"><div class="line">Do a <strong >hard refresh</strong> of your Odoo page by pressing <em >CTRL + F5</em>.</div><div class="line">A hard refresh clears the cache and the javascript code for the current page.</div></div></li><li >To <strong >generate your access key</strong>, follow <a href="#ponto-link-odoo" class="reference internal"><span class="std std-ref">the steps above</span></a>.</li><li >To <strong >update your credentials</strong>, follow <a href="#ponto-update-credentials" class="reference internal"><span class="std std-ref">the steps above</span></a>.</li></ol><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="bank_synchronization.html" class="reference internal alert-link"><span class="doc">Bank Synchronization: Automatic Import</span></a></li><li ><a href="../setup/bank_accounts.html" class="reference internal alert-link"><span class="doc">Bank Accounts</span></a></li><li ><a href="bank_statements.html" class="reference internal alert-link"><span class="doc">Bank Statements</span></a></li></ul></div></section>
+the synchronization settings.</p></section><section id="deprecated-api-tokens"><h2 >Deprecated API tokens</h2><p >Ponto’s previous synchronization system using API tokens is now deprecated.</p><p >This section is only relevant for users who had previously linked Ponto with Ibel using a single API
+token instead of the current synchronization system with a <em >Client ID</em> and a <em >Secret ID</em>.</p><ol ><li ><p ><strong >Update</strong> your database.</p><ul ><li ><div class="line-block"><div class="line"><em >SaaS</em> and <em >Ibel.sh</em> users:</div><div class="line">you can skip this step, as your database is automatically updated.</div></div></li><li ><div class="line-block"><div class="line"><em >Community</em> and <em >Enterprise</em> users:</div><div class="line">download the latest Ibel source code for your version (you can download it from <a href="https://odoo.com/download" class="reference external">this link</a> or from GitHub), install it, and restart your server.</div></div></li></ul></li><li ><div class="line-block"><div class="line">Do a <strong >hard refresh</strong> of your Ibel page by pressing <em >CTRL + F5</em>.</div><div class="line">A hard refresh clears the cache and the javascript code for the current page.</div></div></li><li >To <strong >generate your access key</strong>, follow <a href="#ponto-link-odoo" class="reference internal"><span class="std std-ref">the steps above</span></a>.</li><li >To <strong >update your credentials</strong>, follow <a href="#ponto-update-credentials" class="reference internal"><span class="std std-ref">the steps above</span></a>.</li></ol><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="bank_synchronization.html" class="reference internal alert-link"><span class="doc">Bank Synchronization: Automatic Import</span></a></li><li ><a href="../setup/bank_accounts.html" class="reference internal alert-link"><span class="doc">Bank Accounts</span></a></li><li ><a href="bank_statements.html" class="reference internal alert-link"><span class="doc">Bank Statements</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -329,7 +329,7 @@ token instead of the current synchronization system with a <em >Client ID</em> a
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -351,7 +351,7 @@ token instead of the current synchronization system with a <em >Client ID</em> a
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -385,9 +385,9 @@ token instead of the current synchronization system with a <em >Client ID</em> a
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -404,6 +404,6 @@ token instead of the current synchronization system with a <em >Client ID</em> a
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

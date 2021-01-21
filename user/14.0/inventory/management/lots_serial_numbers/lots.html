@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage lots of identical products &#8212; Odoo 14.0 documentation</title>
+    <title>Manage lots of identical products &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Manage expiration dates" href="expiration_dates.html" />
-    <link rel="prev" title="Work with serial numbers" href="serial_numbers.html" /> 
+    <link rel="prev" title="Work with serial numbers" href="serial_numbers.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../inventory.html">Inventory</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Manage lots of identical products</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,60 +242,60 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Manage lots of identical products </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#setting-up" class="reference ripple internal">Setting Up</a><ul ><li class="list-group-item"><a href="#application-configuration" class="reference ripple internal">Application Configuration</a></li><li class="list-group-item"><a href="#product-configuration" class="reference ripple internal">Product Configuration</a></li></ul></li><li class="list-group-item"><a href="#manage-lots" class="reference ripple internal">Manage Lots</a><ul ><li class="list-group-item"><a href="#receipts" class="reference ripple internal">Receipts</a><ul ><li class="list-group-item"><a href="#manually-assign-the-different-lot-numbers" class="reference ripple internal">Manually assign the different lot numbers</a></li><li class="list-group-item"><a href="#copy-paste-lot-number-from-an-excel-file" class="reference ripple internal">Copy/paste lot number from an Excel file</a></li></ul></li><li class="list-group-item"><a href="#operation-types" class="reference ripple internal">Operation Types</a></li></ul></li><li class="list-group-item"><a href="#lots-traceability" class="reference ripple internal">Lots traceability</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/management/lots_serial_numbers/lots.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="manage-lots-of-identical-products"><p >Lots are useful for products you receive in great quantity and for which
 a lot number can help in reporting, quality controls, or any other info.
 Lots will help identify a number of pieces having, for instance, a
 production fault. It can be useful for a batch production of clothes or
-food.</p><p >Odoo has the capacity to manage lots, ensuring compliance with the
-traceability requirements imposed by the majority of industries.</p><p >The double-entry management in Odoo enables you to run very advanced
+food.</p><p >Ibel has the capacity to manage lots, ensuring compliance with the
+traceability requirements imposed by the majority of industries.</p><p >The double-entry management in Ibel enables you to run very advanced
 traceability.</p></section><section id="setting-up"><h2 >Setting Up</h2></section><section id="application-configuration"><h3 >Application Configuration</h3><p >First, you need to activate the tracking of lot numbers. To do so, go to
 <span class="menuselection">Inventory ‣ Configuration ‣ Settings</span> and tick <em >Lots &amp; Serial
 Numbers</em>. Then, click on save.</p><img src="../../../_images/lots_01.png" style="" class="img-responsive center-block"></section><section id="product-configuration"><h3 >Product Configuration</h3><p >Now, you have to configure which products you want to track by serial
@@ -306,7 +306,7 @@ lot numbers. You have several ways of doing so:</p><ol ><li >Manually assign the
 Then, you will be able to fill the lot number in. Once done, you can
 click on <em >Add a line</em> again to register a new lot number.</p><img src="../../../_images/lots_05.png" style="" class="img-responsive center-block"></section><section id="copy-paste-lot-number-from-an-excel-file"><h4 >Copy/paste lot number from an Excel file</h4><p >Once the spreadsheet containing the lot numbers you received from your
 supplier and copy the list. Then, you can paste them in the <em >Lot/Serial
-Number Name</em> column for Odoo to automatically create the necessary
+Number Name</em> column for Ibel to automatically create the necessary
 lines. After that, you will have to manually enter the number of
 products that are contained in each one of the lots.</p><img src="../../../_images/lots_06.png" style="" class="img-responsive center-block"><img src="../../../_images/lots_05.png" style="" class="img-responsive center-block"><img src="../../../_images/lots_07.png" style="" class="img-responsive center-block"></section><section id="operation-types"><h3 >Operation Types</h3><p >Of course, you also have the possibility to define how you will manage
 lots for each operation type. To do so, open the <em >Inventory</em> app and
@@ -326,7 +326,7 @@ the <em >Location</em> stat button.</p><img src="../../../_images/lots_11.png" s
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -346,7 +346,7 @@ the <em >Location</em> stat button.</p><img src="../../../_images/lots_11.png" s
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -368,7 +368,7 @@ the <em >Location</em> stat button.</p><img src="../../../_images/lots_11.png" s
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -402,9 +402,9 @@ the <em >Location</em> stat button.</p><img src="../../../_images/lots_11.png" s
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -421,6 +421,6 @@ the <em >Location</em> stat button.</p><img src="../../../_images/lots_11.png" s
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

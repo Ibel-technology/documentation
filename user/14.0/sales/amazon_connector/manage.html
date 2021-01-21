@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Amazon orders in Odoo &#8212; Odoo 14.0 documentation</title>
+    <title>Manage Amazon orders in Ibel &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Install the Amazon Connector Authentication Update" href="update.html" />
-    <link rel="prev" title="Configure Amazon Connector in Odoo" href="setup.html" /> 
+    <link rel="prev" title="Configure Amazon Connector in Ibel" href="setup.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
-                    <li><a href="../../sales.html">Sales</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-    <li class="active"><a href="#">Manage Amazon orders in Odoo</a></li>
 
-              
+
+
+
+
+
+                    <li><a href="../../sales.html">Sales</a></li>
+
+
+
+
+
+
+
+
+
+
+    <li class="active"><a href="#">Manage Amazon orders in Ibel</a></li>
+
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,99 +236,99 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
-        <h1> Manage Amazon orders in Odoo </h1>
+        <h1> Manage Amazon orders in Ibel </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#synchronization-of-orders" class="reference ripple internal">Synchronization of orders</a></li><li class="list-group-item"><a href="#manage-deliveries-in-fbm" class="reference ripple internal">Manage deliveries in FBM</a></li><li class="list-group-item"><a href="#follow-deliveries-in-fba" class="reference ripple internal">Follow deliveries in FBA</a></li><li class="list-group-item"><a href="#issue-invoices-and-register-payments" class="reference ripple internal">Issue invoices and register payments</a></li><li class="list-group-item"><a href="#follow-your-amazon-sales-in-sales-reporting" class="reference ripple internal">Follow your Amazon sales in sales reporting</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/sales/amazon_connector/manage.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="manage-amazon-orders-in-odoo"></section><section id="synchronization-of-orders"><h2 >Synchronization of orders</h2><p >Orders are automatically fetched from Amazon and synchronized in Odoo at regular intervals.
+
+
+  <section id="manage-amazon-orders-in-odoo"></section><section id="synchronization-of-orders"><h2 >Synchronization of orders</h2><p >Orders are automatically fetched from Amazon and synchronized in Ibel at regular intervals.
 The synchronization is based on the Amazon status: only orders whose status has changed since the
 last synchronization are fetched from Amazon. For <strong >FBA</strong> (Fulfilled by Amazon), only <strong >Shipped</strong>
 and <strong >Canceled</strong> orders are fetched. For <strong >FBM</strong> (Fulfilled by Merchant), the same is done for
 <strong >Unshipped</strong> and <strong >Canceled</strong> orders. For each synchronized order, a sales order and a customer are
-created in Odoo if they are not yet registered.</p><p >When an order is canceled in Amazon and was already synchronized in Odoo, the corresponding sales
-order is automatically canceled in Odoo.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >To force the synchronization of an order whose status has not changed since the last
+created in Ibel if they are not yet registered.</p><p >When an order is canceled in Amazon and was already synchronized in Ibel, the corresponding sales
+order is automatically canceled in Ibel.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >To force the synchronization of an order whose status has not changed since the last
 synchronization, activate the <a href="../../general/developer_mode/activate.html" class="reference internal alert-link"><span class="doc">Developer mode</span></a>,
 navigate to your Amazon account and modify the date under
 <span class="menuselection">Orders Follow-up ‣ Last Order Sync</span>. Pick a date anterior to the last status
 change of the order that you wish to synchronize and save.</p></div><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >To synchronize immediately the orders of your Amazon account switch to
 <a href="../../general/developer_mode/activate.html" class="reference internal alert-link"><span class="doc">Developer mode</span></a>, head to your Amazon account and
-click on <strong >SYNC ORDERS</strong>. The same can be done with pickings by clicking on <strong >SYNC PICKINGS</strong>.</p></div></section><section id="manage-deliveries-in-fbm"><h2 >Manage deliveries in FBM</h2><p >When a <strong >FBM</strong> (Fulfilled by Merchant) order is synchronized in Odoo, a picking is created along
+click on <strong >SYNC ORDERS</strong>. The same can be done with pickings by clicking on <strong >SYNC PICKINGS</strong>.</p></div></section><section id="manage-deliveries-in-fbm"><h2 >Manage deliveries in FBM</h2><p >When a <strong >FBM</strong> (Fulfilled by Merchant) order is synchronized in Ibel, a picking is created along
 with the sales order and the customer. You can either ship all the ordered products to your customer
 at once or ship products partially by using backorders.</p><p >When a picking related to the order is confirmed, a notification is sent to Amazon who will, in
-turn, notify the customer that the order (or a part of it) is on its way.</p></section><section id="follow-deliveries-in-fba"><h2 >Follow deliveries in FBA</h2><p >When a <strong >FBA</strong> (Fulfilled by Amazon) order is synchronized in Odoo, a stock move is recorded for
+turn, notify the customer that the order (or a part of it) is on its way.</p></section><section id="follow-deliveries-in-fba"><h2 >Follow deliveries in FBA</h2><p >When a <strong >FBA</strong> (Fulfilled by Amazon) order is synchronized in Ibel, a stock move is recorded for
 each sales order item so that it is saved in your system. Inventory managers can find such moves
 in <span class="menuselection">Inventory ‣ Reporting ‣ Product Moves</span>. They pick up products in a specific
 inventory location called <strong >Amazon</strong>. This location represents your stock in Amazon’s warehouses
-and allows you to manage the stock of your products under the FBA program.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >To follow your Amazon (FBA) stock in Odoo, you can make an inventory adjustment after
+and allows you to manage the stock of your products under the FBA program.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >To follow your Amazon (FBA) stock in Ibel, you can make an inventory adjustment after
 replenishing it. You can also trigger an automated replenishment from reordering rules on the
-Amazon location.</p></div><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >The Amazon location is configurable by Amazon account managed in Odoo. All accounts of the same
+Amazon location.</p></div><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >The Amazon location is configurable by Amazon account managed in Ibel. All accounts of the same
 company use the same location by default. It is however possible to follow the stock by
 marketplace. First, remove the marketplace for which you want to follow the stock separately from
 the list of synchronized marketplaces. Then, create another registration for this account and
 remove all marketplaces, except the one to isolate from the others. Finally, assign another stock
-location to the second registration of your account.</p></div></section><section id="issue-invoices-and-register-payments"><h2 >Issue invoices and register payments</h2><p >You can issue invoices for Amazon orders in Odoo. Click <strong >Create Invoice</strong> in the sales order to do
+location to the second registration of your account.</p></div></section><section id="issue-invoices-and-register-payments"><h2 >Issue invoices and register payments</h2><p >You can issue invoices for Amazon orders in Ibel. Click <strong >Create Invoice</strong> in the sales order to do
 so. You can also do it in batch from the list view of orders. Then, confirm and send the invoices to
 your customers.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >To display only Amazon-related orders on the list view, you can filter orders based on the sales
 team.</p></div><p >As the customer has paid Amazon as an intermediary, you should register invoice payments in a
 payment journal dedicated to Amazon (e.g. Amazon Payments, with a dedicated intermediary account).
 You can do the same with the vendor bill received from Amazon and dedicated to commissions. When you
 receive the balance on your bank account at the end of the month and record your bank statements in
-Odoo, you simply credit the Amazon intermediary account by the amount received.</p></section><section id="follow-your-amazon-sales-in-sales-reporting"><h2 >Follow your Amazon sales in sales reporting</h2><p >As a sales team is set on your account under the tab <strong >Order Follow-up</strong>, this helps you give quick
+Ibel, you simply credit the Amazon intermediary account by the amount received.</p></section><section id="follow-your-amazon-sales-in-sales-reporting"><h2 >Follow your Amazon sales in sales reporting</h2><p >As a sales team is set on your account under the tab <strong >Order Follow-up</strong>, this helps you give quick
 glances at the figures in just a few clicks in Sales reporting. By default, your account’s sales
 team is shared between all of your company’s accounts.</p><p >If you wish, you can change the sales team on your account for another to perform a separate
 reporting for the sales of this account.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >It is also possible to perform reporting on a per-marketplace basis in a similar fashion. First,
 remove the marketplace you wish to track separately from the list of synchronized marketplaces.
 Then, create another registration for this account and remove all marketplaces, except the one to
 isolate from the others. Finally, assign another sales team to one of the two registrations of
-your account.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="features.html" class="reference internal alert-link"><span class="doc">Amazon Connector Features</span></a></li><li ><a href="setup.html" class="reference internal alert-link"><span class="doc">Configure Amazon Connector in Odoo</span></a></li></ul></div></section>
+your account.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="features.html" class="reference internal alert-link"><span class="doc">Amazon Connector Features</span></a></li><li ><a href="setup.html" class="reference internal alert-link"><span class="doc">Configure Amazon Connector in Ibel</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -348,7 +348,7 @@ your account.</p></div><div role="alert" class="alert alert-go_to"><p class="ale
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -370,7 +370,7 @@ your account.</p></div><div role="alert" class="alert alert-go_to"><p class="ale
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -404,9 +404,9 @@ your account.</p></div><div role="alert" class="alert alert-go_to"><p class="ale
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -423,6 +423,6 @@ your account.</p></div><div role="alert" class="alert alert-go_to"><p class="ale
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

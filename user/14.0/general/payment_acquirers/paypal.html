@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Configure your Paypal account &#8212; Odoo 14.0 documentation</title>
+    <title>Configure your Paypal account &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Stripe" href="stripe.html" />
-    <link rel="prev" title="Authorize.Net" href="authorize.html" /> 
+    <link rel="prev" title="Authorize.Net" href="authorize.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Configure your Paypal account</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,73 +236,73 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Configure your Paypal account </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
-              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#paypal-account" class="reference ripple internal">Paypal account</a></li><li class="list-group-item"><a href="#settings-in-paypal" class="reference ripple internal">Settings in Paypal</a><ul ><li class="list-group-item"><a href="#auto-return" class="reference ripple internal">Auto Return</a></li><li class="list-group-item"><a href="#payment-data-transfer-pdt" class="reference ripple internal">Payment Data Transfer (PDT)</a></li><li class="list-group-item"><a href="#instant-payment-notification-ipn" class="reference ripple internal">Instant Payment Notification (IPN)</a></li><li class="list-group-item"><a href="#payment-messages-format" class="reference ripple internal">Payment Messages Format</a></li></ul></li><li class="list-group-item"><a href="#settings-in-odoo" class="reference ripple internal">Settings in Odoo</a><ul ><li class="list-group-item"><a href="#activation" class="reference ripple internal">Activation</a></li><li class="list-group-item"><a href="#credentials" class="reference ripple internal">Credentials</a></li><li class="list-group-item"><a href="#transaction-fees" class="reference ripple internal">Transaction fees</a></li></ul></li><li class="list-group-item"><a href="#go-live" class="reference ripple internal">Go live!</a></li><li class="list-group-item"><a href="#test-environment" class="reference ripple internal">Test environment</a></li></ul>
-              
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#paypal-account" class="reference ripple internal">Paypal account</a></li><li class="list-group-item"><a href="#settings-in-paypal" class="reference ripple internal">Settings in Paypal</a><ul ><li class="list-group-item"><a href="#auto-return" class="reference ripple internal">Auto Return</a></li><li class="list-group-item"><a href="#payment-data-transfer-pdt" class="reference ripple internal">Payment Data Transfer (PDT)</a></li><li class="list-group-item"><a href="#instant-payment-notification-ipn" class="reference ripple internal">Instant Payment Notification (IPN)</a></li><li class="list-group-item"><a href="#payment-messages-format" class="reference ripple internal">Payment Messages Format</a></li></ul></li><li class="list-group-item"><a href="#settings-in-odoo" class="reference ripple internal">Settings in Ibel</a><ul ><li class="list-group-item"><a href="#activation" class="reference ripple internal">Activation</a></li><li class="list-group-item"><a href="#credentials" class="reference ripple internal">Credentials</a></li><li class="list-group-item"><a href="#transaction-fees" class="reference ripple internal">Transaction fees</a></li></ul></li><li class="list-group-item"><a href="#go-live" class="reference ripple internal">Go live!</a></li><li class="list-group-item"><a href="#test-environment" class="reference ripple internal">Test environment</a></li></ul>
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/payment_acquirers/paypal.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="configure-your-paypal-account"><p >Paypal is available and popular worldwide. It doesn’t charge any
 subscription fee and creating an account is very easy. That’s why we
-definitely recommend it for starters in Odoo. It works as a seamless
+definitely recommend it for starters in Ibel. It works as a seamless
 flow where the customer is routed to Paypal website to register the
 payment.</p></section><section id="paypal-account"><h2 >Paypal account</h2><p >A business account is needed to get paid with Paypal. Create a
 <a href="https://www.paypal.com/us/merchantsignup/applicationChecklist?signupType=CREATE_NEW_ACCOUNT&amp;productIntentId=wp_standard" class="reference external">Paypal Business Account</a>
 or upgrade your Personal account to a Business account. Go to the Paypal
 settings and click on <em >Upgrade to a Business account</em>.
 Then follow the few configuration steps.</p></section><section id="settings-in-paypal"><h2 >Settings in Paypal</h2><div class="line-block"><div class="line">First, let’s see how to set up your Paypal account in order to build a
-seamless customer experience with Odoo.</div><div class="line">Log in and open the settings. Go to <span class="menuselection">Products &amp; Services ‣
-Website payments</span> and click <strong >Update</strong> on <strong >Website preferences</strong>.</div></div><img src="../../_images/paypal011.png" style="" class="img-responsive center-block"></section><section id="auto-return"><h3 >Auto Return</h3><p ><em >Auto Return</em> automatically redirects your customers to Odoo once the
+seamless customer experience with Ibel.</div><div class="line">Log in and open the settings. Go to <span class="menuselection">Products &amp; Services ‣
+Website payments</span> and click <strong >Update</strong> on <strong >Website preferences</strong>.</div></div><img src="../../_images/paypal011.png" style="" class="img-responsive center-block"></section><section id="auto-return"><h3 >Auto Return</h3><p ><em >Auto Return</em> automatically redirects your customers to Ibel once the
 payment is processed. Check <em >Auto Return</em> and enter your domain name
 with the suffix <code >/shop/confirmation</code> as <em >Return URL</em>
-(e.g. <code >https://yourcompany.odoo.com/shop/confirmation</code>).</p><p >This URL is requested in Paypal but not used in practice as Odoo
+(e.g. <code >https://yourcompany.odoo.com/shop/confirmation</code>).</p><p >This URL is requested in Paypal but not used in practice as Ibel
 transmits it at each transaction. Don’t worry if you manage several
-sales channels or Odoo databases.</p><img src="../../_images/paypal021.png" style="" class="img-responsive center-block"></section><section id="payment-data-transfer-pdt"><h3 >Payment Data Transfer (PDT)</h3><p ><em >Payment Data Transfer</em> delivers the payment confirmation to Odoo as
-soon as it is processed. Without it, Odoo cannot end the sales flow.
+sales channels or Ibel databases.</p><img src="../../_images/paypal021.png" style="" class="img-responsive center-block"></section><section id="payment-data-transfer-pdt"><h3 >Payment Data Transfer (PDT)</h3><p ><em >Payment Data Transfer</em> delivers the payment confirmation to Ibel as
+soon as it is processed. Without it, Ibel cannot end the sales flow.
 This setting must be activated as well. When saving, an <em >Identity
-Token</em> is generated. You will be later requested to enter it in Odoo.</p><img src="../../_images/paypal031.png" style="" class="img-responsive center-block"><p >Paypal Account Optional</p><p >We advise you to not prompt customers to log in with a Paypal account
+Token</em> is generated. You will be later requested to enter it in Ibel.</p><img src="../../_images/paypal031.png" style="" class="img-responsive center-block"><p >Paypal Account Optional</p><p >We advise you to not prompt customers to log in with a Paypal account
 when they get to pay. Let them pay with debit/credit cards as well, or you might lose some deals. Make sure this setting is turned on.</p><img src="../../_images/paypal04.png" style="" class="img-responsive center-block"></section><section id="instant-payment-notification-ipn"><h3 >Instant Payment Notification (IPN)</h3><p >PDT sends order confirmations once and only once. As a result, your site
 must be running when it happens; otherwise, it will never receive the
 message. That’s why we advise to activate the <em >Instant Payment
@@ -311,26 +311,26 @@ is virtually guaranteed since IPN resends a confirmation until your site acknowl
 <em >Update</em> in <em >Instant Payment Notification</em>.</div><div class="line">The <em >Notification URL</em> to set is your domain name +
 “payment/paypal/ipn” (e.g. <code >https://yourcompany.odoo.com/payment/paypal/ipn</code>).</div></div><img src="../../_images/paypal05.png" style="" class="img-responsive center-block"></section><section id="payment-messages-format"><h3 >Payment Messages Format</h3><p >If you use accented characters (or anything else than basic Latin characters)
 for your customer names, addresses… you MUST configure the encoding format of
-the payment request sent by Odoo to Paypal.</p><div role="alert" class="alert-danger alert"><p class="alert-title">Danger</p><p >If you don’t configure this setting, some transactions fail without notice.</p></div><p >To do so, open:</p><ul ><li ><a href="https://sandbox.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-language-encoding" class="reference external">this page for a test account</a></li><li ><a href="https://www.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-language-encoding" class="reference external">this page for a production account</a></li></ul><p >Then, click <em >More Options</em> and set the two default encoding formats as <strong >UTF-8</strong>.</p><img src="../../_images/paypal07.png" style="" class="img-responsive center-block"><img src="../../_images/paypal08.png" style="" class="img-responsive center-block"><p >Your Paypal account is ready!</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >If you want your customers to pay without creating a Paypal account,
+the payment request sent by Ibel to Paypal.</p><div role="alert" class="alert-danger alert"><p class="alert-title">Danger</p><p >If you don’t configure this setting, some transactions fail without notice.</p></div><p >To do so, open:</p><ul ><li ><a href="https://sandbox.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-language-encoding" class="reference external">this page for a test account</a></li><li ><a href="https://www.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-language-encoding" class="reference external">this page for a production account</a></li></ul><p >Then, click <em >More Options</em> and set the two default encoding formats as <strong >UTF-8</strong>.</p><img src="../../_images/paypal07.png" style="" class="img-responsive center-block"><img src="../../_images/paypal08.png" style="" class="img-responsive center-block"><p >Your Paypal account is ready!</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >If you want your customers to pay without creating a Paypal account,
 <em >Paypal Account Optional</em> needs to be turned on.</p><img src="../../_images/paypal_account_optional.png" style="" class="img-responsive"></div><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >For Encrypted Website Payments &amp; EWP_SETTINGS error,
-please check the <a href="https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/encryptedwebpayments/#encrypted-website-payments-ewp" class="alert-link reference external">Paypal documentation</a>.</p></div></section><section id="settings-in-odoo"><h2 >Settings in Odoo</h2></section><section id="activation"><h3 >Activation</h3><p >Activate <em >Paypal</em> from the config bar of Sales, Invoicing and
-eCommerce apps, or from the configuration menu of <em >Payment Acquirers</em>.</p></section><section id="credentials"><h3 >Credentials</h3><p >Odoo requires three Paypal credentials:</p><ul ><li ><em >Email ID</em> is your login email address in Paypal.</li><li ><em >Merchant ID</em> can be found in the settings of your Paypal account, in
+please check the <a href="https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/encryptedwebpayments/#encrypted-website-payments-ewp" class="alert-link reference external">Paypal documentation</a>.</p></div></section><section id="settings-in-odoo"><h2 >Settings in Ibel</h2></section><section id="activation"><h3 >Activation</h3><p >Activate <em >Paypal</em> from the config bar of Sales, Invoicing and
+eCommerce apps, or from the configuration menu of <em >Payment Acquirers</em>.</p></section><section id="credentials"><h3 >Credentials</h3><p >Ibel requires three Paypal credentials:</p><ul ><li ><em >Email ID</em> is your login email address in Paypal.</li><li ><em >Merchant ID</em> can be found in the settings of your Paypal account, in
 <span class="menuselection">Account Settings ‣ Business information</span>.</li><li ><em >Paypal PDT Token</em> is given in <em >Website payments</em> configuration as explained here above.</li></ul><img src="../../_images/paypal09.png" style="" class="img-responsive center-block"></section><section id="transaction-fees"><h3 >Transaction fees</h3><p >You can charge extra fees to your customers for paying with Paypal;
 This to cover the transaction fees Paypal charges you. Once redirected to Paypal, your customer sees an extra applied to the order amount.</p><p >To activate this, go to the Configuration tab of Paypal configuration in
-Odoo and check <em >Add Extra Fees</em>.</p><img src="../../_images/paypal10.png" style="" class="img-responsive center-block"><p >You can refer to <a href="https://www.paypal.com/webapps/mpp/paypal-fees" class="reference external">Paypal Fees</a> to set up
+Ibel and check <em >Add Extra Fees</em>.</p><img src="../../_images/paypal10.png" style="" class="img-responsive center-block"><p >You can refer to <a href="https://www.paypal.com/webapps/mpp/paypal-fees" class="reference external">Paypal Fees</a> to set up
 fees.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p ><a href="https://europa.eu/youreurope/citizens/consumers/shopping/pricing-payments/index_en.htm" class="alert-link reference external">Traders in the EU</a> are not allowed to charge extra fees for paying with credit cards.</p></div></section><section id="go-live"><h2 >Go live!</h2><p >Your configuration is ready to roll. Make sure <em >Production</em> mode is
 on. Then publish the payment method by clicking the <em >Published</em> button right next to it.</p><img src="../../_images/paypal11.png" style="" class="img-responsive center-block"><img src="../../_images/paypal12.png" style="" class="img-responsive center-block"><p >Paypal is now available in your payment form available in eCommerce,
 Sales and Invoicing apps. Customers are redirected to Paypal website
-when hitting <em >Pay Now</em>. They get back to a confirmation page in Odoo
-once the payment is processed.</p><img src="../../_images/paypal13.png" style="" class="img-responsive center-block"></section><section id="test-environment"><h2 >Test environment</h2><p >You can test the entire payment flow in Odoo thanks to Paypal Sandbox accounts.</p><p >Log in to <a href="https://developer.paypal.com/" class="reference external">Paypal Developer Site</a> with your Paypal credentials.</p><p >This will create two sandbox accounts:</p><ul ><li >A business account (to use as merchant, e.g. <a href="mailto:pp.merch01-facilitator@example.com" class="reference external">pp.merch01-facilitator@example.com</a>).</li><li >A default personal account (to use as shopper, e.g. <a href="mailto:pp.merch01-buyer@example.com" class="reference external">pp.merch01-buyer@example.com</a>).</li></ul><p >Log in to Paypal Sandbox with the merchant account and follow the same configuration instructions.
-Enter your sandbox credentials in Odoo and make sure Paypal is still
+when hitting <em >Pay Now</em>. They get back to a confirmation page in Ibel
+once the payment is processed.</p><img src="../../_images/paypal13.png" style="" class="img-responsive center-block"></section><section id="test-environment"><h2 >Test environment</h2><p >You can test the entire payment flow in Ibel thanks to Paypal Sandbox accounts.</p><p >Log in to <a href="https://developer.paypal.com/" class="reference external">Paypal Developer Site</a> with your Paypal credentials.</p><p >This will create two sandbox accounts:</p><ul ><li >A business account (to use as merchant, e.g. <a href="mailto:pp.merch01-facilitator@example.com" class="reference external">pp.merch01-facilitator@example.com</a>).</li><li >A default personal account (to use as shopper, e.g. <a href="mailto:pp.merch01-buyer@example.com" class="reference external">pp.merch01-buyer@example.com</a>).</li></ul><p >Log in to Paypal Sandbox with the merchant account and follow the same configuration instructions.
+Enter your sandbox credentials in Ibel and make sure Paypal is still
 set on <em >Test Environment</em>. Also, make sure the automatic invoicing
 is not activated in your eCommerce settings, to not generate invoices
-when a fictitious transaction is completed.</p><p >Run a test transaction from Odoo using the sandbox personal account.</p><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="payment_acquirers.html" class="reference internal alert-link"><span class="doc">Payment Acquirers (Credit Cards, Online Payment)</span></a></li><li ><a href="../../ecommerce/shopper_experience/payment_acquirer.html" class="reference internal alert-link"><span class="doc">How to manage orders paid with payment acquirers</span></a></li></ul></div></section>
+when a fictitious transaction is completed.</p><p >Run a test transaction from Ibel using the sandbox personal account.</p><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="payment_acquirers.html" class="reference internal alert-link"><span class="doc">Payment Acquirers (Credit Cards, Online Payment)</span></a></li><li ><a href="../../ecommerce/shopper_experience/payment_acquirer.html" class="reference internal alert-link"><span class="doc">How to manage orders paid with payment acquirers</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -372,7 +372,7 @@ when a fictitious transaction is completed.</p><p >Run a test transaction from O
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -406,9 +406,9 @@ when a fictitious transaction is completed.</p><p >Run a test transaction from O
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Payment Acquirers (Credit Cards, Online Payment) &#8212; Odoo 14.0 documentation</title>
+    <title>Payment Acquirers (Credit Cards, Online Payment) &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="How to get paid with wire transfers" href="wire_transfer.html" />
-    <link rel="prev" title="Payment Acquirers" href="../payment_acquirers.html" /> 
+    <link rel="prev" title="Payment Acquirers" href="../payment_acquirers.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Payment Acquirers (Credit Cards, Online Payment)</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,70 +236,70 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Payment Acquirers (Credit Cards, Online Payment) </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#payment-acquirers" class="reference ripple internal">Payment Acquirers</a><ul ><li class="list-group-item"><a href="#bank-payments" class="reference ripple internal">Bank Payments</a></li><li class="list-group-item"><a href="#online-payment-providers" class="reference ripple internal">Online Payment Providers</a></li></ul></li><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#add-a-new-payment-acquirer" class="reference ripple internal">Add a new Payment Acquirer</a><ul ><li class="list-group-item"><a href="#credentials-tab" class="reference ripple internal">Credentials tab</a></li><li class="list-group-item"><a href="#configuration-tab" class="reference ripple internal">Configuration tab</a><ul ><li class="list-group-item"><a href="#save-and-reuse-credit-cards" class="reference ripple internal">Save and reuse Credit Cards</a></li><li class="list-group-item"><a href="#place-a-hold-on-a-card" class="reference ripple internal">Place a hold on a card</a></li><li class="list-group-item"><a href="#payment-flow" class="reference ripple internal">Payment Flow</a></li><li class="list-group-item"><a href="#countries" class="reference ripple internal">Countries</a></li><li class="list-group-item"><a href="#payment-journal" class="reference ripple internal">Payment Journal</a></li></ul></li><li class="list-group-item"><a href="#messages-tab" class="reference ripple internal">Messages tab</a></li></ul></li></ul></li><li class="list-group-item"><a href="#accounting-perspective" class="reference ripple internal">Accounting perspective</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/payment_acquirers/payment_acquirers.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="payment-acquirers-credit-cards-online-payment"><p >Odoo embeds several <strong >payment methods</strong> that allow your customers to pay on their <em >Customer Portals</em>
+
+
+  <section id="payment-acquirers-credit-cards-online-payment"><p >Ibel embeds several <strong >payment methods</strong> that allow your customers to pay on their <em >Customer Portals</em>
 or your <em >eCommerce website</em>. They can pay Sales Orders, invoices, or subscriptions with recurring
 payments with their favorite payment acquirers, including <strong >online payment providers</strong> that accept
 <strong >Credit Cards</strong>.</p><p >Having several payment methods increases the chances of getting paid in time, or even immediately,
 as you make it more convenient for your customers to pay with the payment method they prefer and
-trust.</p><img src="../../_images/payment-acquirers-online-payment.png" alt="Pay online in the customer portal and select which payment acquirer to use." style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Odoo does not keep Credit Card numbers or credentials on its servers, nor is it stored on Odoo
-databases hosted elsewhere. Instead, Odoo apps use a unique reference to the data stored in the
+trust.</p><img src="../../_images/payment-acquirers-online-payment.png" alt="Pay online in the customer portal and select which payment acquirer to use." style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >Ibel does not keep Credit Card numbers or credentials on its servers, nor is it stored on Ibel
+databases hosted elsewhere. Instead, Ibel apps use a unique reference to the data stored in the
 payment acquirers’ systems, where the information is safely stored. This reference is useless
 without your credentials for the payment acquirer.</p></div></section><section id="payment-acquirers"><i id="payment-acquirers-acquirers"></i><h2 >Payment Acquirers</h2><p >From an accounting perspective, we can distinguish two types of payment acquirers: the payments that
 go directly on the bank account and follow the usual reconciliation workflow, and the payment
-acquirers that are third-party services and require you to follow another accounting workflow.</p></section><section id="bank-payments"><i id="payment-acquirers-bank-payments"></i><h3 >Bank Payments</h3><ul ><li ><div class="line-block"><div class="line"><a href="wire_transfer.html" class="reference internal"><span class="doc">Wire Transfer</span></a></div><div class="line">When selected, Odoo displays your payment information with a payment reference. You have to
+acquirers that are third-party services and require you to follow another accounting workflow.</p></section><section id="bank-payments"><i id="payment-acquirers-bank-payments"></i><h3 >Bank Payments</h3><ul ><li ><div class="line-block"><div class="line"><a href="wire_transfer.html" class="reference internal"><span class="doc">Wire Transfer</span></a></div><div class="line">When selected, Ibel displays your payment information with a payment reference. You have to
 approve the payment manually once you have received it on your bank account.</div></div></li><li ><div class="line-block"><div class="line">SEPA Direct Debit</div><div class="line">Your customers can sign a SEPA Direct Debit mandate online and get their bank account charged
 directly. <a href="../../accounting/receivables/customer_payments/batch_sdd.html" class="reference internal"><span class="doc">Click here</span></a> for more
 information about this payment method.</div></div></li></ul></section><section id="online-payment-providers"><i id="payment-acquirers-online-providers"></i><h3 >Online Payment Providers</h3><table class="table"><thead ><tr ><th ></th><th >Redirection to
 the acquirer website</th><th >Payment
-from Odoo</th><th >Save Cards</th><th >Capture Amount
+from Ibel</th><th >Save Cards</th><th >Capture Amount
 Manually</th></tr></thead><tbody ><tr ><td >Adyen</td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td >Alipay</td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td ><a href="authorize.html" class="reference internal"><span class="doc">Authorize.Net</span></a></td><td >✔</td><td >✔</td><td >✔</td><td >✔</td></tr><tr ><td >Buckaroo</td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td >Ingenico</td><td >✔</td><td >✔</td><td >✔</td><td ></td></tr><tr ><td ><a href="paypal.html" class="reference internal"><span class="doc">PayPal</span></a></td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td >PayUMoney</td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td >SIPS</td><td >✔</td><td ></td><td ></td><td ></td></tr><tr ><td >Stripe</td><td >✔</td><td >✔</td><td >✔</td><td ></td></tr></tbody></table><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Some of these Online Payment Providers can also be added as <a href="../../accounting/bank/setup/bank_accounts.html" class="reference internal alert-link"><span class="doc">Bank Accounts</span></a>, but this is <strong >not</strong> the same process as adding them
 as Payment Acquirers. Payment Acquirers allow customers to pay online, and Bank Accounts are
 added and configured on your Accounting app to do a bank reconciliation, which is an accounting
@@ -307,36 +307,36 @@ control process.</p></div></section><section id="configuration"><i id="payment-a
 to <a href="#payment-acquirers-online-providers" class="reference internal"><span class="std std-ref">the table above</span></a> for more details.</p></section><section id="add-a-new-payment-acquirer"><i id="payment-acquirers-add-new"></i><h3 >Add a new Payment Acquirer</h3><p >To add a new Payment acquirer and make it available to your customers, go to
 <span class="menuselection">Accounting ‣ Configuration ‣ Payment Acquirers</span>, look for your payment acquirer,
 install the related module, and activate it. To do so, open the payment acquirer and change its
-state from <em >Disabled</em> to <em >Enabled</em>.</p><img src="../../_images/payment-acquirers-activation.png" alt="Click on install, then on activate to make the payment acquirer available on Odoo." style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >We recommend using the <em >Test Mode</em> on a duplicated database or a test database. The Test Mode is
-meant to be used with your test/sandbox credentials, but Odoo generates Sales Orders and Invoices
+state from <em >Disabled</em> to <em >Enabled</em>.</p><img src="../../_images/payment-acquirers-activation.png" alt="Click on install, then on activate to make the payment acquirer available on Ibel." style="" class="img-responsive center-block"><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >We recommend using the <em >Test Mode</em> on a duplicated database or a test database. The Test Mode is
+meant to be used with your test/sandbox credentials, but Ibel generates Sales Orders and Invoices
 as usual. It isn’t always possible to cancel an invoice, and this could create some issues with
 your invoices numbering if you were to test your payment acquirers on your main database.</p></div></section><section id="credentials-tab"><i id="payment-acquirers-credentials-tab"></i><h4 >Credentials tab</h4><p >If not done yet, go to the <strong >Online Payment Provider</strong>’s website, create an account, and make sure
-to have the credentials required for third-party use. Odoo requires these credentials to communicate
+to have the credentials required for third-party use. Ibel requires these credentials to communicate
 with the Payment Acquirer and get the confirmation of the <em >payment authentication</em>.</p><p >The form in this section is specific to the Payment Acquirer you are configuring. Please refer to
 the related documentation for more information.</p></section><section id="configuration-tab"><i id="payment-acquirers-configuration-tab"></i><h4 >Configuration tab</h4><p >You can change the Payment Acquirer front-end appearance by modifying its name under the <strong >Displayed
-as</strong> field and which credit card icons to display under the <strong >Supported Payment Icons</strong> field.</p></section><section id="save-and-reuse-credit-cards"><i id="payment-acquirers-save-cards"></i><h5 >Save and reuse Credit Cards</h5><p >With the <strong >Save Cards</strong> feature, Odoo can store <strong >Payment Tokens</strong> in your database, which can be
+as</strong> field and which credit card icons to display under the <strong >Supported Payment Icons</strong> field.</p></section><section id="save-and-reuse-credit-cards"><i id="payment-acquirers-save-cards"></i><h5 >Save and reuse Credit Cards</h5><p >With the <strong >Save Cards</strong> feature, Ibel can store <strong >Payment Tokens</strong> in your database, which can be
 used for subsequent payments, without having to reenter the payment details. This is particularly
 useful for subscriptions’ recurring payments.</p></section><section id="place-a-hold-on-a-card"><i id="payment-acquirers-capture-amount"></i><h5 >Place a hold on a card</h5><p >If the <strong >Capture Amount Manually</strong> field is enabled, the funds are reserved for a few days on the
 customer’s card, but not charged yet. You must then go to the related Sales Order and manually
 <em >capture</em> the funds before its automatic cancellation, or <em >void the transaction</em> to unlock the funds
 from the customer’s card.</p></section><section id="payment-flow"><i id="payment-acquirers-payment-flow"></i><h5 >Payment Flow</h5><p >Choose in the <strong >Payment Flow</strong> field if to redirect the user to the payment acquirer’s portal to
-authenticate the payment, or if to stay on the current page and authenticate the payment from Odoo.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Some features are available only if you select <em >Redirection to the acquirer website</em>.</p></div></section><section id="countries"><i id="payment-acquirers-countries"></i><h5 >Countries</h5><p >Restrict the use of the Payment Acquirer to a selection of countries. Leave this field blank to make
-the Payment Acquirer available to all countries.</p></section><section id="payment-journal"><i id="payment-acquirers-journal"></i><h5 >Payment Journal</h5><p >The <strong >Payment Journal</strong> selected for your Payment Acquirer must be a <em >Bank</em> journal.</p><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >In many cases, Odoo automatically creates a new <strong >Journal</strong> and a new <strong >Account</strong> when you
+authenticate the payment, or if to stay on the current page and authenticate the payment from Ibel.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Some features are available only if you select <em >Redirection to the acquirer website</em>.</p></div></section><section id="countries"><i id="payment-acquirers-countries"></i><h5 >Countries</h5><p >Restrict the use of the Payment Acquirer to a selection of countries. Leave this field blank to make
+the Payment Acquirer available to all countries.</p></section><section id="payment-journal"><i id="payment-acquirers-journal"></i><h5 >Payment Journal</h5><p >The <strong >Payment Journal</strong> selected for your Payment Acquirer must be a <em >Bank</em> journal.</p><div role="alert" class="alert alert-warning"><p class="alert-title">Important</p><p >In many cases, Ibel automatically creates a new <strong >Journal</strong> and a new <strong >Account</strong> when you
 activate a new Payment Acquirer. Both of them are preset to work out-of-the-box, but we strongly
 recommend you to make sure these fields are correctly set according to your accounting needs, and
-adapt them if necessary.</p></div></section><section id="messages-tab"><i id="payment-acquirers-messages"></i><h4 >Messages tab</h4><p >Change here the messages displayed by Odoo after a payment’s confirmation or failure.</p></section><section id="accounting-perspective"><i id="payment-acquirers-accounting"></i><h2 >Accounting perspective</h2><p >The <strong >Bank Payments</strong> that go directly to one of your bank accounts follow their usual
+adapt them if necessary.</p></div></section><section id="messages-tab"><i id="payment-acquirers-messages"></i><h4 >Messages tab</h4><p >Change here the messages displayed by Ibel after a payment’s confirmation or failure.</p></section><section id="accounting-perspective"><i id="payment-acquirers-accounting"></i><h2 >Accounting perspective</h2><p >The <strong >Bank Payments</strong> that go directly to one of your bank accounts follow their usual
 reconciliation workflows. However, payments recorded with <strong >Online Payment Providers</strong> require you
 to consider how you want to record your payments’ journal entries. We recommend you to ask your
-accountant for advice.</p><p >Odoo default method is to record the payments on a <em >Current Assets Account</em>, on a dedicated <em >Bank
+accountant for advice.</p><p >Ibel default method is to record the payments on a <em >Current Assets Account</em>, on a dedicated <em >Bank
 Journal</em>, once the <em >Payment Authentication</em> is confirmed. At some point, you transfer the funds from
 the <em >Payment Acquirer</em> to your <em >Bank Account</em>.</p><p >Here are the requirements for this to work:</p><ul ><li ><p >Bank Journal</p><ul ><li >The Journal’s <strong >type</strong> must be <em >Bank Journal</em>.</li><li >Select the right <strong >Default Debit Account</strong> and <strong >Default Credit Account</strong>.</li><li ><div class="line-block"><div class="line">Under the <em >Advanced Settings</em> tab, make sure that <strong >Posting</strong> is set as <em >Post At Payment
-Validation</em>.</div><div class="line">This implies that the Journal Entry is recorded directly when your Odoo database receives the
-confirmation of the <em >Payment Authentication</em> from the Online Payment Provider.</div></div></li></ul></li><li ><p >Current Asset Account</p><ul ><li >The Account’s <strong >type</strong> is <em >Current Assets</em></li><li >The Account must <strong >Allow Reconciliation</strong></li></ul></li></ul><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >In many cases, Odoo automatically creates a new <strong >Journal</strong> and a new <strong >Current Asset Account</strong>
+Validation</em>.</div><div class="line">This implies that the Journal Entry is recorded directly when your Ibel database receives the
+confirmation of the <em >Payment Authentication</em> from the Online Payment Provider.</div></div></li></ul></li><li ><p >Current Asset Account</p><ul ><li >The Account’s <strong >type</strong> is <em >Current Assets</em></li><li >The Account must <strong >Allow Reconciliation</strong></li></ul></li></ul><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >In many cases, Ibel automatically creates a new <strong >Journal</strong> and a new <strong >Current Asset Account</strong>
 when you activate a new Payment Acquirer. You can modify them if necessary.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="../../accounting/receivables/customer_payments/recording.html" class="reference internal alert-link"><span class="doc">Different ways to record a payment</span></a></li><li ><a href="wire_transfer.html" class="reference internal alert-link"><span class="doc">How to get paid with wire transfers</span></a></li><li ><a href="authorize.html" class="reference internal alert-link"><span class="doc">Authorize.Net</span></a></li><li ><a href="paypal.html" class="reference internal alert-link"><span class="doc">Configure your Paypal account</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -378,7 +378,7 @@ when you activate a new Payment Acquirer. You can modify them if necessary.</p><
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -412,9 +412,9 @@ when you activate a new Payment Acquirer. You can modify them if necessary.</p><
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

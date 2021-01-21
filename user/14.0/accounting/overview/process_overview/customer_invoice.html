@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>From Customer Invoice to Payments Collection &#8212; Odoo 14.0 documentation</title>
+    <title>From Customer Invoice to Payments Collection &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="From Vendor Bill to Payment" href="supplier_bill.html" />
-    <link rel="prev" title="Process overview" href="../process_overview.html" /> 
+    <link rel="prev" title="Process overview" href="../process_overview.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">From Customer Invoice to Payments Collection</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,55 +242,55 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> From Customer Invoice to Payments Collection </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#from-draft-invoice-to-profit-and-loss" class="reference ripple internal">From Draft Invoice to Profit and Loss</a></li><li class="list-group-item"><a href="#invoice-creation" class="reference ripple internal">Invoice creation</a></li><li class="list-group-item"><a href="#draft-invoices" class="reference ripple internal">Draft invoices</a></li><li class="list-group-item"><a href="#open-or-pro-forma-invoices" class="reference ripple internal">Open or Pro-forma invoices</a></li><li class="list-group-item"><a href="#send-the-invoice-to-customer" class="reference ripple internal">Send the invoice to customer</a></li><li class="list-group-item"><a href="#payment" class="reference ripple internal">Payment</a></li><li class="list-group-item"><a href="#receive-a-partial-payment-through-the-bank-statement" class="reference ripple internal">Receive a partial payment through the bank statement</a></li><li class="list-group-item"><a href="#reconcile" class="reference ripple internal">Reconcile</a></li><li class="list-group-item"><a href="#payment-followup" class="reference ripple internal">Payment Followup</a><ul ><li class="list-group-item"><a href="#customer-aging-report" class="reference ripple internal">Customer aging report:</a></li></ul></li><li class="list-group-item"><a href="#profit-and-loss" class="reference ripple internal">Profit and loss</a></li><li class="list-group-item"><a href="#balance-sheet" class="reference ripple internal">Balance sheet</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/overview/process_overview/customer_invoice.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="from-customer-invoice-to-payments-collection"><p >Odoo supports multiple invoicing and payment workflows, so you can
+
+
+  <section id="from-customer-invoice-to-payments-collection"><p >Ibel supports multiple invoicing and payment workflows, so you can
 choose and use the ones that match your business needs. Whether you want
 to accept a single payment for a single invoice, or process a payment
 spanning multiple invoices and taking discounts for early payments, you
@@ -304,7 +304,7 @@ If you ship a box to a customer, you have met the terms of the contract
 and can bill them. If your supplier sends you a shipment, they have met
 the terms of that contract and can bill you. Therefore, the terms of the
 contract is fulfilled when the box moves to or from the truck. At this
-point, Odoo supports the creation of what is called a Draft Invoice by
+point, Ibel supports the creation of what is called a Draft Invoice by
 Warehouse staff.</p></section><section id="invoice-creation"><h2 >Invoice creation</h2><p >Draft invoices can be manually generated from other documents such as
 Sales Orders, Purchase Orders,etc. Although you can create a draft
 invoice directly if you would like.</p><p >An invoice must be provided to the customer with the necessary
@@ -315,17 +315,17 @@ While these invoices</p><p >remain unvalidated, they have no accounting impact w
 There is nothing to stop users from creating their own draft invoices.</p><p >Let’s create a customer invoice with following information:</p><ul ><li >Customer: Agrolait</li><li >Product: iMac</li><li >Quantity: 1</li><li >Unit Price: 100</li><li >Taxes: Tax 15%</li></ul><img src="../../../_images/invoice011.png" style="" class="img-responsive center-block"><img src="../../../_images/invoice021.png" style="" class="img-responsive center-block"><p >The document is composed of three parts:</p><ul ><li >the top of the invoice, with customer information,</li><li >the main body of the invoice, with detailed invoice lines,</li><li >the bottom of the page, with detail about the taxes, and the totals.</li></ul></section><section id="open-or-pro-forma-invoices"><h2 >Open or Pro-forma invoices</h2><p >An invoice will usually include the quantity and the price of goods
 and/or services, the date, any parties involved, the unique invoice
 number, and any tax information.</p><p >“Validate” the invoice when you are ready to approve it. The invoice
-then moves from the Draft state to the Open state.</p><p >When you have validated an invoice, Odoo gives it a unique number from a
+then moves from the Draft state to the Open state.</p><p >When you have validated an invoice, Ibel gives it a unique number from a
 defined, and modifiable, sequence.</p><img src="../../../_images/invoice031.png" style="" class="img-responsive center-block"><p >Accounting entries corresponding to this invoice are automatically
 generated when you validate the invoice. You can see the details by
 clicking on the entry in the Journal Entry field in the “Other Info”
 tab.</p><img src="../../../_images/invoice041.png" style="" class="img-responsive center-block"></section><section id="send-the-invoice-to-customer"><h2 >Send the invoice to customer</h2><p >After validating the customer invoice, you can directly send it to the
 customer via the ‘Send by email’ functionality.</p><img src="../../../_images/invoice051.png" style="" class="img-responsive center-block"><p >A typical journal entry generated from a validated invoice will look
-like as follows:</p><table class="table"><thead ><tr ><th ><strong >Account</strong></th><th ><strong >Partner</strong></th><th ><strong >Due date</strong></th><th ><strong >Debit</strong></th><th ><strong >Credit</strong></th></tr></thead><tbody ><tr ><td >Accounts Receivable</td><td >Agrolait</td><td >01/07/2015</td><td >115</td><td ></td></tr><tr ><td >Taxes</td><td >Agrolait</td><td ></td><td ></td><td >15</td></tr><tr ><td >Sales</td><td ></td><td ></td><td ></td><td >100</td></tr></tbody></table></section><section id="payment"><h2 >Payment</h2><p >In Odoo, an invoice is considered to be paid when the associated
+like as follows:</p><table class="table"><thead ><tr ><th ><strong >Account</strong></th><th ><strong >Partner</strong></th><th ><strong >Due date</strong></th><th ><strong >Debit</strong></th><th ><strong >Credit</strong></th></tr></thead><tbody ><tr ><td >Accounts Receivable</td><td >Agrolait</td><td >01/07/2015</td><td >115</td><td ></td></tr><tr ><td >Taxes</td><td >Agrolait</td><td ></td><td ></td><td >15</td></tr><tr ><td >Sales</td><td ></td><td ></td><td ></td><td >100</td></tr></tbody></table></section><section id="payment"><h2 >Payment</h2><p >In Ibel, an invoice is considered to be paid when the associated
 accounting entry has been reconciled with the payment entries. If there
 has not been a reconciliation, the invoice will remain in the Open state
 until you have entered the payment.</p><p >A typical journal entry generated from a payment will look like as
-follows:</p><table class="table"><thead ><tr ><th ><strong >Account</strong></th><th ><strong >Partner</strong></th><th ><strong >Due date</strong></th><th ><strong >Debit</strong></th><th ><strong >Credit</strong></th></tr></thead><tbody ><tr ><td >Bank</td><td >Agrolait</td><td ></td><td >115</td><td ></td></tr><tr ><td >Accounts Receivable</td><td >Agrolait</td><td ></td><td ></td><td >115</td></tr></tbody></table></section><section id="receive-a-partial-payment-through-the-bank-statement"><h2 >Receive a partial payment through the bank statement</h2><p >You can manually enter your bank statements in Odoo, or you can import
+follows:</p><table class="table"><thead ><tr ><th ><strong >Account</strong></th><th ><strong >Partner</strong></th><th ><strong >Due date</strong></th><th ><strong >Debit</strong></th><th ><strong >Credit</strong></th></tr></thead><tbody ><tr ><td >Bank</td><td >Agrolait</td><td ></td><td >115</td><td ></td></tr><tr ><td >Accounts Receivable</td><td >Agrolait</td><td ></td><td ></td><td >115</td></tr></tbody></table></section><section id="receive-a-partial-payment-through-the-bank-statement"><h2 >Receive a partial payment through the bank statement</h2><p >You can manually enter your bank statements in Ibel, or you can import
 them in from a csv file or from several other predefined formats
 according to your accounting localisation.</p><p >Create a bank statement from the accounting dashboard with the related
 journal and enter an amount of $100 .</p><img src="../../../_images/invoice061.png" style="" class="img-responsive center-block"></section><section id="reconcile"><h2 >Reconcile</h2><p >Now let’s reconcile!</p><img src="../../../_images/invoice071.png" style="" class="img-responsive center-block"><p >You can now go through every transaction and reconcile them or you can mass reconcile with instructions at the bottom.</p><p >After reconciling the items in the sheet, the related invoice will now
@@ -333,7 +333,7 @@ display “You have outstanding payments for this customer. You can
 reconcile them to pay this invoice. “</p><img src="../../../_images/invoice081.png" style="" class="img-responsive center-block"><img src="../../../_images/invoice091.png" style="" class="img-responsive center-block"><p >Apply the payment. Below, you can see that the payment has been added to
 the invoice.</p><img src="../../../_images/invoice10.png" style="" class="img-responsive center-block"></section><section id="payment-followup"><h2 >Payment Followup</h2><p >There’s a growing trend of customers paying bills later and later.
 Therefore, collectors must make every effort to collect money and
-collect it faster.</p><p >Odoo will help you define your follow-up strategy. To remind customers
+collect it faster.</p><p >Ibel will help you define your follow-up strategy. To remind customers
 to pay their outstanding invoices, you can define different actions
 depending on how severely overdue the customer is. These actions are
 bundled into follow-up levels that are triggered when the due date of an
@@ -353,7 +353,7 @@ the material has been shipped to the customer.</p></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -373,7 +373,7 @@ the material has been shipped to the customer.</p></section>
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -395,7 +395,7 @@ the material has been shipped to the customer.</p></section>
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -429,9 +429,9 @@ the material has been shipped to the customer.</p></section>
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -448,6 +448,6 @@ the material has been shipped to the customer.</p></section>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

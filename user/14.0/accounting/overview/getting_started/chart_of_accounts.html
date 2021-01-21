@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chart of Accounts &#8212; Odoo 14.0 documentation</title>
+    <title>Chart of Accounts &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Process overview" href="../process_overview.html" />
-    <link rel="prev" title="Initial setup of Odoo Accounting and Odoo Invoicing" href="setup.html" /> 
+    <link rel="prev" title="Initial setup of Ibel Accounting and Ibel Invoicing" href="setup.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Chart of Accounts</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,58 +242,58 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Chart of Accounts </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration-of-an-account" class="reference ripple internal">Configuration of an Account</a><ul ><li class="list-group-item"><a href="#code-and-name" class="reference ripple internal">Code and Name</a></li><li class="list-group-item"><a href="#type" class="reference ripple internal">Type</a><ul ><li class="list-group-item"><a href="#assets-deferred-expenses-and-deferred-revenues-automation" class="reference ripple internal">Assets, Deferred Expenses, and Deferred Revenues Automation</a></li></ul></li><li class="list-group-item"><a href="#default-taxes" class="reference ripple internal">Default Taxes</a></li><li class="list-group-item"><a href="#tags" class="reference ripple internal">Tags</a></li><li class="list-group-item"><a href="#account-groups" class="reference ripple internal">Account Groups</a></li><li class="list-group-item"><a href="#allow-reconciliation" class="reference ripple internal">Allow Reconciliation</a></li><li class="list-group-item"><a href="#deprecated" class="reference ripple internal">Deprecated</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/overview/getting_started/chart_of_accounts.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="chart-of-accounts"><p >The <strong >Chart of Accounts (COA)</strong> is the list of all the accounts used to record financial
 transactions in the general ledger of an organization.</p><p >The accounts are usually listed in the order of appearance in the financial reports. Most of the
 time, they are listed as follows :</p><ul ><li ><p >Balance Sheet accounts</p><ul ><li >Assets</li><li >Liabilities</li><li >Equity</li></ul></li><li ><p >Profit &amp; Loss</p><ul ><li >Income</li><li >Expense</li></ul></li></ul><p >When browsing your Chart of Accounts, you can filter the accounts by number, in the left column, and
-also group them by Account Type.</p><img src="../../../_images/chart_of_accounts01.png" alt="Group the accounts by type in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="configuration-of-an-account"><h2 >Configuration of an Account</h2><p >The country you select at the creation of your database (or additional company on your database)
+also group them by Account Type.</p><img src="../../../_images/chart_of_accounts01.png" alt="Group the accounts by type in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="configuration-of-an-account"><h2 >Configuration of an Account</h2><p >The country you select at the creation of your database (or additional company on your database)
 determines which <strong >Fiscal Localization Package</strong> is installed by default. This package includes a
 standard Chart of Accounts already configured according to the country’s regulations. You can use
 it directly or set it according to your company’s needs.</p><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >It is not possible to modify the <strong >Fiscal Localization</strong> of a company once a Journal Entry has
@@ -309,7 +309,7 @@ thus consolidate reports such as the <strong >Trial Balance</strong>.</p><p >To 
 <em >Group</em> drop-down selector, select <em >Create and Edit…</em>, fill out the form, and save. Next,
 set all the sub-accounts with the right Account Group.</p><p >To display your <strong >Trial Balance</strong> report with your Account Groups, go to <span class="menuselection">Accounting
 ‣ Reporting ‣ Trial Balance</span>, then open the <em >Options</em> menu and select <strong >Hierarchy and
-Subtotals</strong>.</p><img src="../../../_images/chart_of_accounts02.png" alt="Account Groups in the Trial Balance in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="allow-reconciliation"><h3 >Allow Reconciliation</h3><p >Some accounts, such as accounts made to record the transactions of a payment method, can be used for
+Subtotals</strong>.</p><img src="../../../_images/chart_of_accounts02.png" alt="Account Groups in the Trial Balance in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="allow-reconciliation"><h3 >Allow Reconciliation</h3><p >Some accounts, such as accounts made to record the transactions of a payment method, can be used for
 the reconciliation of journal entries.</p><p >For example, an invoice paid with a credit card can be <em >marked as paid</em> if reconciled with the
 payment. Therefore, the account used to record credit card payments needs to be configured as
 <em >allowing reconciliation</em>.</p><p >To do so, check the <strong >Allow Reconciliation</strong> box and save.</p></section><section id="deprecated"><h3 >Deprecated</h3><p >It is not possible to delete an account once a transaction has been recorded on it. You can make
@@ -317,7 +317,7 @@ them unusable by using the <strong >Deprecated</strong> feature.</p><p >To do so
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -337,7 +337,7 @@ them unusable by using the <strong >Deprecated</strong> feature.</p><p >To do so
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -359,7 +359,7 @@ them unusable by using the <strong >Deprecated</strong> feature.</p><p >To do so
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -393,9 +393,9 @@ them unusable by using the <strong >Deprecated</strong> feature.</p><p >To do so
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -412,6 +412,6 @@ them unusable by using the <strong >Deprecated</strong> feature.</p><p >To do so
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

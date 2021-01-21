@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>General guide about In-App Purchase (IAP) Services &#8212; Odoo 14.0 documentation</title>
+    <title>General guide about In-App Purchase (IAP) Services &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Developer Mode" href="../developer_mode.html" />
-    <link rel="prev" title="In-App Purchase" href="../in_app_purchase.html" /> 
+    <link rel="prev" title="In-App Purchase" href="../in_app_purchase.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">General guide about In-App Purchase (IAP) Services</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,76 +236,76 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> General guide about In-App Purchase (IAP) Services </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#buying-credits" class="reference ripple internal">Buying Credits</a></li><li class="list-group-item"><a href="#iap-accounts" class="reference ripple internal">IAP accounts</a></li><li class="list-group-item"><a href="#iap-portal" class="reference ripple internal">IAP Portal</a></li><li class="list-group-item"><a href="#get-notified-when-credits-are-low" class="reference ripple internal">Get notified when credits are low</a></li><li class="list-group-item"><a href="#iap-services-available" class="reference ripple internal">IAP services available</a></li><li class="list-group-item"><a href="#offering-my-own-services" class="reference ripple internal">Offering my own services</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/in_app_purchase/in_app_purchase.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="general-guide-about-in-app-purchase-iap-services"><p >In-App Purchases (IAP) gives access to additional services through Odoo. For instance, it allows me
+
+
+  <section id="general-guide-about-in-app-purchase-iap-services"><p >In-App Purchases (IAP) gives access to additional services through Ibel. For instance, it allows me
 to send SMS Text Messages or to send Invoices by post directly from my database.</p></section><section id="buying-credits"><h2 >Buying Credits</h2><p >Each IAP Service relies on prepaid credits to work and has its own pricing. To consult my current
-balance or to recharge my account, go to <span class="menuselection">Settings ‣ Odoo IAP ‣
-View my Services</span>.</p><img src="../../_images/image1.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >If I am on Odoo Online (SAAS) and have the Enterprise version, I benefit from free credits to
+balance or to recharge my account, go to <span class="menuselection">Settings ‣ Ibel IAP ‣
+View my Services</span>.</p><img src="../../_images/image1.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >If I am on Ibel Online (SAAS) and have the Enterprise version, I benefit from free credits to
 test our IAP features.</p></div></section><section id="iap-accounts"><h2 >IAP accounts</h2><p >Credits to use IAP services are stored on IAP accounts, which are specific to each service and
 database. By default, IAP accounts are common to all companies, but can be restricted to specific
 ones. Activate the <a href="../developer_mode/activate.html" class="reference internal"><span class="doc">Developer mode</span></a>, then go to
 <span class="menuselection">Technical Settings ‣ IAP Account</span>.</p><img src="../../_images/image2.png" style="" class="img-responsive center-block"></section><section id="iap-portal"><h2 >IAP Portal</h2><p >The IAP Portal is a platform regrouping my IAP Services. It is accessible from
-<span class="menuselection">Settings app ‣ Odoo IAP ‣ View my Services</span>. From there, I can view my current
+<span class="menuselection">Settings app ‣ Ibel IAP ‣ View my Services</span>. From there, I can view my current
 balance, recharge my credits, review my consumption and set a reminder to when credits are low.</p><img src="../../_images/image3.png" style="" class="img-responsive center-block"></section><section id="get-notified-when-credits-are-low"><h2 >Get notified when credits are low</h2><p >To be notified when it’s time to recharge my credits, I’ll go to my IAP Portal through
-<span class="menuselection">Settings app ‣ Odoo IAP ‣ View my Services</span>, unfold a service and mark the
+<span class="menuselection">Settings app ‣ Ibel IAP ‣ View my Services</span>, unfold a service and mark the
 Receive threshold warning option. Then, I’ll provide a minimum amount of credits and email
 addresses. Now, every time that the limit is reached, an automatic reminder will be sent to by
-email!</p><img src="../../_images/image4.png" style="" class="img-responsive center-block"></section><section id="iap-services-available"><h2 >IAP services available</h2><p >Different services are available depending on the hosting type of your Database:</p><ul ><li ><em >Odoo Online (SAAS)</em>: only the IAP services provided by Odoo can be used (i.e. the SMS, Snailmail,
-Reveal and Partner Autocomplete features);</li><li ><em >Odoo.sh and Odoo Enterprise (on-premise)</em>: both the services provided by Odoo and by third-party
-apps can be used.</li></ul></section><section id="offering-my-own-services"><h2 >Offering my own services</h2><p >I am more than welcome to offer my own IAP services through Odoo Apps! It is the perfect opportunity
+email!</p><img src="../../_images/image4.png" style="" class="img-responsive center-block"></section><section id="iap-services-available"><h2 >IAP services available</h2><p >Different services are available depending on the hosting type of your Database:</p><ul ><li ><em >Ibel Online (SAAS)</em>: only the IAP services provided by Ibel can be used (i.e. the SMS, Snailmail,
+Reveal and Partner Autocomplete features);</li><li ><em >Ibel.sh and Ibel Enterprise (on-premise)</em>: both the services provided by Ibel and by third-party
+apps can be used.</li></ul></section><section id="offering-my-own-services"><h2 >Offering my own services</h2><p >I am more than welcome to offer my own IAP services through Ibel Apps! It is the perfect opportunity
 to get recurring revenue for an ongoing service use rather than — and possibly instead of — a sole
 initial purchase. Please, find more information at: <a href="https://www.odoo.com/documentation/14.0/webservices/iap.html" class="reference external">In-App Purchase</a></p></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -347,7 +347,7 @@ initial purchase. Please, find more information at: <a href="https://www.odoo.co
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -381,9 +381,9 @@ initial purchase. Please, find more information at: <a href="https://www.odoo.co
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Process Batch Transfers &#8212; Odoo 14.0 documentation</title>
+    <title>Process Batch Transfers &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Planning" href="../planning.html" />
-    <link rel="prev" title="Send Automated SMS at Delivery" href="sms_delivery.html" /> 
+    <link rel="prev" title="Send Automated SMS at Delivery" href="sms_delivery.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../inventory.html">Inventory</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Process Batch Transfers</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,59 +242,59 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Process Batch Transfers </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#create-a-batch-transfer" class="reference ripple internal">Create a Batch Transfer</a></li><li class="list-group-item"><a href="#create-a-batch-transfer-from-the-transfers-list-view" class="reference ripple internal">Create a Batch Transfer from the Transfers List View</a></li><li class="list-group-item"><a href="#process-a-batch-transfer" class="reference ripple internal">Process a Batch Transfer</a></li><li class="list-group-item"><a href="#process-a-batch-transfer-from-the-barcode-app" class="reference ripple internal">Process a Batch Transfer from the Barcode app</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/management/misc/batch_transfers.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="process-batch-transfers"><p >Batch picking allows a single picker to handle a batch of orders,
-reducing the number of times he must visit the same location. In Odoo,
+reducing the number of times he must visit the same location. In Ibel,
 it means you can regroup several transfers into the same batch
 transfer, then process it, either via the barcode application or in the form view.</p></section><section id="create-a-batch-transfer"><h2 >Create a Batch Transfer</h2><p >To activate the batch picking option, go to <span class="menuselection">Inventory
-‣ Configuration ‣ Configuration</span> and enable <em >Batch Pickings</em>.</p><img src="../../../_images/batch_transfers_01.png" alt="View of the inventory settings. Process to enable the batch pickings option in the Odoo Inventory app" style="" class="img-responsive center-block"><p >Then, go to <span class="menuselection">Inventory ‣ Operations ‣ Batch
+‣ Configuration ‣ Configuration</span> and enable <em >Batch Pickings</em>.</p><img src="../../../_images/batch_transfers_01.png" alt="View of the inventory settings. Process to enable the batch pickings option in the Ibel Inventory app" style="" class="img-responsive center-block"><p >Then, go to <span class="menuselection">Inventory ‣ Operations ‣ Batch
 Transfers</span> and hit the create button.</p><img src="../../../_images/batch_transfers_02.png" alt="View of the new menu, Batch Transfers, under operations" style="" class="img-responsive center-block"><p >Now, determine the batch transfer responsible and the type of transfers
 you want to include in the batch. To add the types of transfers, click on <em >Add a line</em>.</p><img src="../../../_images/batch_transfers_03.png" alt="View of a Batch Transfers form" style="" class="img-responsive center-block"><p >In the example below, a filter was applied to only see the transfers that are in the <em >Pick</em> step.
 After that, the different transfers that needed to be included in the batch transfer were selected.</p><img src="../../../_images/batch_transfers_04.png" alt="View of the list of transfers to choose for a single batch transfer and how to add them to the batch transfer" style="" class="img-responsive center-block"><p >To see the products to pick for the different transfers, click on
@@ -306,16 +306,16 @@ batch transfer or create a new one.</p><img src="../../../_images/batch_transfer
 the <em >Quantity done</em> for each product. Once everything has been picked, select
 <em >Validate</em> so the different transfers contained in the batch are validated
 too.</p><img src="../../../_images/batch_transfers_08.png" alt="View of an in progress batch transfer" style="" class="img-responsive center-block"><p >In case all the products cannot be picked, you can create backorders for each individual transfer
-which couldn’t be completely processed.</p><img src="../../../_images/batch_transfers_09.png" alt="How to handle batch transfers with unavailable products. Creation of a backorder inside of a batch transfer" style="" class="img-responsive center-block"><img src="../../../_images/batch_transfers_10.png" alt="View of how backorders are handled in Odoo's batch transfers" style="" class="img-responsive center-block"></section><section id="process-a-batch-transfer-from-the-barcode-app"><h2 >Process a Batch Transfer from the Barcode app</h2><p >Enter the <em >Barcode</em> application, select the <em >Batch Transfers</em> menu.</p><img src="../../../_images/batch_transfers_11.png" alt="View of the Odoo Barcode app dashboard" style="" class="img-responsive center-block"><p >Then, you can enter the batch transfer on which you want to work. Batch
+which couldn’t be completely processed.</p><img src="../../../_images/batch_transfers_09.png" alt="How to handle batch transfers with unavailable products. Creation of a backorder inside of a batch transfer" style="" class="img-responsive center-block"><img src="../../../_images/batch_transfers_10.png" alt="View of how backorders are handled in Ibel's batch transfers" style="" class="img-responsive center-block"></section><section id="process-a-batch-transfer-from-the-barcode-app"><h2 >Process a Batch Transfer from the Barcode app</h2><p >Enter the <em >Barcode</em> application, select the <em >Batch Transfers</em> menu.</p><img src="../../../_images/batch_transfers_11.png" alt="View of the Ibel Barcode app dashboard" style="" class="img-responsive center-block"><p >Then, you can enter the batch transfer on which you want to work. Batch
 transfers can easily be grouped per responsible if necessary.</p><img src="../../../_images/batch_transfers_12.png" alt="View of the batch transfers dashboard inside of the Barcode app" style="" class="img-responsive center-block"><p >In the batch transfer, products are classified per
 location. The source document is visible on each line and a color-code
-helps differentiate them.</p><img src="../../../_images/batch_transfers_13.png" alt="View of an in progress batch transfer with the Odoo Barcode application" style="" class="img-responsive center-block"><p >To see the products to pick from another location, click on the <em >Next</em>
-button.</p><img src="../../../_images/batch_transfers_14.png" alt="View of a ready and completed batch transfer inside of the Odoo Barcode application" style="" class="img-responsive center-block"><p >Once all the products have been picked, click on <em >Validate</em> (on the
+helps differentiate them.</p><img src="../../../_images/batch_transfers_13.png" alt="View of an in progress batch transfer with the Ibel Barcode application" style="" class="img-responsive center-block"><p >To see the products to pick from another location, click on the <em >Next</em>
+button.</p><img src="../../../_images/batch_transfers_14.png" alt="View of a ready and completed batch transfer inside of the Ibel Barcode application" style="" class="img-responsive center-block"><p >Once all the products have been picked, click on <em >Validate</em> (on the
 last page) to mark the batch transfer as done.</p></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -335,7 +335,7 @@ last page) to mark the batch transfer as done.</p></section>
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -357,7 +357,7 @@ last page) to mark the batch transfer as done.</p></section>
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -391,9 +391,9 @@ last page) to mark the batch transfer as done.</p></section>
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -410,6 +410,6 @@ last page) to mark the batch transfer as done.</p></section>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Understanding General Concepts &#8212; Odoo 14.0 documentation</title>
+    <title>Understanding General Concepts &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Understanding Automated Actions" href="understanding_automated_actions.html" />
-    <link rel="prev" title="Concepts" href="../concepts.html" /> 
+    <link rel="prev" title="Concepts" href="../concepts.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../studio.html">Studio</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Understanding General Concepts</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,80 +236,80 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Understanding General Concepts </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#getting-started" class="reference ripple internal">Getting started</a><ul ><li class="list-group-item"><a href="#what-is-a-module" class="reference ripple internal">What is a Module?</a></li><li class="list-group-item"><a href="#what-is-a-model-also-called-object" class="reference ripple internal">What is a Model (also called Object)?</a></li><li class="list-group-item"><a href="#what-are-fields" class="reference ripple internal">What are Fields?</a><ul ><li class="list-group-item"><a href="#relational-fields-in-detail" class="reference ripple internal">Relational Fields in detail</a></li></ul></li><li class="list-group-item"><a href="#what-are-views" class="reference ripple internal">What are Views?</a></li><li class="list-group-item"><a href="#what-is-a-menu" class="reference ripple internal">What is a Menu?</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/studio/concepts/understanding_general.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="understanding-general-concepts"><div class="line-block"><div class="line">Odoo Studio is a toolbox that allows you to add models or adapt functionalities on top of Odoo’s
+
+
+  <section id="understanding-general-concepts"><div class="line-block"><div class="line">Ibel Studio is a toolbox that allows you to add models or adapt functionalities on top of Ibel’s
 standard behavior without coding knowledge. You can also create custom views and modify existing
-ones without having to get into the XML code.</div><div class="line">Even for experienced developers, typing out code requires time. By using Odoo Studio, you can
+ones without having to get into the XML code.</div><div class="line">Even for experienced developers, typing out code requires time. By using Ibel Studio, you can
 quickly get your models up and going and focus on the crucial parts of your application. The
 result is a user-friendly solution that makes customizations and designing new applications easy
-with or without programming skills.</div></div></section><section id="getting-started"><h2 >Getting started</h2><p >One you start using Odoo Studio, you automatically create a new <em >module</em> that contains all your
+with or without programming skills.</div></div></section><section id="getting-started"><h2 >Getting started</h2><p >One you start using Ibel Studio, you automatically create a new <em >module</em> that contains all your
 modifications. These modifications can be done on existing screens (<em >views</em>), by adding new
-<em >fields</em> in existing applications, or by creating an entirely new <em >model</em>.</p></section><section id="what-is-a-module"><h3 >What is a Module?</h3><div class="line-block"><div class="line">An Odoo <strong >Module</strong> can contain a number of elements, such as: business objects (models), object
+<em >fields</em> in existing applications, or by creating an entirely new <em >model</em>.</p></section><section id="what-is-a-module"><h3 >What is a Module?</h3><div class="line-block"><div class="line">An Ibel <strong >Module</strong> can contain a number of elements, such as: business objects (models), object
 views, data files, web controllers, and static web data. An application is a collection of modules.</div><div class="line">In object-oriented programming, models usually represent a concept from the real world.
-Example: Odoo has models for Sales Orders, Users, Countries, etc. If you were to build an
+Example: Ibel has models for Sales Orders, Users, Countries, etc. If you were to build an
 application to manage Real Estate sales, a model that represents the Properties for sale would
-probably be your first step.</div></div><img src="../../_images/new_app.png" alt="Overview of the main dashboard emphasizing the option to create a new app in Odoo Studio" style="" class="img-responsive center-block"></section><section id="what-is-a-model-also-called-object"><i id="studio-concepts-understanding-general-models"></i><h3 >What is a Model (also called Object)?</h3><p >A <strong >Model</strong> determines the logical structure of a database and fundamentally determines in which
+probably be your first step.</div></div><img src="../../_images/new_app.png" alt="Overview of the main dashboard emphasizing the option to create a new app in Ibel Studio" style="" class="img-responsive center-block"></section><section id="what-is-a-model-also-called-object"><i id="studio-concepts-understanding-general-models"></i><h3 >What is a Model (also called Object)?</h3><p >A <strong >Model</strong> determines the logical structure of a database and fundamentally determines in which
 manner data can be stored, organized, and manipulated. In other words, a model is a table of
 information that can be bridged with other tables.</p></section><section id="what-are-fields"><h3 >What are Fields?</h3><div class="line-block"><div class="line"><strong >Fields</strong> compose models. It is where a record (a piece of data) is registered.</div><div class="line">Example: on the Real Estate application, fields on the Properties model would include
-the price, address, a picture, a link to the current owner, etc.</div><div class="line">There are 2 main types of fields in Odoo: <em >basic (or scalar) fields</em> and <em >relational fields</em>.</div><div class="line">Basic fields represent simple values, like numbers or text. Relational fields represent relations
+the price, address, a picture, a link to the current owner, etc.</div><div class="line">There are 2 main types of fields in Ibel: <em >basic (or scalar) fields</em> and <em >relational fields</em>.</div><div class="line">Basic fields represent simple values, like numbers or text. Relational fields represent relations
 between models. So, if you have a model for <em >Customers</em> and another one for <em >Properties</em>, you
 would use a relational field to link each Property to its Customer.</div></div></section><section id="relational-fields-in-detail"><h4 >Relational Fields in detail</h4><div class="line-block"><div class="line"><strong >Relational Fields</strong> provide the option to link the data of one model with the data of another
-model.</div><div class="line">In Odoo, relational field types are: <em >One2many</em>, <em >Many2one</em>, <em >Many2many</em>.</div></div><img src="../../_images/relational_fields.png" alt="Tables with a visual explanation of related fields for Odoo Studio" style="" class="img-responsive center-block"><div class="line-block"><div class="line">An <strong >One2many</strong> field is a <em >one-way</em> direction of selecting <em >multiple</em> records from a table.</div><div class="line">Example: a Sales Order can contain multiple Sales Order Lines, which also contain multiple fields
+model.</div><div class="line">In Ibel, relational field types are: <em >One2many</em>, <em >Many2one</em>, <em >Many2many</em>.</div></div><img src="../../_images/relational_fields.png" alt="Tables with a visual explanation of related fields for Ibel Studio" style="" class="img-responsive center-block"><div class="line-block"><div class="line">An <strong >One2many</strong> field is a <em >one-way</em> direction of selecting <em >multiple</em> records from a table.</div><div class="line">Example: a Sales Order can contain multiple Sales Order Lines, which also contain multiple fields
 of information.</div><div class="line">A <strong >Many2one</strong> field is a <em >one-way</em> direction of selecting <em >one</em> record from a table.</div><div class="line">Example: you can have many product categories, but each product can only belong to one category.</div><div class="line">A <strong >Many2many</strong> field is a <em >two-way</em> direction of selecting records from a table.</div><div class="line">Example: multiple tags can be added to a lead’s form.</div></div><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >An <em >One2many</em> field must have a <em >Many2one</em> related to it.</p></div></section><section id="what-are-views"><h3 >What are Views?</h3><p ><strong >Views</strong> define how records are displayed. They are specified in XML which means that they can be
-edited independently from the models that they represent. There are various types of views in Odoo,
-and each of them represents a mode of visualization. Some examples are: <em >form</em>, <em >list</em>, <em >kanban</em>.</p></section><section id="what-is-a-menu"><h3 >What is a Menu?</h3><p >A <strong >Menu</strong> is a button that executes and action. In Odoo Studio, to create menus (models) and
-rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_images/edit_menu.png" alt="Overview of a menu being edit in Odoo Studio" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://www.odoo.com/fr_FR/slides/studio-31" class="alert-link reference external">Studio Basics</a></li></ul></div></section>
+edited independently from the models that they represent. There are various types of views in Ibel,
+and each of them represents a mode of visualization. Some examples are: <em >form</em>, <em >list</em>, <em >kanban</em>.</p></section><section id="what-is-a-menu"><h3 >What is a Menu?</h3><p >A <strong >Menu</strong> is a button that executes and action. In Ibel Studio, to create menus (models) and
+rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_images/edit_menu.png" alt="Overview of a menu being edit in Ibel Studio" style="" class="img-responsive center-block"><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="https://www.odoo.com/fr_FR/slides/studio-31" class="alert-link reference external">Studio Basics</a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -329,7 +329,7 @@ rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_ima
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -351,7 +351,7 @@ rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_ima
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -385,9 +385,9 @@ rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_ima
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -404,6 +404,6 @@ rearrange their hierarchy, click on <em >Edit Menu</em>.</p><img src="../../_ima
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

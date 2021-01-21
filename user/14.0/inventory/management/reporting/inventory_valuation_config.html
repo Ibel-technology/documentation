@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inventory valuation configuration &#8212; Odoo 14.0 documentation</title>
+    <title>Inventory valuation configuration &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Fiscal Localizations" href="../../../accounting/fiscal_localizations.html" />
-    <link rel="prev" title="Impact on the average price valuation when returning goods" href="../../../accounting/others/inventory/avg_price_valuation.html" /> 
+    <link rel="prev" title="Impact on the average price valuation when returning goods" href="../../../accounting/others/inventory/avg_price_valuation.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted has_code_col">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Inventory valuation configuration</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,54 +242,54 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="has_code_col">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Inventory valuation configuration </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container has_code_col">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#costing-methods-standard-fifo-avco" class="reference ripple internal">Costing Methods: Standard, FIFO, AVCO</a></li><li class="list-group-item"><a href="#inventory-valuation-manual-or-automated" class="reference ripple internal">Inventory Valuation: Manual or Automated</a><ul ><li class="list-group-item"><a href="#manual-inventory-valuation" class="reference ripple internal">Manual Inventory Valuation</a><ul ><li class="list-group-item"><a href="#continental-accounting" class="reference ripple internal">Continental Accounting</a></li><li class="list-group-item"><a href="#anglo-saxon-accounting" class="reference ripple internal">Anglo-Saxon Accounting</a></li></ul></li><li class="list-group-item"><a href="#automated-inventory-valuation" class="reference ripple internal">Automated Inventory Valuation</a><ul ><li class="list-group-item"><a href="#id1" class="reference ripple internal">Continental Accounting</a></li><li class="list-group-item"><a href="#id2" class="reference ripple internal">Anglo-Saxon Accounting</a></li></ul></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/management/reporting/inventory_valuation_config.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="inventory-valuation-configuration"><p >Inventory valuation refers to how you value your stock. It’s a very
 important aspect of a business as the inventory can be the biggest asset
 of a company.</p><p >Inventory valuation implies two main choices:</p><ul ><li >The cost method you use to value your goods (standard, fifo, avco)</li><li >The way you record this value into your accounting books (manually or automatically)</li></ul><p >Those two concepts are explained in the sections below.</p></section><section id="costing-methods-standard-fifo-avco"><h2 >Costing Methods: Standard, FIFO, AVCO</h2><p >The costing method is defined in the product category. There are three
@@ -302,7 +302,7 @@ cost of the product is recomputed as each receipt.</p><p >The average cost does 
 purchase cost. When a product leaves the stock, that’s the “First in,
 first out” rule that applies.</p><p >Pay attention, that this is a financial FIFO. The first value “in”
 is the first value “out”, no matter the storage location, warehouse
-or serial number.</p><p >FIFO is advised if you manage all your workflows into Odoo (Sales,
+or serial number.</p><p >FIFO is advised if you manage all your workflows into Ibel (Sales,
 Purchases, Inventory). It suits any kind of users.</p></dd></dl></section><section id="inventory-valuation-manual-or-automated"><h2 >Inventory Valuation: Manual or Automated</h2><p >There are two ways to record your inventory valuation in your accounting
 books. As the costing method, this is defined in your product category.
 Those two methods are detailed below.</p><p >It is important to also note that the accounting entries will depend on
@@ -317,18 +317,18 @@ the <a href="../../../general/developer_mode/activate.html" class="reference int
 settings.</p></section><section id="manual-inventory-valuation"><h3 >Manual Inventory Valuation</h3><p >In this case, goods receipts and deliveries won’t have any direct impact
 on your accounting books. Periodically, you create a manual journal
 entry representing the value of what you have in stock. To know that
-value, go in <span class="menuselection">Inventory ‣ Reporting ‣ Inventory Valuation</span>.</p><p >This is the default configuration in Odoo and it works
+value, go in <span class="menuselection">Inventory ‣ Reporting ‣ Inventory Valuation</span>.</p><p >This is the default configuration in Ibel and it works
 out-of-the-box. Check following operations and find out how
-Odoo is managing the accounting postings.</p></section><section id="continental-accounting"><h4 >Continental Accounting</h4><dl class="alternatives doc-aside"><dt >Vendor Bill</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Assets: Inventory</td><td >50</td><td ></td></tr><tr ><td >Assets: Deferred Tax Assets</td><td >4.68</td><td ></td></tr><tr ><td >Liabilities: Accounts Payable</td><td ></td><td >54.68</td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Purchased Goods: defined on the product or on the internal category of related product (Expense Account field)</li><li >Deferred Tax Assets: defined on the tax used on the purchase order line</li><li >Accounts Payable: defined on the vendor related to the bill</li></ul></dd></dl></dd><dt >Goods Receptions</dt><dd >No Journal Entry</dd><dt >Customer Invoice</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Revenues: Sold Goods</td><td ></td><td >100</td></tr><tr ><td >Liabilities: Deferred Tax Liabilities</td><td ></td><td >9</td></tr><tr ><td >Assets: Accounts Receivable</td><td >109</td><td ></td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Revenues: defined on the product or on the internal category of related product (Income Account field)</li><li >Deferred Tax Liabilities: defined on the tax used on the invoice line</li><li >Accounts Receivable: defined on the customer (Receivable Account)</li></ul></dd></dl><p >The fiscal position used on the invoice may have a rule that replaces the
+Ibel is managing the accounting postings.</p></section><section id="continental-accounting"><h4 >Continental Accounting</h4><dl class="alternatives doc-aside"><dt >Vendor Bill</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Assets: Inventory</td><td >50</td><td ></td></tr><tr ><td >Assets: Deferred Tax Assets</td><td >4.68</td><td ></td></tr><tr ><td >Liabilities: Accounts Payable</td><td ></td><td >54.68</td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Purchased Goods: defined on the product or on the internal category of related product (Expense Account field)</li><li >Deferred Tax Assets: defined on the tax used on the purchase order line</li><li >Accounts Payable: defined on the vendor related to the bill</li></ul></dd></dl></dd><dt >Goods Receptions</dt><dd >No Journal Entry</dd><dt >Customer Invoice</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Revenues: Sold Goods</td><td ></td><td >100</td></tr><tr ><td >Liabilities: Deferred Tax Liabilities</td><td ></td><td >9</td></tr><tr ><td >Assets: Accounts Receivable</td><td >109</td><td ></td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Revenues: defined on the product or on the internal category of related product (Income Account field)</li><li >Deferred Tax Liabilities: defined on the tax used on the invoice line</li><li >Accounts Receivable: defined on the customer (Receivable Account)</li></ul></dd></dl><p >The fiscal position used on the invoice may have a rule that replaces the
 Income Account or the tax defined on the product by another one.</p></dd><dt >Customer Shipping</dt><dd >No Journal Entry</dd><dt >Manufacturing Orders</dt><dd >No Journal Entry</dd></dl><hr style="float: none; visibility: hidden; margin: 0;"><p >At the end of the month/year, your company does a physical inventory
-or just relies on the inventory in Odoo to value the stock into your books.</p><p >Create a journal entry to move the stock variation value from your
+or just relies on the inventory in Ibel to value the stock into your books.</p><p >Create a journal entry to move the stock variation value from your
 Profit&amp;Loss section to your assets.</p><div class="doc-aside"><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Assets: Inventory</td><td >X</td><td ></td></tr><tr ><td >Expenses: Inventory Variations</td><td ></td><td >X</td></tr></tbody></table><p >If the stock value decreased, the <strong >Inventory</strong> account is credited
 and te <strong >Inventory Variations</strong> debited.</p></div>
 <hr style="float: none; visibility: hidden; margin: 0;"></section><section id="anglo-saxon-accounting"><h4 >Anglo-Saxon Accounting</h4><dl class="alternatives doc-aside"><dt >Vendor Bill</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Assets: Inventory</td><td >50</td><td ></td></tr><tr ><td >Assets: Deferred Tax Assets</td><td >4.68</td><td ></td></tr><tr ><td >Liabilities: Accounts Payable</td><td ></td><td >54.68</td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Purchased Goods: defined on the product or on the internal category of related product
 (Expense Account field)</li><li >Deferred Tax Assets: defined on the tax used on the purchase order line</li><li >Accounts Payable: defined on the vendor related to the bill</li></ul></dd></dl></dd><dt >Goods Receptions</dt><dd >No Journal Entry</dd><dt >Customer Invoice</dt><dd ><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Revenues: Sold Goods</td><td ></td><td >100</td></tr><tr ><td >Liabilities: Deferred Tax Liabilities</td><td ></td><td >9</td></tr><tr ><td >Assets: Accounts Receivable</td><td >109</td><td ></td></tr></tbody></table><dl ><dt >Configuration:</dt><dd ><ul ><li >Revenues: defined on the product or on the internal category of related
 product (Income Account field)</li><li >Deferred Tax Liabilities: defined on the tax used on the invoice line</li><li >Accounts Receivable: defined on the customer (Receivable Account)</li></ul></dd></dl><p >The fiscal position used on the invoice may have a rule that replaces the
 Income Account or the tax defined on the product by another one.</p></dd><dt >Customer Shipping</dt><dd >No Journal Entry</dd><dt >Manufacturing Orders</dt><dd >No Journal Entry</dd></dl><hr style="float: none; visibility: hidden; margin: 0;"><p >At the end of the month/year, your company does a physical inventory
-or just relies on the inventory in Odoo to value the stock into your books.</p><p >Then you need to break down the purchase balance into both the inventory and
+or just relies on the inventory in Ibel to value the stock into your books.</p><p >Then you need to break down the purchase balance into both the inventory and
 the cost of goods sold using the following formula:</p><p >Cost of goods sold (COGS) = Starting inventory value + Purchases – Closing inventory value</p><p >To update the stock valuation in your books, record such an entry:</p><div class="doc-aside"><table class="table values-table"><thead ><tr ><th ></th><th >Debit</th><th >Credit</th></tr></thead><tbody ><tr ><td >Assets: Inventory (closing value)</td><td >X</td><td ></td></tr><tr ><td >Expenses: Cost of Good Sold</td><td >X</td><td ></td></tr><tr ><td >Expenses: Purchased Goods</td><td ></td><td >X</td></tr><tr ><td >Assets: Inventory (starting value)</td><td ></td><td >X</td></tr></tbody></table></div>
 </section><section id="automated-inventory-valuation"><h3 >Automated Inventory Valuation</h3><p >In that case, when a product enters or leaves your stock, an accounting
 entry will be automatically created. This means your accounting books
@@ -352,7 +352,7 @@ form as a specific replacement value</li></ul></div>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -372,7 +372,7 @@ form as a specific replacement value</li></ul></div>
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -394,7 +394,7 @@ form as a specific replacement value</li></ul></div>
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -428,9 +428,9 @@ form as a specific replacement value</li></ul></div>
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -447,6 +447,6 @@ form as a specific replacement value</li></ul></div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

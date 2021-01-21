@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Two-factor Authentication &#8212; Odoo 14.0 documentation</title>
+    <title>Two-factor Authentication &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,11 +34,11 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Payment Acquirers" href="../payment_acquirers.html" />
-    <link rel="prev" title="How to allow users to sign in with LDAP" href="ldap.html" /> 
+    <link rel="prev" title="How to allow users to sign in with LDAP" href="ldap.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
       <a class="pull-left o_logo" href="/"></a>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Two-factor Authentication</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,54 +236,54 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Two-factor Authentication </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#requirements" class="reference ripple internal">Requirements</a></li><li class="list-group-item"><a href="#setting-up-two-factor-authentication" class="reference ripple internal">Setting up two-factor authentication</a></li><li class="list-group-item"><a href="#logging-in" class="reference ripple internal">Logging in</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/auth/2fa.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="two-factor-authentication"><p >Two-factor authentication (“2FA”) is a good way to improve the
 security of an account, to make it less likely that an other person
 will manage to log in instead of you.</p><p >Practically, it means storing a secret inside an <em >authenticator</em>
@@ -298,7 +298,7 @@ assume you’ll pick and install one on your phone, examples include
 <a href="https://lastpass.com/auth/" class="reference external">LastPass Authenticator</a>, <a href="https://www.microsoft.com/en-gb/account/authenticator?cmp=h66ftb_42hbak" class="reference external">Microsoft
 Authenticator</a>,
 …; password managers also commonly include <abbr title="two-factor authentication">2FA</abbr> support e.g. <a href="https://support.1password.com/one-time-passwords/" class="reference external">1Password</a>, <a href="https://bitwarden.com/help/article/authenticator-keys/" class="reference external">Bitwarden</a>, …</p><p >For the sake of demonstration we will be using Google Authenticator
-(not because it is any good but because it is quite common).</p></section><section id="setting-up-two-factor-authentication"><h2 >Setting up two-factor authentication</h2><p >Once you have your authenticator of choice, go to the Odoo instance
+(not because it is any good but because it is quite common).</p></section><section id="setting-up-two-factor-authentication"><h2 >Setting up two-factor authentication</h2><p >Once you have your authenticator of choice, go to the Ibel instance
 you want to setup <abbr title="two-factor authentication">2FA</abbr>, then open
 <span class="guilabel">Preferences</span> (or <span class="guilabel">My Profile</span>):</p><div ><img src="../../_images/preferences.png" style="" class="img-responsive"></div><p >Open the <span class="guilabel">Account Security</span> tab, then click the
 <span class="guilabel">Enable two-factor authentication</span> button:</p><div ><img src="../../_images/sec_tab.png" style="" class="img-responsive"></div><p >Because this is a security-sensitive action, you will need to input
@@ -314,14 +314,14 @@ field, then click the <span class="guilabel">Enable two-factor authentication</s
 button.</p><p >Congratulation, your account is now protected by two-factor
 authentication!</p><div ><img src="../../_images/totp_enabled.png" style="" class="img-responsive"></div></section><section id="logging-in"><h2 >Logging in</h2><p >You should now <span class="guilabel">Log out</span> to follow along.</p><p >On the login page, input the username and password of the account for
 which you set up <abbr title="two-factor authentication">2FA</abbr>, rather than
-immediately enter Odoo you will now get a second log-in screen:</p><div ><img src="../../_images/2fa_input.png" style="" class="img-responsive"></div><p >Get your authenticator, input the code it provides for the domain and
+immediately enter Ibel you will now get a second log-in screen:</p><div ><img src="../../_images/2fa_input.png" style="" class="img-responsive"></div><p >Get your authenticator, input the code it provides for the domain and
 account, validate, and you’re now in.</p><p >And that’s it. From now on, unless you disable <abbr title="two-factor authentication">2FA</abbr> you will have a two-step log-in process rather than
 the old one-step process.</p><div role="alert" class="alert-danger alert"><p class="alert-title">Danger</p><p >Don’t lose your authenticator, if you do, you will need an
-<em >Odoo Administrator</em> to disable <abbr title="two-factor authentication">2FA</abbr> on the account.</p></div></section>
+<em >Ibel Administrator</em> to disable <abbr title="two-factor authentication">2FA</abbr> on the account.</p></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -363,7 +363,7 @@ the old one-step process.</p><div role="alert" class="alert-danger alert"><p cla
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -397,9 +397,9 @@ the old one-step process.</p><div role="alert" class="alert-danger alert"><p cla
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>

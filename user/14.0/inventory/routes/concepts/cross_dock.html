@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organize a cross-dock in a warehouse &#8212; Odoo 14.0 documentation</title>
+    <title>Organize a cross-dock in a warehouse &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Taking stock from different warehouses" href="stock_warehouses.html" />
-    <link rel="prev" title="How to do inter-warehouses transfers?" href="inter_warehouse.html" /> 
+    <link rel="prev" title="How to do inter-warehouses transfers?" href="inter_warehouse.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../inventory.html">Inventory</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Organize a cross-dock in a warehouse</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,62 +242,62 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Organize a cross-dock in a warehouse </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a></li><li class="list-group-item"><a href="#configure-products-with-cross-dock-route" class="reference ripple internal">Configure products with Cross-Dock Route</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/inventory/routes/concepts/cross_dock.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="organize-a-cross-dock-in-a-warehouse"><p >Cross-docking is the process of sending products that are received directly to the customers, without making them enter the stock. The trucks are simply unloaded in a <em >Cross-Dock</em> area in order to reorganize products and load another truck.</p><img src="../../../_images/cross1.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >For more information on how to organize your warehouse, read our blog: <a href="https://www.odoo.com/blog/business-hacks-1/post/what-is-cross-docking-and-is-it-for-me-270" class="alert-link reference external">What is cross-docking and is it for me?</a></p></div></section><section id="configuration"><h2 >Configuration</h2><p >In the <em >Inventory</em> app, open <span class="menuselection">Configuration ‣ Settings</span> and activate the <em >Multi-Step Routes</em>.</p><img src="../../../_images/cross2.png" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Doing so will also enable the <em >Storage Locations</em> feature.</p></div><p >Now, both <em >Incoming</em> and <em >Outgoing</em> shipments should be configured to work with 2 steps. To adapt
 the configuration, go to <span class="menuselection">Inventory ‣ Configuration ‣ Warehouses</span> and edit your
 warehouse.</p><img src="../../../_images/cross3.png" style="" class="img-responsive center-block"><p >This modification will lead to the creation of a <em >Cross-Docking</em> route that can be found in
-<span class="menuselection">Inventory ‣ Configuration ‣ Routes</span>.</p><img src="../../../_images/cross4.png" style="" class="img-responsive center-block"></section><section id="configure-products-with-cross-dock-route"><h2 >Configure products with Cross-Dock Route</h2><p >Create the product that uses the <em >Cross-Dock Route</em> and then, in the inventory tab, select the routes <em >Buy</em> and <em >Cross-Dock</em>. Now, in the purchase tab, specify the vendor to who you buy the product and set a price for it.</p><img src="../../../_images/cross5.png" style="" class="img-responsive center-block"><img src="../../../_images/cross6.png" style="" class="img-responsive center-block"><p >Once done, create a sale order for the product and confirm it. Odoo will automatically create two transfers which will be linked to the sale order. The first one is the transfer from the <em >Input Location</em> to the <em >Output Location</em>, corresponding to the move of the product in the <em >Cross-Dock</em> area. The second one is the delivery order from the <em >Output Location</em> to your <em >Customer Location. Both are in state *Waiting Another Operation</em> because we still need to order the product to our supplier.</p><img src="../../../_images/cross7.png" style="" class="img-responsive center-block"><img src="../../../_images/cross8.png" style="" class="img-responsive center-block"><p >Now, go to the <em >Purchase</em> app. There, you will find the purchase order that has been automatically triggered by the system. Validate it and receive the products in the <em >Input Location</em>.</p><img src="../../../_images/cross9.png" style="" class="img-responsive center-block"><img src="../../../_images/cross10.png" style="" class="img-responsive center-block"><p >When the products have been received from the supplier, you can go back to your initial sale order and validate the internal transfer from <em >Input</em> to <em >Output</em>.</p><img src="../../../_images/cross11.png" style="" class="img-responsive center-block"><img src="../../../_images/cross12.png" style="" class="img-responsive center-block"><p >The delivery order is now ready to be processed and can be validated too.</p><img src="../../../_images/cross13.png" style="" class="img-responsive center-block"><img src="../../../_images/cross14.png" style="" class="img-responsive center-block"></section>
+<span class="menuselection">Inventory ‣ Configuration ‣ Routes</span>.</p><img src="../../../_images/cross4.png" style="" class="img-responsive center-block"></section><section id="configure-products-with-cross-dock-route"><h2 >Configure products with Cross-Dock Route</h2><p >Create the product that uses the <em >Cross-Dock Route</em> and then, in the inventory tab, select the routes <em >Buy</em> and <em >Cross-Dock</em>. Now, in the purchase tab, specify the vendor to who you buy the product and set a price for it.</p><img src="../../../_images/cross5.png" style="" class="img-responsive center-block"><img src="../../../_images/cross6.png" style="" class="img-responsive center-block"><p >Once done, create a sale order for the product and confirm it. Ibel will automatically create two transfers which will be linked to the sale order. The first one is the transfer from the <em >Input Location</em> to the <em >Output Location</em>, corresponding to the move of the product in the <em >Cross-Dock</em> area. The second one is the delivery order from the <em >Output Location</em> to your <em >Customer Location. Both are in state *Waiting Another Operation</em> because we still need to order the product to our supplier.</p><img src="../../../_images/cross7.png" style="" class="img-responsive center-block"><img src="../../../_images/cross8.png" style="" class="img-responsive center-block"><p >Now, go to the <em >Purchase</em> app. There, you will find the purchase order that has been automatically triggered by the system. Validate it and receive the products in the <em >Input Location</em>.</p><img src="../../../_images/cross9.png" style="" class="img-responsive center-block"><img src="../../../_images/cross10.png" style="" class="img-responsive center-block"><p >When the products have been received from the supplier, you can go back to your initial sale order and validate the internal transfer from <em >Input</em> to <em >Output</em>.</p><img src="../../../_images/cross11.png" style="" class="img-responsive center-block"><img src="../../../_images/cross12.png" style="" class="img-responsive center-block"><p >The delivery order is now ready to be processed and can be validated too.</p><img src="../../../_images/cross13.png" style="" class="img-responsive center-block"><img src="../../../_images/cross14.png" style="" class="img-responsive center-block"></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -317,7 +317,7 @@ warehouse.</p><img src="../../../_images/cross3.png" style="" class="img-respons
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -339,7 +339,7 @@ warehouse.</p><img src="../../../_images/cross3.png" style="" class="img-respons
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -373,9 +373,9 @@ warehouse.</p><img src="../../../_images/cross3.png" style="" class="img-respons
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -392,6 +392,6 @@ warehouse.</p><img src="../../../_images/cross3.png" style="" class="img-respons
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

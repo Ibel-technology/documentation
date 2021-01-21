@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Different ways to record a payment &#8212; Odoo 14.0 documentation</title>
+    <title>Different ways to record a payment &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Invoice Online Payment" href="online_payment.html" />
-    <link rel="prev" title="Customer Payments" href="../customer_payments.html" /> 
+    <link rel="prev" title="Customer Payments" href="../customer_payments.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Different ways to record a payment</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,55 +242,55 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Different ways to record a payment </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#paying-an-invoice" class="reference ripple internal">Paying an invoice</a></li><li class="list-group-item"><a href="#payments-not-tied-to-an-invoice" class="reference ripple internal">Payments not tied to an invoice</a><ul ><li class="list-group-item"><a href="#registering-a-payment" class="reference ripple internal">Registering a payment</a></li><li class="list-group-item"><a href="#reconciling-invoice-payments" class="reference ripple internal">Reconciling invoice payments</a></li><li class="list-group-item"><a href="#reconciling-all-your-outstanding-payments-and-invoices" class="reference ripple internal">Reconciling all your outstanding payments and invoices</a></li></ul></li><li class="list-group-item"><a href="#transferring-money-from-one-bank-account-to-another" class="reference ripple internal">Transferring money from one bank account to another</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/receivables/customer_payments/recording.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="different-ways-to-record-a-payment"><p >In Odoo, a payment can either be linked directly to an invoice or be a
+
+
+  <section id="different-ways-to-record-a-payment"><p >In Ibel, a payment can either be linked directly to an invoice or be a
 stand alone record for use on a later date:</p><ul ><li >If a payment is linked to an invoice, it reduces the amount due of
 the invoice. You can have multiple payments linked to the same
 invoice.</li><li >If a payment is not linked to an invoice, the customer has an
@@ -302,7 +302,7 @@ due.</p><img src="../../../_images/recording01.png" style="" class="img-responsi
 the payment. From there you can choose to open the journal entry or
 reconcile the payment.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >If you unreconcile a payment, it is still registered in your books but not
 linked to the specific invoice any longer. If you unreconcile a payment in a
-different currency, Odoo will create a journal entry to reverse the Currency
+different currency, Ibel will create a journal entry to reverse the Currency
 Exchange Loss/Gain posted at the time of reconciliation.</p></div></section><section id="payments-not-tied-to-an-invoice"><h2 >Payments not tied to an invoice</h2></section><section id="registering-a-payment"><h3 >Registering a payment</h3><p >In the Accounting application, you can create a new payment from the
 Sales menu (register a customer payment) or the Purchases menu (pay a
 vendor). If you use these menus, the payment is not linked to an
@@ -312,12 +312,12 @@ transaction is defined by the payment method. If the payment refers to a
 document (sale order, purchase order or invoice), set the reference of
 this document in the memo field.</p><p >Once confirmed, a journal entry will be posted reflecting the
 transaction just made in the accounting application.</p></section><section id="reconciling-invoice-payments"><h3 >Reconciling invoice payments</h3><p >The easiest way of reconciling a payment with an invoice is to do so on
-the invoice directly.</p><p >When validating a new invoice, Odoo will warn you that an outstanding
+the invoice directly.</p><p >When validating a new invoice, Ibel will warn you that an outstanding
 payment for this customer or vendor is available. In this case, you can
 reconcile this payment to the invoice near the totals at the bottom,
 under “Outstanding Payments”.</p><img src="../../../_images/recording03.png" style="" class="img-responsive center-block"></section><section id="reconciling-all-your-outstanding-payments-and-invoices"><h3 >Reconciling all your outstanding payments and invoices</h3><p >If you want to reconcile all outstanding payments and invoices at once
 (instead of doing so one by one), you can use the batch reconciliation
-feature within Odoo.</p><p >The batch reconciliation feature is available from the dashboard on the
+feature within Ibel.</p><p >The batch reconciliation feature is available from the dashboard on the
 Customer Invoices card and the Vendor Bills card for reconciling
 Accounts Receivable and Payable, respectively.</p><img src="../../../_images/recording04.png" style="" class="img-responsive center-block"><p >The payments matching tool will open all unreconciled customers or
 vendors and will give you the opportunity to process them all one by
@@ -330,11 +330,11 @@ payments.</p><img src="../../../_images/recording07.png" style="" class="img-res
 the bank you want to apply the transfer from in the dashboard, and in the
 register payments screen, you select the transfer to account. Do not go
 through this process again in the other bank account or else you will end up
-with two journal entries for the same transaction.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="online_payment.html" class="reference internal alert-link"><span class="doc">Invoice Online Payment</span></a></li><li ><a href="../../bank/feeds/paypal.html" class="reference internal alert-link"><span class="doc">Synchronize your PayPal account with Odoo</span></a></li><li ><a href="check.html" class="reference internal alert-link"><span class="doc">Register customer payments by checks</span></a></li><li ><a href="followup.html" class="reference internal alert-link"><span class="doc">Follow-up on invoices and get paid faster</span></a></li></ul></div></section>
+with two journal entries for the same transaction.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="online_payment.html" class="reference internal alert-link"><span class="doc">Invoice Online Payment</span></a></li><li ><a href="../../bank/feeds/paypal.html" class="reference internal alert-link"><span class="doc">Synchronize your PayPal account with Ibel</span></a></li><li ><a href="check.html" class="reference internal alert-link"><span class="doc">Register customer payments by checks</span></a></li><li ><a href="followup.html" class="reference internal alert-link"><span class="doc">Follow-up on invoices and get paid faster</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -354,7 +354,7 @@ with two journal entries for the same transaction.</p></div><div role="alert" cl
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -376,7 +376,7 @@ with two journal entries for the same transaction.</p></div><div role="alert" cl
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -410,9 +410,9 @@ with two journal entries for the same transaction.</p></div><div role="alert" cl
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -429,6 +429,6 @@ with two journal entries for the same transaction.</p></div><div role="alert" cl
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

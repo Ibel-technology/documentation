@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Use Web Push Notifications &#8212; Odoo 14.0 documentation</title>
+    <title>Use Web Push Notifications &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Interact with Customers and Visitors with Live Chat" href="livechat.html" />
-    <link rel="prev" title="Manage Social Media Pages and Create Content" href="manage_social.html" /> 
+    <link rel="prev" title="Manage Social Media Pages and Create Content" href="manage_social.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../social_marketing.html">Social Marketing</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Use Web Push Notifications</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,66 +236,66 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Use Web Push Notifications </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#ask-users-for-permission" class="reference ripple internal">Ask users for permission</a></li><li class="list-group-item"><a href="#send-notifications" class="reference ripple internal">Send notifications</a><ul ><li class="list-group-item"><a href="#individually" class="reference ripple internal">Individually</a></li><li class="list-group-item"><a href="#to-a-group" class="reference ripple internal">To a group</a></li><li class="list-group-item"><a href="#by-rules" class="reference ripple internal">By rules</a></li></ul></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/social_marketing/overview/push_notifications.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="use-web-push-notifications"><p >Web Push Notifications deliver messages to your user’s device without the need to be on your
 website, or for them to give personal information. They can be used to inform your users about news,
 articles and content posted, practical messages like traffic and weather updates,
 flight information, sales alerts, coupons, and product updates.</p></section><section id="ask-users-for-permission"><h2 >Ask users for permission</h2><p >In the <em >Website</em> application go to <span class="menuselection">Website ‣ Configuration ‣ Settings</span>
-and enable <em >Web Push Notifications</em>.</p><img src="../../_images/enable_push.png" alt="Go to settings and enable web push notifications for Odoo Social Marketing" style="" class="img-responsive center-block"><p >Choose your message, icon, and delay time (which is the wait time for the permission request to be
-shown once the user lands on your page).</p><img src="../../_images/push_permission.png" alt="Request to send messages is being shown on the page for Odoo Social Marketing" style="" class="img-responsive center-block"></section><section id="send-notifications"><h2 >Send notifications</h2></section><section id="individually"><h3 >Individually</h3><p >You can send individual messages through the menu <em >Visitors</em>.</p><img src="../../_images/individually_push.png" alt="Choose individually to whom send web push notifications in Odoo Social Marketing" style="" class="img-responsive center-block"></section><section id="to-a-group"><h3 >To a group</h3><p >Target a bigger segment by selecting multiple visitors in the <em >View List</em> (e.g.: all visitors that
-visited your Homepage).</p><img src="../../_images/push_to_a_group.png" alt="Select multiple contacts to send web push notifications in Odoo Social Marketing" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Visitors records are kept under <em >Visitors</em> for a week, before getting archived.</p></div></section><section id="by-rules"><h3 >By rules</h3><p >Or go to <span class="menuselection">Social Marketing ‣ Posts ‣ Create</span>. Under <em >Web Notification options</em>,
-apply filters to send your message to the records that match the rules you set.</p><img src="../../_images/push_rules.png" alt="Define rules to send push notifications in Odoo Social Marketing" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The feature only works with Odoo Website application.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="manage_social.html" class="reference internal alert-link"><span class="doc">Manage Social Media Pages and Create Content</span></a></li><li ><a href="campaigns.html" class="reference internal alert-link"><span class="doc">Connecting to my Marketplace with Campaigns</span></a></li></ul></div></section>
+and enable <em >Web Push Notifications</em>.</p><img src="../../_images/enable_push.png" alt="Go to settings and enable web push notifications for Ibel Social Marketing" style="" class="img-responsive center-block"><p >Choose your message, icon, and delay time (which is the wait time for the permission request to be
+shown once the user lands on your page).</p><img src="../../_images/push_permission.png" alt="Request to send messages is being shown on the page for Ibel Social Marketing" style="" class="img-responsive center-block"></section><section id="send-notifications"><h2 >Send notifications</h2></section><section id="individually"><h3 >Individually</h3><p >You can send individual messages through the menu <em >Visitors</em>.</p><img src="../../_images/individually_push.png" alt="Choose individually to whom send web push notifications in Ibel Social Marketing" style="" class="img-responsive center-block"></section><section id="to-a-group"><h3 >To a group</h3><p >Target a bigger segment by selecting multiple visitors in the <em >View List</em> (e.g.: all visitors that
+visited your Homepage).</p><img src="../../_images/push_to_a_group.png" alt="Select multiple contacts to send web push notifications in Ibel Social Marketing" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Visitors records are kept under <em >Visitors</em> for a week, before getting archived.</p></div></section><section id="by-rules"><h3 >By rules</h3><p >Or go to <span class="menuselection">Social Marketing ‣ Posts ‣ Create</span>. Under <em >Web Notification options</em>,
+apply filters to send your message to the records that match the rules you set.</p><img src="../../_images/push_rules.png" alt="Define rules to send push notifications in Ibel Social Marketing" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The feature only works with Ibel Website application.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="manage_social.html" class="reference internal alert-link"><span class="doc">Manage Social Media Pages and Create Content</span></a></li><li ><a href="campaigns.html" class="reference internal alert-link"><span class="doc">Connecting to my Marketplace with Campaigns</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -315,7 +315,7 @@ apply filters to send your message to the records that match the rules you set.<
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -337,7 +337,7 @@ apply filters to send your message to the records that match the rules you set.<
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -371,9 +371,9 @@ apply filters to send your message to the records that match the rules you set.<
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -390,6 +390,6 @@ apply filters to send your message to the records that match the rules you set.<
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

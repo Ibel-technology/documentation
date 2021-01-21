@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>On-premises Database management &#8212; Odoo 14.0 documentation</title>
+    <title>On-premises Database management &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../_static/doc.js"></script>
 <script type="text/javascript" src="../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Hosting Changes" href="hosting_changes.html" />
-    <link rel="prev" title="Online Database management" href="db_online.html" /> 
+    <link rel="prev" title="Online Database management" href="db_online.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,21 +177,21 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
+
+
+
+
             <li><a href="../index.html">User Doc</a></li>
-        
-    
+
+
     <li class="active"><a href="#">On-premises Database management</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -199,18 +199,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -220,76 +220,76 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
-    
-    
+
+
+
     <figure class="card top has_banner">
       <span class="card-img" style="background-image: url('../_static/banners/db_premise.png');"></span>
       <div class="container text-center">
         <h1> On-premises Database management </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#register-a-database" class="reference ripple internal">Register a database</a><ul ><li class="list-group-item"><a href="#registration-error-message" class="reference ripple internal">Registration Error Message</a><ul ><li class="list-group-item"><a href="#solutions" class="reference ripple internal">Solutions</a></li></ul></li><li class="list-group-item"><a href="#error-message-due-to-too-many-users" class="reference ripple internal">Error message due to too many users</a><ul ><li class="list-group-item"><a href="#id1" class="reference ripple internal">Solutions</a></li></ul></li><li class="list-group-item"><a href="#database-expired-error-message" class="reference ripple internal">Database expired error message</a><ul ><li class="list-group-item"><a href="#id2" class="reference ripple internal">Solutions</a></li></ul></li></ul></li><li class="list-group-item"><a href="#duplicate-a-database" class="reference ripple internal">Duplicate a database</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/db_management/db_premise.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="on-premises-database-management"><i id="db-premise"></i></section><section id="register-a-database"><h2 >Register a database</h2><p >To register your database, you just need to enter your Subscription Code in the
 banner in the App Switcher. Make sure you do not add extra spaces before or after
 your subscription code. If the registration is successful, it will turn green and
 will provide you with the Expiration Date of your freshly-registered database. You
-can check this Epiration Date in the About menu (Odoo 9) or in the Settings Dashboard
-(Odoo 10).</p></section><section id="registration-error-message"><h3 >Registration Error Message</h3><p >If you are unable to register your database, you will likely encounter this
-message:</p><img src="../_images/error_message_sub_code.png" alt="Something went wrong while registering your database, you can try again or contact Odoo Help" style="" class="img-responsive center-block"></section><section id="solutions"><h4 >Solutions</h4><ul ><li ><p >Do you have a valid Enterprise subscription?</p><ul ><li >Check if your subscription details get the tag “In Progress” on
-your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Odoo Account</a> or with your Account Manager</li></ul></li><li ><p >Have you already linked a database with your subscription reference?</p><ul ><li >You can link only one database per subscription.
-(Need a test or a development database? <a href="https://www.odoo.com/partners" class="reference external">Find a partner</a>)</li><li ><p >You can unlink the old database yourself on your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Odoo Contract</a> with the button “Unlink database”</p><img src="../_images/unlink_single_db.png" style="" class="img-responsive center-block"><p >A confirmation message will appear; make sure this is the correct database as
-it will be deactivated shortly:</p><img src="../_images/unlink_confirm_enterprise_edition.png" style="" class="img-responsive center-block"></li></ul></li><li ><p >Do you have the updated version of Odoo 9?</p><ul ><li >From July 2016 onward, Odoo 9 now automatically change the uuid of a
+can check this Epiration Date in the About menu (Ibel 9) or in the Settings Dashboard
+(Ibel 10).</p></section><section id="registration-error-message"><h3 >Registration Error Message</h3><p >If you are unable to register your database, you will likely encounter this
+message:</p><img src="../_images/error_message_sub_code.png" alt="Something went wrong while registering your database, you can try again or contact Ibel Help" style="" class="img-responsive center-block"></section><section id="solutions"><h4 >Solutions</h4><ul ><li ><p >Do you have a valid Enterprise subscription?</p><ul ><li >Check if your subscription details get the tag “In Progress” on
+your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Ibel Account</a> or with your Account Manager</li></ul></li><li ><p >Have you already linked a database with your subscription reference?</p><ul ><li >You can link only one database per subscription.
+(Need a test or a development database? <a href="https://www.odoo.com/partners" class="reference external">Find a partner</a>)</li><li ><p >You can unlink the old database yourself on your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Ibel Contract</a> with the button “Unlink database”</p><img src="../_images/unlink_single_db.png" style="" class="img-responsive center-block"><p >A confirmation message will appear; make sure this is the correct database as
+it will be deactivated shortly:</p><img src="../_images/unlink_confirm_enterprise_edition.png" style="" class="img-responsive center-block"></li></ul></li><li ><p >Do you have the updated version of Ibel 9?</p><ul ><li >From July 2016 onward, Ibel 9 now automatically change the uuid of a
 duplicated database; a manual operation is no longer required.</li><li ><p >If it’s not the case, you may have multiple databases sharing the same
-UUID. Please check on your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Odoo Contract</a>, a short message will appear
+UUID. Please check on your <a href="https://accounts.odoo.com/my/subscription" class="reference external">Ibel Contract</a>, a short message will appear
 specifying which database is problematic:</p><img src="../_images/unlink_db_name_collision.png" style="" class="img-responsive center-block"><p >In this case, you need to change the UUID on your test databases to solve this
 issue. You will find more information about this in <a href="#duplicate-premise" class="reference internal"><span class="std std-ref">this section</span></a>.</p><p >For your information, we identify database with UUID. Therefore, each database
 should have a distinct UUID to ensure that registration and invoicing proceed
-effortlessly for your and for us.</p></li></ul></li><li ><p >Check your network and firewall settings</p><ul ><li ><p >The Update notification must be able to reach Odoo’s subscription
-validation servers. In other words, make sure that the Odoo server is able
+effortlessly for your and for us.</p></li></ul></li><li ><p >Check your network and firewall settings</p><ul ><li ><p >The Update notification must be able to reach Ibel’s subscription
+validation servers. In other words, make sure that the Ibel server is able
 to open outgoing connections towards:</p><blockquote ><ul ><li >services.odoo.com on port 443 (or 80)</li><li >services.openerp.com on port 443 (or 80) for older deployments</li></ul></blockquote></li><li >Once you activated your database, you must keep these ports open, as the
 Update notification runs once a week.</li></ul></li></ul></section><section id="error-message-due-to-too-many-users"><h3 >Error message due to too many users</h3><p >If you have more users in your local database than provisionned in your
-Odoo Enterprise subscription, you may encounter this message:</p><img src="../_images/add_more_users.png" alt="This database will expire in X days, you have more users than your subscription allows" style="" class="img-responsive center-block"><p >When the message appears you have 30 days before the expiration.
+Ibel Enterprise subscription, you may encounter this message:</p><img src="../_images/add_more_users.png" alt="This database will expire in X days, you have more users than your subscription allows" style="" class="img-responsive center-block"><p >When the message appears you have 30 days before the expiration.
 The countdown is updated everyday.</p></section><section id="id1"><h4 >Solutions</h4><ul ><li ><strong >Add more users</strong> on your subscription: follow the link and Validate
 the upsell quotation and pay for the extra users.</li><li ><strong >Deactivate users</strong> as explained in this <a href="documentation.html#deactivating-users" class="reference external">documentation</a>
 and <strong >Reject</strong> the upsell quotation.</li></ul><p >Once your database has the correct number of users, the expiration message
@@ -307,7 +307,7 @@ duplicate your database (among other things).</p><img src="../_images/db_manager
 the duplicated database’s uuid (Unniversally Unique Identifier), since this
 uuid is how your database identifies itself with our servers. Having two
 databases with the same uuid could result in invoicing problems or registration
-problems down the line.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >From July 2016 onward, Odoo 9 now automatically change the uuid of a
+problems down the line.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >From July 2016 onward, Ibel 9 now automatically change the uuid of a
 duplicated database; a manual operation is no longer required.</p></div><p >The database uuid is currently accessible from the menu <span class="menuselection">Settings ‣ Technical ‣
 System Parameters</span>, we advise you to use a <a href="https://www.uuidtools.com" class="reference external">uuid generator</a> or to
 use the unix command <code >uuidgen</code> to generate a new uuid. You can then simply replace it like any
@@ -315,7 +315,7 @@ other record by clicking on it and using the edit button.</p><img src="../_image
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -335,7 +335,7 @@ other record by clicking on it and using the edit button.</p><img src="../_image
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -357,7 +357,7 @@ other record by clicking on it and using the edit button.</p><img src="../_image
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -391,9 +391,9 @@ other record by clicking on it and using the edit button.</p><img src="../_image
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -410,6 +410,6 @@ other record by clicking on it and using the edit button.</p><img src="../_image
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

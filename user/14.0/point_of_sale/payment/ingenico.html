@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connect an Ingenico Payment Terminal to your PoS &#8212; Odoo 14.0 documentation</title>
+    <title>Connect an Ingenico Payment Terminal to your PoS &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Connect a Vantiv Payment Terminal to your PoS" href="vantiv.html" />
-    <link rel="prev" title="Payment Terminals" href="../payment.html" /> 
+    <link rel="prev" title="Payment Terminals" href="../payment.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../point_of_sale.html">Point of Sale</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Connect an Ingenico Payment Terminal to your PoS</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,63 +236,63 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Connect an Ingenico Payment Terminal to your PoS </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#connect-an-iot-box" class="reference ripple internal">Connect an IoT Box</a></li><li class="list-group-item"><a href="#configure-the-lane-5000-for-ingenico-benelux" class="reference ripple internal">Configure the Lane/5000 for Ingenico BENELUX</a></li><li class="list-group-item"><a href="#configure-the-payment-method" class="reference ripple internal">Configure the payment method</a></li></ul></li><li class="list-group-item"><a href="#pay-with-a-payment-terminal" class="reference ripple internal">Pay with a payment terminal</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/point_of_sale/payment/ingenico.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="connect-an-ingenico-payment-terminal-to-your-pos"><p >Connecting a payment terminal allows you to offer a fluid payment flow
 to your customers and ease the work of your cashiers.</p><p >Please note that Ingenico is currently only available for customers in the
-Benelux.</p></section><section id="configuration"><h2 >Configuration</h2></section><section id="connect-an-iot-box"><h3 >Connect an IoT Box</h3><p >Connecting an Ingenico Payment Terminal to Odoo is a feature that
+Benelux.</p></section><section id="configuration"><h2 >Configuration</h2></section><section id="connect-an-iot-box"><h3 >Connect an IoT Box</h3><p >Connecting an Ingenico Payment Terminal to Ibel is a feature that
 requires an IoT Box. For more information on how to connect an IoT Box
 to your database, please refer to the <a href="../../iot/config/connect.html" class="reference internal"><span class="doc">IoT documentation</span></a>.</p></section><section id="configure-the-lane-5000-for-ingenico-benelux"><h3 >Configure the Lane/5000 for Ingenico BENELUX</h3><p >Click on the F button of the terminal, then go in the
 <span class="menuselection">PoS Menu ‣ Settings</span> and enter the settings password.</p><p >Now, click on connexion change and TCP/IP. Type the IP of your <em >IoT
 Box</em> (you can find it on the form view of your IoT Box). Then, enter
 9000 as port. The terminal will restart. Once it is done, go on your
-<em >IoT Box</em> form in Odoo and verify that the terminal has been found.</p><img src="../../_images/payment_terminal_02.png" style="" class="img-responsive center-block"></section><section id="configure-the-payment-method"><h3 >Configure the payment method</h3><p >First, go in the general settings of the POS app, and activate the
+<em >IoT Box</em> form in Ibel and verify that the terminal has been found.</p><img src="../../_images/payment_terminal_02.png" style="" class="img-responsive center-block"></section><section id="configure-the-payment-method"><h3 >Configure the payment method</h3><p >First, go in the general settings of the POS app, and activate the
 Ingenico setting.</p><img src="../../_images/payment_terminal_03.png" style="" class="img-responsive center-block"><p >Go back in <span class="menuselection">Point of Sale ‣ Configuration ‣ Point of Sale</span>,
 go in the payments section and access your payment methods. Create a new
 payment method for Ingenico, select the payment terminal option Ingenico, and
@@ -303,14 +303,14 @@ on <em >Send</em>. When the payment is successful, the status will change to
 <em >Payment Successful</em>.</p><img src="../../_images/payment_terminal_05.png" style="" class="img-responsive center-block"><p >If you want to cancel the payment request, click on cancel. You can
 still retry to send the payment request.</p><p >If there is any issue with the payment terminal, you can still force the
 payment using the <em >Force Done</em>. This will allow you to validate the
-order in Odoo even if the connexion between the terminal and Odoo has
+order in Ibel even if the connexion between the terminal and Ibel has
 issues.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >This option will only be available if you received an error message
 telling you the connexion failed.</p></div><p >Once your payment is processed, on the payment record, you’ll find the
 type of card that has been used and the transaction ID.</p><img src="../../_images/payment_terminal_06.png" style="" class="img-responsive center-block"></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -330,7 +330,7 @@ type of card that has been used and the transaction ID.</p><img src="../../_imag
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -352,7 +352,7 @@ type of card that has been used and the transaction ID.</p><img src="../../_imag
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -386,9 +386,9 @@ type of card that has been used and the transaction ID.</p><img src="../../_imag
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -405,6 +405,6 @@ type of card that has been used and the transaction ID.</p><img src="../../_imag
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deferred Expenses and Prepayments &#8212; Odoo 14.0 documentation</title>
+    <title>Deferred Expenses and Prepayments &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../../_static/doc.js"></script>
 <script type="text/javascript" src="../../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Non-current Assets and Fixed Assets" href="assets.html" />
-    <link rel="prev" title="Purchase Receipts" href="purchase_receipts.html" /> 
+    <link rel="prev" title="Purchase Receipts" href="purchase_receipts.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,43 +177,43 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../../accounting.html">Invoicing and Accounting</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Deferred Expenses and Prepayments</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -221,18 +221,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -242,54 +242,54 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Deferred Expenses and Prepayments </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#prerequisites" class="reference ripple internal">Prerequisites</a><ul ><li class="list-group-item"><a href="#configure-a-deferred-expense-account" class="reference ripple internal">Configure a Deferred Expense Account</a></li><li class="list-group-item"><a href="#post-an-expense-to-the-right-account" class="reference ripple internal">Post an expense to the right account</a><ul ><li class="list-group-item"><a href="#select-the-account-on-a-draft-bill" class="reference ripple internal">Select the account on a draft bill</a></li><li class="list-group-item"><a href="#choose-a-different-expense-account-for-specific-products" class="reference ripple internal">Choose a different Expense Account for specific products</a></li><li class="list-group-item"><a href="#change-the-account-of-a-posted-journal-item" class="reference ripple internal">Change the account of a posted journal item</a></li></ul></li></ul></li><li class="list-group-item"><a href="#deferred-expenses-entries" class="reference ripple internal">Deferred Expenses entries</a><ul ><li class="list-group-item"><a href="#create-a-new-entry" class="reference ripple internal">Create a new entry</a><ul ><li class="list-group-item"><a href="#what-does-prorata-temporis-mean" class="reference ripple internal">What does “Prorata Temporis” mean?</a></li></ul></li><li class="list-group-item"><a href="#deferred-entry-from-the-purchases-journal" class="reference ripple internal">Deferred Entry from the Purchases Journal</a></li></ul></li><li class="list-group-item"><a href="#deferred-expense-models" class="reference ripple internal">Deferred Expense Models</a><ul ><li class="list-group-item"><a href="#apply-a-deferred-expense-model-to-a-new-entry" class="reference ripple internal">Apply a Deferred Expense Model to a new entry</a></li></ul></li><li class="list-group-item"><a href="#automate-the-deferred-expenses" class="reference ripple internal">Automate the Deferred Expenses</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/accounting/payables/supplier_bills/deferred_expenses.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="deferred-expenses-and-prepayments"><p ><strong >Deferred expenses</strong> and <strong >prepayments</strong> (also known as <strong >prepaid expense</strong>), are both costs that
 have already occurred for unconsumed products or services yet to receive.</p><p >Such costs are <strong >assets</strong> for the company that pays them since it already paid for products and
 services still to receive or that are yet to be used. The company cannot report them on the current
@@ -298,44 +298,44 @@ expensed in the future.</p><p >These future expenses must be deferred on the com
 can be <strong >recognized</strong>, at once or over a defined period, on the Profit and Loss statement.</p><p >For example, let’s say we pay $ 1200 at once for one year of insurance. We already pay the cost now
 but haven’t used the service yet. Therefore, we post this new expense in a <em >prepayment account</em> and
 decide to recognize it on a monthly basis. Each month, for the next 12 months, $ 100 will be
-recognized as an expense.</p><p >Odoo Accounting handles deferred expenses and prepayments by spreading them in multiple entries that
+recognized as an expense.</p><p >Ibel Accounting handles deferred expenses and prepayments by spreading them in multiple entries that
 are automatically created in <em >draft mode</em> and then posted periodically.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >The server checks once a day if an entry must be posted. It might then take up to 24 hours before
 you see a change from <em >draft</em> to <em >posted</em>.</p></div></section><section id="prerequisites"><h2 >Prerequisites</h2><p >Such transactions must be posted on a <strong >Deferred Expense Account</strong> rather than on the default
 expense account.</p></section><section id="configure-a-deferred-expense-account"><h3 >Configure a Deferred Expense Account</h3><p >To configure your account in the <strong >Chart of Accounts</strong>, go to <span class="menuselection">Accounting ‣
-Configuration ‣ Chart of Accounts</span>, click on <em >Create</em>, and fill out the form.</p><img src="../../../_images/deferred_expenses01.png" alt="Configuration of a Deferred Expense Account in Odoo Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >This account’s type must be either <em >Current Assets</em> or <em >Prepayments</em></p></div></section><section id="post-an-expense-to-the-right-account"><h3 >Post an expense to the right account</h3></section><section id="select-the-account-on-a-draft-bill"><h4 >Select the account on a draft bill</h4><p >On a draft bill, select the right account for all the products of which the expenses must be
-deferred.</p><img src="../../../_images/deferred_expenses02.png" alt="Selection of a Deferred Expense Account on a draft bill in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="choose-a-different-expense-account-for-specific-products"><h4 >Choose a different Expense Account for specific products</h4><p >Start editing the product, go to the <em >Accounting</em> tab, select the right <strong >Expense Account</strong>, and
-save.</p><img src="../../../_images/deferred_expenses03.png" alt="Change of the Expense Account for a product in Odoo" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >It is possible to automate the creation of expense entries for these products (see:
+Configuration ‣ Chart of Accounts</span>, click on <em >Create</em>, and fill out the form.</p><img src="../../../_images/deferred_expenses01.png" alt="Configuration of a Deferred Expense Account in Ibel Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >This account’s type must be either <em >Current Assets</em> or <em >Prepayments</em></p></div></section><section id="post-an-expense-to-the-right-account"><h3 >Post an expense to the right account</h3></section><section id="select-the-account-on-a-draft-bill"><h4 >Select the account on a draft bill</h4><p >On a draft bill, select the right account for all the products of which the expenses must be
+deferred.</p><img src="../../../_images/deferred_expenses02.png" alt="Selection of a Deferred Expense Account on a draft bill in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="choose-a-different-expense-account-for-specific-products"><h4 >Choose a different Expense Account for specific products</h4><p >Start editing the product, go to the <em >Accounting</em> tab, select the right <strong >Expense Account</strong>, and
+save.</p><img src="../../../_images/deferred_expenses03.png" alt="Change of the Expense Account for a product in Ibel" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >It is possible to automate the creation of expense entries for these products (see:
 <a href="#automate-the-deferred-expenses" class="reference internal alert-link">Automate the Deferred Expenses</a>).</p></div></section><section id="change-the-account-of-a-posted-journal-item"><h4 >Change the account of a posted journal item</h4><p >To do so, open your Purchases Journal by going to <span class="menuselection">Accounting ‣ Accounting ‣
 Purchases</span>, select the journal item you want to modify, click on the account, and select the right
-one.</p><img src="../../../_images/deferred_expenses04.png" alt="Modification of a posted journal item's account in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="deferred-expenses-entries"><h2 >Deferred Expenses entries</h2></section><section id="create-a-new-entry"><h3 >Create a new entry</h3><p >A <strong >Deferred Expense entry</strong> automatically generates all journal entries in <em >draft mode</em>. They are
+one.</p><img src="../../../_images/deferred_expenses04.png" alt="Modification of a posted journal item's account in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="deferred-expenses-entries"><h2 >Deferred Expenses entries</h2></section><section id="create-a-new-entry"><h3 >Create a new entry</h3><p >A <strong >Deferred Expense entry</strong> automatically generates all journal entries in <em >draft mode</em>. They are
 then posted one by one at the right time until the full amount of the expense is recognized.</p><p >To create a new entry, go to <span class="menuselection">Accounting ‣ Accounting ‣ Deferred Expense</span>, click
 on <em >Create</em>, and fill out the form.</p><p >Click on <strong >select related purchases</strong> to link an existing journal item to this new entry. Some
 fields are then automatically filled out, and the journal item is now listed under the <strong >Related
-Expenses</strong> tab.</p><img src="../../../_images/deferred_expenses05.png" alt="Deferred Expense entry in Odoo Accounting" style="" class="img-responsive center-block"><p >Once done, you can click on <em >Compute Deferral</em> (next to the <em >Confirm</em> button) to generate all the
-values of the <strong >Expense Board</strong>. This board shows you all the entries that Odoo will post to
-recognize your expense, and at which date.</p><img src="../../../_images/deferred_expenses06.png" alt="Expense Board in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="what-does-prorata-temporis-mean"><h4 >What does “Prorata Temporis” mean?</h4><p >The <strong >Prorata Temporis</strong> feature is useful to recognize your expense the most accurately possible.</p><p >With this feature, the first entry on the Expense Board is computed based on the time left between
+Expenses</strong> tab.</p><img src="../../../_images/deferred_expenses05.png" alt="Deferred Expense entry in Ibel Accounting" style="" class="img-responsive center-block"><p >Once done, you can click on <em >Compute Deferral</em> (next to the <em >Confirm</em> button) to generate all the
+values of the <strong >Expense Board</strong>. This board shows you all the entries that Ibel will post to
+recognize your expense, and at which date.</p><img src="../../../_images/deferred_expenses06.png" alt="Expense Board in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="what-does-prorata-temporis-mean"><h4 >What does “Prorata Temporis” mean?</h4><p >The <strong >Prorata Temporis</strong> feature is useful to recognize your expense the most accurately possible.</p><p >With this feature, the first entry on the Expense Board is computed based on the time left between
 the <em >Prorata Date</em> and the <em >First Recognition Date</em> rather than the default amount of time between
 recognitions.</p><p >For example, the Expense Board above has its first expense with an amount of $ 70.97 rather than
 $ 100.00. Consequently, the last entry is also lower and has an amount of $ 29.03.</p></section><section id="deferred-entry-from-the-purchases-journal"><h3 >Deferred Entry from the Purchases Journal</h3><p >You can create a deferred entry from a specific journal item in your <strong >Purchases Journal</strong>.</p><p >To do so, open your Purchases Journal by going to <span class="menuselection">Accounting ‣ Accounting ‣
 Purchases</span>, and select the journal item you want to defer. Make sure that it is posted in the right
 account (see: <a href="#change-the-account-of-a-posted-journal-item" class="reference internal">Change the account of a posted journal item</a>).</p><p >Then, click on <em >Action</em>, select <strong >Create Deferred Entry</strong>, and fill out the form the same way you
-would do to <a href="#create-a-new-entry" class="reference internal">create a new entry</a>.</p><img src="../../../_images/deferred_expenses07.png" alt="Create Deferred Entry from a journal item in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="deferred-expense-models"><h2 >Deferred Expense Models</h2><p >You can create <strong >Deferred Expense Models</strong> to create your Deferred Expense entries faster.</p><p >To create a model, go to <span class="menuselection">Accounting ‣ Configuration ‣ Deferred Expense Models</span>,
+would do to <a href="#create-a-new-entry" class="reference internal">create a new entry</a>.</p><img src="../../../_images/deferred_expenses07.png" alt="Create Deferred Entry from a journal item in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="deferred-expense-models"><h2 >Deferred Expense Models</h2><p >You can create <strong >Deferred Expense Models</strong> to create your Deferred Expense entries faster.</p><p >To create a model, go to <span class="menuselection">Accounting ‣ Configuration ‣ Deferred Expense Models</span>,
 click on <em >Create</em>, and fill out the form the same way you would do to create a new entry.</p><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can also convert a <em >confirmed Deferred Expense entry</em> into a model by opening it from
 <span class="menuselection">Accounting ‣ Accounting ‣ Deferred Expenses</span> and then, by clicking on the
 button <em >Save Model</em>.</p></div></section><section id="apply-a-deferred-expense-model-to-a-new-entry"><h3 >Apply a Deferred Expense Model to a new entry</h3><p >When you create a new Deferred Expense entry,  fill out the <strong >Deferred Expense Account</strong> with the
 right recognition account.</p><p >New buttons with all the models linked to that account appear at the top of the form. Clicking on a
-model button fills out the form according to that model.</p><img src="../../../_images/deferred_expenses08.png" alt="Deferred Expense model button in Odoo Accounting" style="" class="img-responsive center-block"></section><section id="automate-the-deferred-expenses"><i id="deferred-expenses-automation"></i><h2 >Automate the Deferred Expenses</h2><p >When you create or edit an account of which the type is either <em >Current Assets</em> or <em >Prepayments</em>,
+model button fills out the form according to that model.</p><img src="../../../_images/deferred_expenses08.png" alt="Deferred Expense model button in Ibel Accounting" style="" class="img-responsive center-block"></section><section id="automate-the-deferred-expenses"><i id="deferred-expenses-automation"></i><h2 >Automate the Deferred Expenses</h2><p >When you create or edit an account of which the type is either <em >Current Assets</em> or <em >Prepayments</em>,
 you can configure it to defer the expenses that are credited on it automatically.</p><p >You have three choices for the <strong >Automate Deferred Expense</strong> field:</p><ol ><li ><strong >No:</strong> this is the default value. Nothing happens.</li><li ><strong >Create in draft:</strong> whenever a transaction is posted on the account, a draft <em >Deferred Expenses
 entry</em> is created, but not validated. You must first fill out the form in
 <span class="menuselection">Accounting ‣ Accounting ‣ Deferred Expenses</span>.</li><li ><strong >Create and validate:</strong> you must also select a Deferred Expense Model (see: <a href="#deferred-expense-models" class="reference internal">Deferred Expense
 Models</a>). Whenever a transaction is posted on the account, a <em >Deferred Expenses entry</em> is
-created and immediately validated.</li></ol><img src="../../../_images/deferred_expenses09.png" alt="Automate Deferred Expense on an account in Odoo Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can, for example, select this account as the default <strong >Expense Account</strong> of a product to
+created and immediately validated.</li></ol><img src="../../../_images/deferred_expenses09.png" alt="Automate Deferred Expense on an account in Ibel Accounting" style="" class="img-responsive center-block"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can, for example, select this account as the default <strong >Expense Account</strong> of a product to
 fully automate its purchase. (see: <a href="#choose-a-different-expense-account-for-specific-products" class="reference internal alert-link">Choose a different Expense Account for specific
 products</a>).</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="../../overview/getting_started/chart_of_accounts.html" class="reference internal alert-link"><span class="doc">Chart of Accounts</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -355,7 +355,7 @@ products</a>).</p></div><div role="alert" class="alert alert-go_to"><p class="al
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -377,7 +377,7 @@ products</a>).</p></div><div role="alert" class="alert alert-go_to"><p class="al
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -411,9 +411,9 @@ products</a>).</p></div><div role="alert" class="alert alert-go_to"><p class="al
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -430,6 +430,6 @@ products</a>).</p></div><div role="alert" class="alert alert-go_to"><p class="al
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Use quotation templates &#8212; Odoo 14.0 documentation</title>
+    <title>Use quotation templates &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Add optional products" href="optional_products.html" />
-    <link rel="prev" title="Send Quotations" href="../send_quotations.html" /> 
+    <link rel="prev" title="Send Quotations" href="../send_quotations.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../sales.html">Sales</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">Use quotation templates</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,72 +236,72 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> Use quotation templates </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
               <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a></li><li class="list-group-item"><a href="#create-your-first-template" class="reference ripple internal">Create your first template</a></li><li class="list-group-item"><a href="#design-your-template" class="reference ripple internal">Design your template</a></li><li class="list-group-item"><a href="#use-a-quotation-template" class="reference ripple internal">Use a quotation template</a></li><li class="list-group-item"><a href="#confirm-the-quotation" class="reference ripple internal">Confirm the quotation</a></li></ul>
-              
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/sales/send_quotations/quote_template.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
+
+
   <section id="use-quotation-templates"><p >By creating custom quotation templates, you will save a lot of time. Indeed, with the use of
 templates, you will be able to send complete quotations at a fast pace.</p></section><section id="configuration"><h2 >Configuration</h2><p >To enable this feature, go to <span class="menuselection">Sales ‣ Configuration ‣ Settings</span> and activate
-<strong >Quotation Templates</strong>.</p><img src="../../_images/quotations_templates_1.png" alt="How to enable quotation templates on Odoo Sales?" style="" class="img-responsive center-block img-thumbnail"><p >For even more convenience, it is also recommended to add the <strong >Quotation Builder</strong> feature which
+<strong >Quotation Templates</strong>.</p><img src="../../_images/quotations_templates_1.png" alt="How to enable quotation templates on Ibel Sales?" style="" class="img-responsive center-block img-thumbnail"><p >For even more convenience, it is also recommended to add the <strong >Quotation Builder</strong> feature which
 will help you design your quotation templates very easily. This option will automatically install
-the Odoo Website App.</p><img src="../../_images/quotations_templates_2.png" alt="How to enable quotation builder on Odoo Sales?" style="" class="img-responsive center-block img-thumbnail"></section><section id="create-your-first-template"><h2 >Create your first template</h2><p >Quotation templates are under <span class="menuselection">Sales ‣ Configuration</span>.</p><p >You can create a new template or edit an existing one. Once named, you will be able to select
-products and quantities as well as the expiration time of the quotation.</p><img src="../../_images/quotations_templates_3.png" alt="Create a new quotation template on Odoo Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >On each template, you can also specify discounts if the option is activated in the <strong >Sales</strong>
+the Ibel Website App.</p><img src="../../_images/quotations_templates_2.png" alt="How to enable quotation builder on Ibel Sales?" style="" class="img-responsive center-block img-thumbnail"></section><section id="create-your-first-template"><h2 >Create your first template</h2><p >Quotation templates are under <span class="menuselection">Sales ‣ Configuration</span>.</p><p >You can create a new template or edit an existing one. Once named, you will be able to select
+products and quantities as well as the expiration time of the quotation.</p><img src="../../_images/quotations_templates_3.png" alt="Create a new quotation template on Ibel Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >On each template, you can also specify discounts if the option is activated in the <strong >Sales</strong>
 settings.</p></div></section><section id="design-your-template"><h2 >Design your template</h2><p >You will have the possibility to design your template and edit the customer interface in order
 to manage what clients will see before accepting and paying the quotation. For example, you will
 be able to describe your company, your services and your products. To do so, you can click on
-<strong >Edit</strong> and you will be brought to the quotation builder.</p><img src="../../_images/quotations_templates_4.png" alt="Design your quotation template on Odoo Sales" style="" class="img-responsive center-block img-thumbnail"><p >You can easily edit the content of your template by dragging &amp; dropping different building blocks
-to organize your quotation. For example, you can add a content block to describe your products.</p><img src="../../_images/quotations_templates_5.png" alt="Drag &amp; drop building blocks to create your quotation template on Odoo Sales" style="" class="img-responsive center-block img-thumbnail"></section><section id="use-a-quotation-template"><h2 >Use a quotation template</h2><p >When creating a quotation, you can choose a specific template.</p><img src="../../_images/quotations_templates_6.png" alt="Select a specific template on Odoo Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can select any template of your choice and suggest it as the default template in
+<strong >Edit</strong> and you will be brought to the quotation builder.</p><img src="../../_images/quotations_templates_4.png" alt="Design your quotation template on Ibel Sales" style="" class="img-responsive center-block img-thumbnail"><p >You can easily edit the content of your template by dragging &amp; dropping different building blocks
+to organize your quotation. For example, you can add a content block to describe your products.</p><img src="../../_images/quotations_templates_5.png" alt="Drag &amp; drop building blocks to create your quotation template on Ibel Sales" style="" class="img-responsive center-block img-thumbnail"></section><section id="use-a-quotation-template"><h2 >Use a quotation template</h2><p >When creating a quotation, you can choose a specific template.</p><img src="../../_images/quotations_templates_6.png" alt="Select a specific template on Ibel Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Tip</p><p >You can select any template of your choice and suggest it as the default template in
 the <strong >Sales</strong> settings.</p></div></section><section id="confirm-the-quotation"><h2 >Confirm the quotation</h2><p >Templates facilitate the confirmation process by allowing customers to sign electronically or to
-pay online. You can activate these two options directly in the quotation template itself.</p><img src="../../_images/quotations_templates_7.png" alt="Allow your customers to sign electronically or to pay online on Odoo Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Every quotation will now have this setting. Of course you can always change it and make it
+pay online. You can activate these two options directly in the quotation template itself.</p><img src="../../_images/quotations_templates_7.png" alt="Allow your customers to sign electronically or to pay online on Ibel Sales" style="" class="img-responsive center-block img-thumbnail"><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >Every quotation will now have this setting. Of course you can always change it and make it
 specific for each quotation.</p></div><div role="alert" class="alert alert-go_to"><p class="alert-title">See also</p><ul ><li ><a href="get_signature_to_validate.html" class="reference internal alert-link"><span class="doc">Get a signature to confirm an order</span></a></li><li ><a href="get_paid_to_validate.html" class="reference internal alert-link"><span class="doc">Get paid to confirm an order</span></a></li></ul></div></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -321,7 +321,7 @@ specific for each quotation.</p></div><div role="alert" class="alert alert-go_to
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -343,7 +343,7 @@ specific for each quotation.</p></div><div role="alert" class="alert alert-go_to
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -377,9 +377,9 @@ specific for each quotation.</p></div><div role="alert" class="alert alert-go_to
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -396,6 +396,6 @@ specific for each quotation.</p></div><div role="alert" class="alert alert-go_to
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>
