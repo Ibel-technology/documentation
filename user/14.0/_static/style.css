@@ -1086,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #875A7B;
+  color: #002c73;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #926485;
+  color: #0745a8;
   text-decoration: none;
 }
 a:focus {
@@ -9637,12 +9637,12 @@ article.doc-body .code-fields ul em {
   font-weight: 600;
 }
 .card-img {
-  background: #75526b;
-  background: -webkit-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
+  background: #002c73;
+  /* background: -webkit-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
   background: -moz-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
   background: -ms-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
   background: -o-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
-  background: linear-gradient(99deg, #875A7B 10%, #62495B 90%);
+  background: linear-gradient(99deg, #875A7B 10%, #62495B 90%); */
   position: absolute;
   top: 0;
   left: auto;
@@ -9665,7 +9665,7 @@ article.doc-body .code-fields ul em {
   -moz-transform-origin: 50% 0px 0px;
   -ms-transform-origin: 50% 0px 0px;
   transform-origin: 50% 0px 0px;
-  background: #75526b;
+  background: #002c73;
   background: -webkit-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
   background: -moz-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
   background: -ms-linear-gradient(99deg, #875A7B 10%, #62495B 90%);
@@ -9788,12 +9788,12 @@ main .alert.alert-info > h3.alert-title {
   display: none;
 }
 main .alert.alert-go_to {
-  border-color: #875A7B;
-  background-color: #f7f3f6;
-  color: #78506d;
+  border-color: #43526b;
+  background-color: #dae0eb;
+  color: #43526b;
 }
 main .alert.alert-go_to > h3.alert-title {
-  color: #593b51;
+  color: #43526b;
 }
 main .alert.alert-go_to > h3.alert-title:before {
   content: "\e70d";
@@ -9803,7 +9803,7 @@ main .alert.alert-success {
   background-color: #eef7ee;
 }
 main .alert.alert-success > h3.alert-title {
-  color: #408c41;
+  color: #43526b;
 }
 main .alert.alert-success > h3.alert-title:before {
   content: "\e625";
@@ -9811,7 +9811,7 @@ main .alert.alert-success > h3.alert-title:before {
 main .alert.alert-warning,
 main .alert.warning {
   border-color: #fceedb;
-  background-color: #fef9f3;
+  background-color: #43526b;
 }
 main .alert.alert-warning > h3.alert-title,
 main .alert.warning > h3.alert-title {

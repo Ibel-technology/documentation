@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to use Google Spreadsheet in Addition to my Data? &#8212; Odoo 14.0 documentation</title>
+    <title>How to use Google Spreadsheet in Addition to my Data? &#8212; Ibel documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/accounting.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/legal.css" />
- 
+
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
@@ -34,14 +34,14 @@
 <script type="text/javascript" src="../../_static/doc.js"></script>
 <script type="text/javascript" src="../../_static/jquery.noconflict.js"></script>
     <link rel="canonical" href="" />
-  
+
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="OAuth" href="azure.html" />
-    <link rel="prev" title="How to allow users to sign in with their Google account" href="google.html" /> 
+    <link rel="prev" title="How to allow users to sign in with their Google account" href="google.html" />
   </head><body><header class="o_main_header o_has_sub_nav o_inverted ">
     <div class="o_main_header_main">
-      <a class="pull-left o_logo" href="/"></a>
+      <!-- <a class="pull-left o_logo" href="/"></a> -->
       <a href="#" class="o_mobile_menu_toggle visible-xs-block pull-right">
         <span class="sr-only">Toggle navigation</span>
         <span class="mdi-navigation-menu"></span>
@@ -49,7 +49,7 @@
       <div class="o_header_buttons">
         <a href="http://www.odoo.com/trial" class="btn btn-primary">Start Now</a>
       </div>
-      <ul class="o_primary_nav">
+      <!-- <ul class="o_primary_nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Apps</a>
           <div class="dropdown-menu o_secondary_nav">
@@ -164,7 +164,7 @@
         <li><a href="https://www.odoo.com/page/tour">Tour</a></li>
         <li><a href="https://www.odoo.com/pricing">Pricing</a></li>
         <li><a href="https://www.odoo.com/page/docs">Docs</a></li>
-      </ul>
+      </ul> -->
     </div>
     <nav class="navbar o_sub_nav">
       <div class="container">
@@ -177,37 +177,37 @@
 
         <div class="collapse navbar-collapse" id="o_sub-menu">
           <ol class="o_breadcrumb breadcrumb nav navbar-left">
-              
-              
 
 
 
 
 
-    
-        
-            
+
+
+
+
+
                 <li><a href="../../index.html">User Doc</a></li>
-            
-        
-    
-        
-            
-                
+
+
+
+
+
+
                     <li><a href="../../general.html">General</a></li>
-                
-            
-        
-    
-        
-            
-                
-            
-        
-    
+
+
+
+
+
+
+
+
+
+
     <li class="active"><a href="#">How to use Google Spreadsheet in Addition to my Data?</a></li>
 
-              
+
           </ol>
 
           <div class="call-to-action navbar-right hidden-xs">
@@ -215,18 +215,18 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            
 
-            
-            
 
-<li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
+
+
+
+<!-- <li><a href="https://www.odoo.com/documentation/user/14.0/index.html">User</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/index.html">Developer</a></li>
 <li><a href="https://training.odoo.com">Training Center</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/webservices/odoo.html">API</a></li>
 <li><a href="https://www.odoo.com/documentation/14.0/setup/install.html">Installation</a></li>
 <li><a href="https://www.odoo.com/page/odoo-white-paper">White Papers</a></li>
-<li><a href="https://www.odoo.com/page/legal">Legal</a></li>
+<li><a href="https://www.odoo.com/page/legal">Legal</a></li> -->
 <li id="searchbox" style="display: none; margin: 0 0 0 10px;" role="search">
     <form class="search form-inline input-group-sm" action="../../search.html" method="get">
         <input type="text" class="form-control" name="q" id="q" placeholder="Search..." />
@@ -236,72 +236,72 @@
     </form>
 </li>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-            
 
-            
+
+
           </ul>
 
           <ul class="navbar-nav navbar-right nav o_sub_nav_actions">
-            
+
               <li class="divider"></li>
-            
-
-            
-            
 
 
-            
+
+
+
+
+
           </ul>
         </div>
       </div>
     </nav>
   </header><div id="wrap" class="">
-    
+
     <figure class="card top ">
       <span class="card-img" ></span>
       <div class="container text-center">
         <h1> How to use Google Spreadsheet in Addition to my Data? </h1>
       </div>
     </figure>
-    
-    
-    
+
+
+
       <main class="container ">
-        
+
         <div class="o_content row">
-          
+
           <aside>
             <div class="navbar-aside text-center">
-              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#create-a-new-spreadsheet" class="reference ripple internal">Create a new Spreadsheet</a></li><li class="list-group-item"><a href="#link-a-spreadsheet-with-odoo" class="reference ripple internal">Link a Spreadsheet with Odoo</a></li></ul></li><li class="list-group-item"><a href="#applications" class="reference ripple internal">Applications</a><ul ><li class="list-group-item"><a href="#retrieve-data" class="reference ripple internal">Retrieve Data</a></li><li class="list-group-item"><a href="#retrieve-grouped-sums" class="reference ripple internal">Retrieve Grouped Sums</a></li><li class="list-group-item"><a href="#other-uses" class="reference ripple internal">Other uses</a></li></ul></li></ul>
-              
+              <ul class="list-group text-left nav"><li class="list-group-item"><a href="#configuration" class="reference ripple internal">Configuration</a><ul ><li class="list-group-item"><a href="#create-a-new-spreadsheet" class="reference ripple internal">Create a new Spreadsheet</a></li><li class="list-group-item"><a href="#link-a-spreadsheet-with-odoo" class="reference ripple internal">Link a Spreadsheet with Ibel</a></li></ul></li><li class="list-group-item"><a href="#applications" class="reference ripple internal">Applications</a><ul ><li class="list-group-item"><a href="#retrieve-data" class="reference ripple internal">Retrieve Data</a></li><li class="list-group-item"><a href="#retrieve-grouped-sums" class="reference ripple internal">Retrieve Grouped Sums</a></li><li class="list-group-item"><a href="#other-uses" class="reference ripple internal">Other uses</a></li></ul></li></ul>
+
               <p class="gith-container"><a href="https://github.com/odoo/documentation-user/edit/14.0/general/auth/google_spreadsheets.rst" class="gith-link">
                   Edit on GitHub
               </a></p>
-              
+
             </div>
           </aside>
-          
+
           <article class="doc-body ">
-            
-            
-  <section id="how-to-use-google-spreadsheet-in-addition-to-my-data"><p >Create custom dashboards in Google Spreadsheet that retrieves data directly from Odoo using
+
+
+  <section id="how-to-use-google-spreadsheet-in-addition-to-my-data"><p >Create custom dashboards in Google Spreadsheet that retrieves data directly from Ibel using
 spreadsheet formula. You can use it to create sales commission plans, budgets, project forecasts,
 etc. Formulas are written in Python but programming skills are not required.</p></section><section id="configuration"><h2 >Configuration</h2><p >From the <em >General Settings</em>, active <em >Google Drive</em> and <em >Google Spreadsheet</em>. The options
-<em >Authorization Code</em> and <em >Get Authorization Code</em> are now available.</p><img src="../../_images/authori.png" alt="Enable the Google Drive and Google Spreadsheet features in Odoo" style="" class="img-responsive center-block"><p >Now, link your Google account with Odoo going to <span class="menuselection">Get Authorization Code ‣
+<em >Authorization Code</em> and <em >Get Authorization Code</em> are now available.</p><img src="../../_images/authori.png" alt="Enable the Google Drive and Google Spreadsheet features in Ibel" style="" class="img-responsive center-block"><p >Now, link your Google account with Ibel going to <span class="menuselection">Get Authorization Code ‣
 select your Google account ‣ enter your password ‣ copy the code ‣
-paste it into the Authorization Code field</span>.</p></section><section id="create-a-new-spreadsheet"><h3 >Create a new Spreadsheet</h3><p >From the <em >CRM</em> app, for example, go to <em >Favorites</em> and click on <em >Add to Google Spreadsheet</em>.</p><img src="../../_images/add_to_google_spread.png" alt="From the CRM application, for example, click on add to Google Spreadsheet in Odoo" style="" class="img-responsive center-block"><p >A new spreadsheet will be automatically created in your Google Drive.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >When you opening this new file, a second sheet is created automatically by Odoo with a
-tutorial/documentation on <em >How to use Google Spreadsheet</em>.</p></div></section><section id="link-a-spreadsheet-with-odoo"><h3 >Link a Spreadsheet with Odoo</h3><div class="line-block"><div class="line">From this new file, configure your database.</div><div class="line">Go to <span class="menuselection">Odoo ‣ Server Settings ‣ Database Name ‣ Username ‣ Password</span>.</div></div><img src="../../_images/odoo_menu.png" alt="Menu called Odoo is shown on the settings bar in the Spreadsheet" style="" class="img-responsive center-block"></section><section id="applications"><h2 >Applications</h2><p >You have 2 different formulas of using Google Spreadsheet in Odoo: retrieve data and retrieve
+paste it into the Authorization Code field</span>.</p></section><section id="create-a-new-spreadsheet"><h3 >Create a new Spreadsheet</h3><p >From the <em >CRM</em> app, for example, go to <em >Favorites</em> and click on <em >Add to Google Spreadsheet</em>.</p><img src="../../_images/add_to_google_spread.png" alt="From the CRM application, for example, click on add to Google Spreadsheet in Ibel" style="" class="img-responsive center-block"><p >A new spreadsheet will be automatically created in your Google Drive.</p><div role="alert" class="alert-info alert"><p class="alert-title">Note</p><p >When you opening this new file, a second sheet is created automatically by Ibel with a
+tutorial/documentation on <em >How to use Google Spreadsheet</em>.</p></div></section><section id="link-a-spreadsheet-with-odoo"><h3 >Link a Spreadsheet with Ibel</h3><div class="line-block"><div class="line">From this new file, configure your database.</div><div class="line">Go to <span class="menuselection">Ibel ‣ Server Settings ‣ Database Name ‣ Username ‣ Password</span>.</div></div><img src="../../_images/odoo_menu.png" alt="Menu called Ibel is shown on the settings bar in the Spreadsheet" style="" class="img-responsive center-block"></section><section id="applications"><h2 >Applications</h2><p >You have 2 different formulas of using Google Spreadsheet in Ibel: retrieve data and retrieve
 grouped sums.</p><div role="alert" class="alert alert-warning"><p class="alert-title">Warning</p><p >Google Drive limits the execution time of scripts; if the data you requested takes
 too long to be delivered, you might get an error. There is no specific size limit, since the
-time for Odoo to respond depends on several factors - although reading data regarding several
+time for Ibel to respond depends on several factors - although reading data regarding several
 thousand records is usually fine.</p></div></section><section id="retrieve-data"><h3 >Retrieve Data</h3><div class="line-block"><div class="line">The theoretical formula is <strong class="command">= oe_browse (table;columns;filters;orderby:limit)</strong>.
 Used it if you want to display the information without grouping it (e.g.: each sales
-order in the database).</div><div class="line">Find some the arguments in the table below.</div></div><img src="../../_images/retrieve_data.png" alt="Table with examples of arguments to use in Odoo" style="" class="img-responsive center-block"></section><section id="retrieve-grouped-sums"><h3 >Retrieve Grouped Sums</h3><div class="line-block"><div class="line">The theoretical formula is <strong class="command">= oe_read_group (table;columns;group_by;filters;orderby:limit)</strong>.
-Use it when you want to display a sum of data (e.g.: total invoiced).</div><div class="line">Find some arguments in the table below.</div></div><img src="../../_images/retrieve_sums.png" alt="Table with examples of grouped sum arguments to use in Odoo" style="" class="img-responsive center-block"></section><section id="other-uses"><h3 >Other uses</h3><p >Mix Odoo data with spreadsheet data, add traditional formulas, and create Dynamic Tabled and Graphs.</p></section>
+order in the database).</div><div class="line">Find some the arguments in the table below.</div></div><img src="../../_images/retrieve_data.png" alt="Table with examples of arguments to use in Ibel" style="" class="img-responsive center-block"></section><section id="retrieve-grouped-sums"><h3 >Retrieve Grouped Sums</h3><div class="line-block"><div class="line">The theoretical formula is <strong class="command">= oe_read_group (table;columns;group_by;filters;orderby:limit)</strong>.
+Use it when you want to display a sum of data (e.g.: total invoiced).</div><div class="line">Find some arguments in the table below.</div></div><img src="../../_images/retrieve_sums.png" alt="Table with examples of grouped sum arguments to use in Ibel" style="" class="img-responsive center-block"></section><section id="other-uses"><h3 >Other uses</h3><p >Mix Ibel data with spreadsheet data, add traditional formulas, and create Dynamic Tabled and Graphs.</p></section>
 
           </article>
         </div>
-        
+
         <div id="mask"></div>
       </main>
   </div>
@@ -321,7 +321,7 @@ Use it when you want to display a sum of data (e.g.: total invoiced).</div><div 
       </ul>
     </div>
   </div>
-  <footer>
+  <!-- <footer>
     <div id="footer" class="container">
       <span class="o_logo o_logo_inverse center-block o_footer_logo"></span>
       <div class="row">
@@ -343,7 +343,7 @@ Use it when you want to display a sum of data (e.g.: total invoiced).</div><div 
             <div class="col-xs-6 col-sm-4">
               <span class="menu_title">Services</span>
               <ul>
-                <li><a href="https://www.odoo.sh">Odoo Cloud Platform</a></li>
+                <li><a href="https://www.odoo.sh">Ibel Cloud Platform</a></li>
                 <li class="divider"></li>
                 <li><a href="http://www.odoo.com/help">Support</a></li>
                 <li><a href="https://upgrade.odoo.com">Upgrade</a></li>
@@ -377,9 +377,9 @@ Use it when you want to display a sum of data (e.g.: total invoiced).</div><div 
         <div class="col-sm-5 col-md-4 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <p>
             <small>
-              Odoo is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
+              Ibel is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
               <br/><br/>
-              Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.
+              Ibel's unique value proposition is to be at the same time very easy to use and fully integrated.
             </small>
           </p>
         </div>
@@ -396,6 +396,6 @@ Use it when you want to display a sum of data (e.g.: total invoiced).</div><div 
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   </body>
 </html>
